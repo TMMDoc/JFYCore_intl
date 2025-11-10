@@ -299,7 +299,7 @@ used as threshold.</p>
 </div>
 <div class="paragraph">
 <p><strong>Average segment length</strong> - The average length for
-all segments is calculated and used as a threshold. Default setting in JFY Laser.</p>
+all segments is calculated and used as a threshold. Default setting in JFY Cut.</p>
 </div>
 <div class="paragraph">
 <p><strong>Area</strong> - The area enclosed by the contour is used as
@@ -325,7 +325,7 @@ drawing.</p>
 i.e. draw a visible line on the sheet metal that does not pierce through.</p>
 </div>
 <div class="paragraph">
-<p><strong>Cut</strong>: JFY Laser will choose the appropriate
+<p><strong>Cut</strong>: JFY Cut will choose the appropriate
 laser condition for this polyline and the laser will cut it accordingly.</p>
 </div>
 <div class="admonitionblock note">
@@ -637,7 +637,7 @@ value from Part info. These tokens are not case sensitive.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">This is the font height (from baseline to ascent line.)
 in mm or inch units. When inserting this text, it might be possible that
 there is not enough space to insert the text at prescribed font height.
-In such situations, JFY Laser will automatically shrink the text size in
+In such situations, JFY Cut will automatically shrink the text size in
 steps of 10% until it is feasible to place it. This stepping down in
 currently allowed up-to 2 mm.</p>
 <p class="tableblock">Minimum has been set to 2 mm.</p></td>
@@ -659,7 +659,7 @@ minimize the risk of overlapping text.</p>
 Text will be aligned with
 the longest linear segment of the outer contour. In this case the text
 might not be axis aligned. Whether the text is placed horizontal,
-vertical or oblique, JFY Laser will always orient the text such that the user
+vertical or oblique, JFY Cut will always orient the text such that the user
 finds the text in right direction when looking at the part from the side
 closest to the text. That is, horizontal text placed to bottom-center
 will run left-to-right and when placed to top-center will run
@@ -684,7 +684,7 @@ as the required orientation.</p></td>
 </tbody>
 </table>
 <div class="paragraph">
-<p>When adding these marks, JFY Laser always ensures that the added
+<p>When adding these marks, JFY Cut always ensures that the added
 text does not collide with any part contour. For very tiny parts or
 parts with little open space, it will automatically scale down the font
 size by the required amount to fit the text inside the part and away

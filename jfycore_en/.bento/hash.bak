@@ -2,7 +2,7 @@ Version=58
 APPNAME=JFY Core
 BENDAPP=JFY Bend
 BRAND=JFY
-CUTAPP=JFY Laser
+CUTAPP=JFY Cut
 FLAVOR=JFY
 FOLDAPP=JFY Fold
 JFY=
@@ -17,7 +17,7 @@ Impressum.adoc • Impressum
 Index.adoc • Welcome to {APPNAME}
 Index.JFY.adoc • Welcome to JFY Core
 Index.TRUMPF.adoc • Welcome to TecZone
-manifest.txt • 253403.083420
+manifest.txt • 252110.122126
 Appendix\3DFormats.adoc • Supported 3D Formats
 Appendix\BendToolDXF.adoc • Bend Tool DXF
 Appendix\BSeparatorDXF.adoc • Separator Sheet DXF

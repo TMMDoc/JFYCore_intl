@@ -280,7 +280,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>JFY Laser uses a system of <strong>Finishing rules</strong> to determine what to do
+<p>JFY Cut uses a system of <strong>Finishing rules</strong> to determine what to do
 when the cutting of a hole or a part is complete. As these holes and parts get
 detached from the sheet (by the laser cutting), various things can happen:</p>
 </div>
@@ -366,7 +366,7 @@ gaps between the slats.</p>
 <div class="paragraph">
 <p>Each rule specifies a <em>type of contour</em>, a <em>size</em> and the <em>action</em> that should
 be taken when a match happens. The ordering of these rules is important. As
-JFY Laser finishes processing each contour, it walks through these rules and
+JFY Cut finishes processing each contour, it walks through these rules and
 applies the first one that matches. In general, this means that you need to
 write more specific rules first, or use smaller sizes first. (The
 <strong>Up</strong> and <strong>Down</strong>
@@ -504,7 +504,7 @@ the job.</p>
 <div class="sect2">
 <h3 id="_adding_microjoints">Adding Microjoints<a id="h000284"></a></h3>
 <div class="paragraph">
-<p>Here is an example where JFY Laser has added micro-joints to to some holes that
+<p>Here is an example where JFY Cut has added micro-joints to to some holes that
 are very close to outer contours (or to other holes). When the nozzle passes so
 close during the cutting of those other holes, it is possible for this slug to
 tilt up due to the gas pressure and cause a collision. So a microjoint is added.</p>
@@ -546,7 +546,7 @@ action has been specified in the finishing rule that applies for this contour.</
 </div>
 <div class="paragraph">
 <p>Sometimes choosing a different approach point can change an unstable contour
-into a stable contour, as shown above. JFY Laser detect such situations and
+into a stable contour, as shown above. JFY Cut detect such situations and
 automatically adjust the approach point.</p>
 </div>
 </div>
@@ -566,7 +566,7 @@ stably on the pins (as shown on the image below left):</p>
 <div class="paragraph">
 <p>In a layout, a smaller part might be nested in this hole to improve sheet
 utilisation and at that point, the inner contour may not be supported with
-enough pins to be considered stable. JFY Laser will add a microjoint to stabilise
+enough pins to be considered stable. JFY Cut will add a microjoint to stabilise
 the contour, as shown in the image above right.</p>
 </div>
 <div class="paragraph">

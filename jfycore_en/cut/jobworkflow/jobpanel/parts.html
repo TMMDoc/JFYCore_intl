@@ -305,13 +305,13 @@ remove parts to the job, and to perform some operations on all the parts:</p>
 <ul>
 <li>
 <p>Use <strong>Add</strong> to add a part for nesting. This can be an
-already <em>tooled up</em> <strong>.fx</strong> file or any 2D or 3D file that JFY Laser can import and
+already <em>tooled up</em> <strong>.fx</strong> file or any 2D or 3D file that JFY Cut can import and
 convert to a sheet metal part.These files will then be <em>tooled up</em> as explained
 in the <a href="../../partworkflow/index.html">Part Workflow</a> section.</p>
 </li>
 <li>
 <p>The <strong>Add Assembly</strong> button is used to add a complete
-3D assembly. JFY Laser will select the <em>sheet metal</em> parts from the assembly and
+3D assembly. JFY Cut will select the <em>sheet metal</em> parts from the assembly and
 add them into the nesting job. The quantities for the individual components of
 the assembly are set to produce one quantity of the complete assembly.</p>
 </li>
@@ -353,7 +353,7 @@ ensure that all the parts are using the new settings.</p>
 <li>
 <p>The <strong>Quantity</strong> is the required quantity of the part. You can enter a
 simple number here, or a <em>range</em> like <code>20 - 30</code>. This means that at least 20
-copies of this part will be nested, but no more than 30. JFY Laser will free to
+copies of this part will be nested, but no more than 30. JFY Cut will free to
 nest any quantity between these two values to maximize nesting efficiency, but
 will never start a new sheet just to nest parts beyond the minimum quantity.</p>
 </li>
@@ -370,7 +370,7 @@ engine. (For this to work correctly, you must also specify the grain direction
 of the <em>sheets</em> in the <a href="sheets.html">Sheets</a> tab).</p>
 </li>
 <li>
-<p>The <strong>Group</strong> value is a hint to the nesting engine - JFY Laser will try
+<p>The <strong>Group</strong> value is a hint to the nesting engine - JFY Cut will try
 to keep parts with the same group value together on the same sheet, where
 possible.</p>
 </li>

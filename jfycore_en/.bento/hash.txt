@@ -14,6 +14,7 @@ UIXlate=False, DebugUIXlate=False, Language=EN
 
 contents.txt • 254003.084024
 Impressum.adoc • Impressum
+Impressum.JFY.adoc • Impressum
 Index.adoc • Welcome to {APPNAME}
 Index.JFY.adoc • Welcome to JFY Core
 Index.TRUMPF.adoc • Welcome to TecZone

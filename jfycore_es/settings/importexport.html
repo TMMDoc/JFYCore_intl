@@ -1,0 +1,554 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/jfy-icon.png">
+  <title>Importar/Exportar</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.jfy.png" width="150" height="50" /></div>
+        <div><p>JFY Core Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Bienvenido a JFY Core</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../intro/index.html">Introducción</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../intro/install.html">Instalación del software</a></li>
+    <li><button class="tree blank"></button><a href="../intro/clarity.html">La interfaz de usuario</a></li>
+    <li><button class="tree blank"></button><a href="../intro/workflow.html">Flujo de trabajo de piezas</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../cad/index.html">CAD</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cad/2dimport/index.html">Importación 2D</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../cad/2dimport/2dcleanup.html">Limpieza 2D</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cad/3dimport/index.html">Importación 3D</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../cad/3dimport/prep3dmodel.html">Importar modelo 3D</a></li>
+      <li><button class="tree blank"></button><a href="../cad/3dimport/prepassembly.html">Importar grupo de módulos</a></li>
+      <li><button class="tree blank"></button><a href="../cad/3dimport/formdetect.html">Detección de forma</a></li>
+      <li><button class="tree blank"></button><a href="../cad/3dimport/componentdetect.html">Detección de componentes</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../cad/sketch.html">Modificación de la geometría</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../cut/index.html">JFY Cut</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cut/partworkflow/index.html">Flujo de trabajo de piezas</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/partworkflow/panels/index.html">Paneles de edición</a>
+       <ul class="hide">
+        <li>
+         <button class="tree closed"></button>
+         <a href="../cut/partworkflow/panels/lasercut/index.html">Corte por láser</a>
+         <ul class="hide">
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/approach.html">Aproximación</a></li>
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/withdrawal.html">Retroceso</a></li>
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/microjoint.html">Microjoint</a></li>
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/advanced.html">Avanzado</a></li>
+         </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/contour.html">Contorno</a></li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/scrapcut.html">Corte de desperdicios</a></li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/part.html">Pieza</a></li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/cornertreatment.html">Tratamiento de esquinas</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../cut/partworkflow/quicknest.html">Nesting rápido</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cut/jobworkflow/index.html">Flujo de trabajo de tarea</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/jobworkflow/jobpanel/index.html">Panel de tareas</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/sheets.html">Pestaña Chapas</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/parts.html">Pestaña Piezas</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/layouts.html">Pestaña Diseños</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/summary.html">Pestaña Resumen</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/jobworkflow/editlayout/index.html">Editar layout</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/nestingmodes.html">Modos de nesting</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/placementpanel.html">Panel de colocación</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/sequencing.html">Secuenciación</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/slicesheet.html">Chapa de corte</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cut/advanced/index.html">Avanzado</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../cut/advanced/finishingrules.html">Reglas de acabado</a></li>
+      <li><button class="tree blank"></button><a href="../cut/advanced/editltt.html">Editar LTT</a></li>
+      <li><button class="tree blank"></button><a href="../cut/advanced/flyline.html">FlyLine</a></li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/advanced/twinline/index.html">TwinLine</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cut/advanced/twinline/strategies.html">Estrategia</a></li>
+        <li><button class="tree blank"></button><a href="../cut/advanced/twinline/microjoints.html">Microjoints</a></li>
+        <li><button class="tree blank"></button><a href="../cut/advanced/twinline/stability.html">Ajustes adicionales</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../bend/index.html">JFY Bend</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../bend/createbenddata.html">Crear datos de plegado</a></li>
+    <li><button class="tree blank"></button><a href="../bend/navigator.html">Bend Navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../bend/editing/index.html">Editar datos de plegado</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../bend/editing/editbend.html">Editar un plegado</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/editmount.html">Editar un soporte de útil</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/editsetup.html">Editar una configuración de plegado</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/editgauge.html">Editar los dedos de tope</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/bendsheet.html">Hoja de cálculo de plegados</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/sequencing.html">Cambio de la secuencia</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/addsetup.html">Adición de configuraciones y estaciones</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../bend/advanced/index.html">Avanzado</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../bend/advanced/batchprocess.html">Proceso por lotes</a></li>
+      <li><button class="tree blank"></button><a href="../bend/advanced/recompute.html">Recalcular solución</a></li>
+      <li><button class="tree blank"></button><a href="../bend/advanced/tonnage.html">Comprobación de tonelaje</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Ajustes</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="drawing/index.html">Dibujo</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="drawing/layers.html">Niveles</a></li>
+      <li><button class="tree blank"></button><a href="drawing/dimensions.html">Medidas</a></li>
+      <li><button class="tree blank"></button><a href="drawing/view.html">Vista</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="bendcam/index.html">CAM de plegado</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="bendcam/benddefaults.html">Valores predeterminados de máquina</a></li>
+      <li><button class="tree blank"></button><a href="bendcam/bendoutputs.html">Salidas de plegado</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="cutcam/index.html">CAM de corte</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="cutcam/layout/index.html">Layout</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="cutcam/layout/nesting.html">Ajustes de nesting</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/sheet.html">Chapa</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/sheethandling.html">Manipulación de chapa</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/skeletoncuts.html">Cortes de rejilla</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/worksupport.html">Soporte de trabajo</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="cutcam/lasercam/index.html">Láser CAM</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="cutcam/lasercam/sequence.html">Secuencia</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="cutcam/cutoutputs.html">Salidas de corte</a></li>
+      <li><button class="tree blank"></button><a href="cutcam/cutview.html">Vista de corte</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="reports/index.html">Informes</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="reports/itemdefaults.html">Asignaciones previas de artículos</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a class="active" href="importexport.html">Importar/Exportar</a></li>
+    <li><button class="tree blank"></button><a href="environment.html">Entorno</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../database/index.html">Base de datos</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../database/materials.html">Materiales</a></li>
+    <li><button class="tree blank"></button><a href="../database/machines.html">Máquinas</a></li>
+    <li><button class="tree blank"></button><a href="../database/bendtools.html">Útiles de plegado</a></li>
+    <li><button class="tree blank"></button><a href="../database/formscomponents.html">Moldes/Componentes</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../report/index.html">Informes</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../report/designer.html">Report Designer</a></li>
+    <li><button class="tree blank"></button><a href="../report/fields.html">Campos, imágenes y tablas</a></li>
+    <li><button class="tree blank"></button><a href="../report/bands.html">Bandas (subinformes)</a></li>
+    <li><button class="tree blank"></button><a href="../report/labels.html">Etiquetas, mapas de bits y formas</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../appendix/index.html">Apéndice</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../appendix/3dformats.html">Formatos 3D admitidos</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Aviso Legal</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Ajustes</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="importexport.html">Importar/Exportar</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Importar/Exportar</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>En esta sección, cubriremos la configuración de <strong>Import settings</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/navset.png" alt="navset" width="800">
+</div>
+</div>
+<div class="paragraph">
+<p>Haga clic en el icono <strong>Settings</strong>
+<span class="image"><img src="img/settings.png" alt="set" width="16"></span> de la página de inicio.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/importexportsettings.png" alt="importexportsettings"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_import_settings">Import settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>En esta sección, cubriremos la configuración de <strong>Import settings</strong>.
+Haga clic en el icono <strong>Settings</strong>. Haga clic en <strong>Import/Export</strong>
+y navegue a <strong>Import settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/importsetup.png" alt="importsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Units for DXF files</strong> - Seleccione aquí entre milímetros o pulgadas.</p>
+</div>
+<div class="paragraph">
+<p><strong>Stitch together lines/arcs closer than this</strong> - Establezca este valor (0&gt;1mm). Al importar una pieza que tiene líneas/arcos más cerca que el valor preestablecido, el programa los unirá automáticamente al importarlos.</p>
+</div>
+<div class="paragraph">
+<p><strong>Maximum thickness for sheet-metal part</strong> - Para reconocer una pieza de chapa grande, el umbral de reconocimiento de chapa debería incrementarse. (10&gt;40 mm) Se ajusta automáticamente de forma predeterminada en 25 mm o una pulgada, dependiendo de la unidad utilizada.</p>
+</div>
+<div class="paragraph">
+<p><strong>Point entities</strong> - En función de la opción seleccionada se determinará cómo se van a importar los puntos.</p>
+</div>
+<div class="paragraph">
+<p><em>Import all</em> - Se importarán y mostrarán todos los puntos.</p>
+</div>
+<div class="paragraph">
+<p><em>Skip points on polylines</em> - Esto omite todos los puntos que se detectan en las polilíneas.</p>
+</div>
+<div class="paragraph">
+<p><em>Skip all</em> - Esto ignora todos los puntos de la importación y no se muestra ninguno.</p>
+</div>
+<div class="paragraph">
+<p><strong>Ignore layers in DXF/DWG files</strong> - Los dibujos DXF y DWG se crean, por lo general, en diferentes niveles. Con este ajuste, el programa ignora estos niveles y desplaza los objetos al nivel predeterminado.</p>
+</div>
+<div class="paragraph">
+<p><strong>Explode blocks in 2D drawing</strong> - Divide las agrupaciones durante la importación</p>
+</div>
+<div class="paragraph">
+<p><strong>Convert white entities to black</strong> - Active este ajuste para convertir objetos blancos en negros durante la importación.</p>
+</div>
+<div class="paragraph">
+<p><strong>Darken colors during DXF import</strong>- Active este ajuste para oscurecer objetos de color durante la importación.</p>
+</div>
+<div class="paragraph">
+<p><strong>Remove duplicate segments</strong> - Active este ajuste para eliminar cualquier geometría duplicada hallada en la pieza durante la importación.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dxf_settings">DXF settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>En esta sección, cubriremos la configuración de <strong>DXF settings</strong>. Haga clic en el icono
+<strong>Settings</strong>. Haga clic en <strong>Import/Export</strong> y navegue a <strong>DXF settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/dxfsetup.png" alt="dxfsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Angles in DXF are interior angles</strong> - Active este ajuste para que los ángulos en un DXF se traten como ángulos de apertura.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_settings">Export settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>En esta sección, cubriremos la configuración de <strong>Export settings</strong>. Haga clic en el icono <strong>Settings</strong>. Haga clic en <strong>Import/Export</strong> y navegue a <strong>Export settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/exportsetup.png" alt="exportsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>No POLYLINE objects in DXF output</strong> - Habitualmente, los contornos cerrados se generan como polilíneas al exportar a formato DXF. Algunos sistemas CAD no pueden procesar estas salidas. Con este ajuste, el programa emite los DXF con líneas y arcos circulares. Los archivos se pueden leer en cualquier lugar, pero los archivos creados son más grandes y las conexiones entre las líneas y los arcos circulares se pierden</p>
+</div>
+<div class="paragraph">
+<p><strong>Output bend-info when saving DXF files</strong> - Active este ajuste para que un DXF exportado salga con información del plegado.</p>
+</div>
+<div class="paragraph">
+<p><strong>Bend-info in Starmatik format</strong> - Active este interruptor para extraer la información de plegado en formato Starmatik. Aquí es donde se posiciona una entidad de texto de forma exacta en el centro de cada línea que va a ser una línea de plegado.</p>
+</div>
+<div class="paragraph">
+<p><strong>Convert black to gray on output</strong> - Al exportar datos en 2D, los objetos del archivo DXF salen en negro por defecto. Para poder reconocer mejor los objetos en los programas CAD, los objetos salen en gris con este ajuste.</p>
+</div>
+<div class="paragraph">
+<p><strong>Start MetaCAM when PDG files are exported</strong> - Active este ajuste para que un archivo PDG se abra automáticamente en MetaCAM</p>
+</div>
+<div class="paragraph">
+<p><strong>Format for flat pattern</strong> - Al exportar un patrón plano, este se puede ajustar en formato de archivo GEO, DXF o PDG.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spline_conversion">Spline conversion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>En esta sección, cubriremos la configuración de
+<strong>ajustes Spline conversion</strong>. Haga clic en el icono <strong>Settings</strong>. Haga clic en
+<strong>Import/Export</strong> y navegue a los ajustes <strong>Spline conversion</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/splineconvert.png" alt="splineconvert"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Convert splines on import</strong> - Determine aquí si la conversión de spline se desactiva o se activa para convertir las splines en líneas o arcos circulares. En cualquier caso, cada spline se convertirá en un objeto polilínea individual que contiene segmentos de línea o segmentos de arco circular.</p>
+</div>
+<div class="paragraph">
+<p><strong>Node-count computation</strong> - El número de líneas o arcos circulares que se generan se calcula utilizando uno de los dos mecanismos siguientes: paso de rosca o desviación.</p>
+</div>
+<div class="paragraph">
+<p><strong>Length of each line or arc segment</strong> - Si se escoge el paso de rosca en el cálculo del recuento de nodos,ajuste aquí la longitud para cada segmento de arco circular o de línea para descomponer la spline utilizando esta longitud de paso.</p>
+</div>
+<div class="paragraph">
+<p><strong>Maximum deviation during approximation</strong> - Si se escoge la desviación en el cálculo de recuento de nodos, ajuste aquí la desviación máxima que se permite entre la spline suavizada original y la aproximación a la línea o al arco circular. La polilínea se construye con la menor cantidad de segmentos posibles, mientras se mantiene el error máximo dentro de este límite.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assembly_explode">Assembly Explode</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>En esta sección, cubriremos la configuración de los ajustes de <strong>Assembly Explode</strong>. Haga clic en el icono <strong>Settings</strong>. Haga clic en <strong>Import/Export</strong> y vaya a los ajustes de <strong>Assembly Explode</strong></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/assmexplsetup.png" alt="assmexplsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Skip sheet-metal parts with no bends</strong> - Al despiezar un grupo de módulos, si activa este interruptor visualizará solo las piezas de chapa con líneas de plegado. Si lo desactiva, visualizará todas las piezas del grupo de módulos.</p>
+</div>
+<div class="paragraph">
+<p><strong>Components (nuts/bolts etc) to display</strong> - Utilice este ajuste para seleccionar qué opciones se mostrarán al despiezar un grupo de módulos que contenga otros componentes.</p>
+</div>
+<div class="paragraph">
+<p><em>None</em> - Solo se muestran las piezas de chapa tras el despiece, pero no otras tuercas o pernos.</p>
+</div>
+<div class="paragraph">
+<p><em>Unidentified</em> - Solo se muestran componentes que todavía se deben identificar en el programa.</p>
+</div>
+<div class="paragraph">
+<p><em>All</em> - Se muestran todos los componentes.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_layer_mapping">Layer mapping</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image"><img src="img/layermapsetup.png" alt="layermapsetup"></span></p>
+</div>
+<div class="paragraph">
+<p>En esta sección, cubriremos la configuración de <strong>Layer mapping</strong>. Haga clic en el icono
+<strong>Settings</strong>
+. Haga clic en <strong>Import/Export</strong> y navegue a los ajustes de <strong>Layer mapping</strong>.En esta sección, los niveles que se utilizan en piezas que se importan al programa pueden mapearse automáticamente según su funcionalidad (uso).</p>
+</div>
+<div class="paragraph">
+<div class="title">Ejemplo</div>
+<p>Si una pieza importada tiene un nivel MARCA, este se puede ajustar para que utilice automáticamente el <strong>Nivel marca</strong> en el programa.</p>
+</div>
+<div class="paragraph">
+<p><strong>Layer name</strong> - Este es el nombre del nivel que, en caso de importar una pieza con ese nivel, utilizará la funcionalidad ajustada en el panel "Uso".</p>
+</div>
+<div class="paragraph">
+<p><strong>Use</strong> - Esta es la funcionalidad de la capa. Las diferentes opciones disponibles son:</p>
+</div>
+<div class="paragraph">
+<p><em>Standard</em> - Se trata del nivel estándar que se utilizará para CAM.</p>
+</div>
+<div class="paragraph">
+<p><em>Auxiliary</em> - Un nivel auxiliar; no se utilizará para CAM.</p>
+</div>
+<div class="paragraph">
+<p><em>Mark</em> - Cualquier entidad en este nivel se marcará, no se cortará.</p>
+</div>
+<div class="paragraph">
+<p><em>Approach marker</em> - Entidades de punto que indican la posición de avance del láser.</p>
+</div>
+<div class="paragraph">
+<p><em>Sequence marker</em> - Marcadores de texto que indican la secuencia de los contornos.</p>
+</div>
+<div class="paragraph">
+<p><em>Forming center</em> - Marca de centro para conformado (un punto o una L pequeña).</p>
+</div>
+<div class="paragraph">
+<p><em>Forming foot print</em> - El borde (la huella) de un conformado.</p>
+</div>
+<div class="paragraph">
+<p><em>Evaporate</em> - Este nivel se utilizará para distinguir la erosión de la lámina.</p>
+</div>
+<div class="paragraph">
+<p><em>Dot marking</em> - Este nivel se utilizará para los códigos QR.</p>
+</div>
+<div class="paragraph">
+<p><em>Info</em> - Es un nivel solo informativo.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_import_settings">Import settings</a>
+  </li>
+  <li level="1">
+   <a href="#_dxf_settings">DXF settings</a>
+  </li>
+  <li level="1">
+   <a href="#_export_settings">Export settings</a>
+  </li>
+  <li level="1">
+   <a href="#_spline_conversion">Spline conversion</a>
+  </li>
+  <li level="1">
+   <a href="#_assembly_explode">Assembly Explode</a>
+  </li>
+  <li level="1">
+   <a href="#_layer_mapping">Layer mapping</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="reports/itemdefaults.html">Asignaciones previas de artículos</a></span>
+ <span class="next"><a href="environment.html">Entorno</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

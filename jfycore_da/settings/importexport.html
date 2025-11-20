@@ -1,0 +1,555 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/jfy-icon.png">
+  <title>Import/eksport</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.jfy.png" width="150" height="50" /></div>
+        <div><p>JFY Core Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Velkommen til JFY Core</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../intro/index.html">Introduktion</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../intro/install.html">Installation af softwaren</a></li>
+    <li><button class="tree blank"></button><a href="../intro/clarity.html">Brugerfladen</a></li>
+    <li><button class="tree blank"></button><a href="../intro/workflow.html">Arbejdsgang for del</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../cad/index.html">CAD</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cad/2dimport/index.html">2-D-import</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../cad/2dimport/2dcleanup.html">2-D oprydning</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cad/3dimport/index.html">3-D-import</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../cad/3dimport/prep3dmodel.html">Importér 3D-model</a></li>
+      <li><button class="tree blank"></button><a href="../cad/3dimport/prepassembly.html">Importér montering</a></li>
+      <li><button class="tree blank"></button><a href="../cad/3dimport/formdetect.html">Formregistrering</a></li>
+      <li><button class="tree blank"></button><a href="../cad/3dimport/componentdetect.html">Komponentregistrering</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../cad/sketch.html">Ændring af geometrien</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../cut/index.html">JFY Cut</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cut/partworkflow/index.html">Arbejdsgang for del</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/partworkflow/panels/index.html">Redigering af paneler</a>
+       <ul class="hide">
+        <li>
+         <button class="tree closed"></button>
+         <a href="../cut/partworkflow/panels/lasercut/index.html">Laserskæring</a>
+         <ul class="hide">
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/approach.html">Tilgang</a></li>
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/withdrawal.html">Tilbagetrækning</a></li>
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/microjoint.html">Microjoint</a></li>
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/advanced.html">Avanceret</a></li>
+         </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/contour.html">Kontur</a></li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/scrapcut.html">Skrotskæring</a></li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/part.html">Del</a></li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/cornertreatment.html">Hjørnebehandling</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../cut/partworkflow/quicknest.html">Hurtig indlejring</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cut/jobworkflow/index.html">Arbejdsgang for job</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/jobworkflow/jobpanel/index.html">Jobpanel</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/sheets.html">Fanen Plader</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/parts.html">Fanen Dele</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/layouts.html">Fanen Layouts</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/summary.html">Fanen Resumé</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/jobworkflow/editlayout/index.html">Redigér layout</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/nestingmodes.html">Indlejringstilstande</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/placementpanel.html">Placeringspanel</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/sequencing.html">Rækkefølgeopdeling</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/slicesheet.html">Pladeskæring</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cut/advanced/index.html">Avanceret</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../cut/advanced/finishingrules.html">Finish-regler</a></li>
+      <li><button class="tree blank"></button><a href="../cut/advanced/editltt.html">Redigér LTT</a></li>
+      <li><button class="tree blank"></button><a href="../cut/advanced/flyline.html">FlyLine</a></li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/advanced/twinline/index.html">TwinLine</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cut/advanced/twinline/strategies.html">Strategi</a></li>
+        <li><button class="tree blank"></button><a href="../cut/advanced/twinline/microjoints.html">Microjoints</a></li>
+        <li><button class="tree blank"></button><a href="../cut/advanced/twinline/stability.html">Yderligere indstillinger</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../bend/index.html">JFY Bend</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../bend/createbenddata.html">Opret bukningsdata</a></li>
+    <li><button class="tree blank"></button><a href="../bend/navigator.html">Bukningsnavigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../bend/editing/index.html">Redigér bukningsdata</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../bend/editing/editbend.html">Redigér en bukning</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/editmount.html">Redigér en værktøjsmontering</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/editsetup.html">Redigér en bukningsopsætning</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/editgauge.html">Redigér anslagsfingrene</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/bendsheet.html">Bukninger, regneark</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/sequencing.html">Ændring af rækkefølgen</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/addsetup.html">Tilføjelse af opsætninger og stationer</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../bend/advanced/index.html">Avanceret</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../bend/advanced/batchprocess.html">Batchproces</a></li>
+      <li><button class="tree blank"></button><a href="../bend/advanced/recompute.html">Genberegn løsning</a></li>
+      <li><button class="tree blank"></button><a href="../bend/advanced/tonnage.html">Kontrol af tonnage</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Indstillinger</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="drawing/index.html">Tegning</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="drawing/layers.html">Lag</a></li>
+      <li><button class="tree blank"></button><a href="drawing/dimensions.html">Dimensioner</a></li>
+      <li><button class="tree blank"></button><a href="drawing/view.html">Visning</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="bendcam/index.html">Bukning CAM</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="bendcam/benddefaults.html">Maskinens standardindstillinger</a></li>
+      <li><button class="tree blank"></button><a href="bendcam/bendoutputs.html">Bukningsudgange</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="cutcam/index.html">Skæring CAM</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="cutcam/layout/index.html">Layout</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="cutcam/layout/nesting.html">Indlejringsindstillinger</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/sheet.html">Plade</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/sheethandling.html">Pladehåndtering</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/skeletoncuts.html">Skeletskæringer</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/worksupport.html">Arbejdsstøtte</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="cutcam/lasercam/index.html">Laser CAM</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="cutcam/lasercam/sequence.html">Rækkefølge</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="cutcam/cutoutputs.html">Skæreoutputs</a></li>
+      <li><button class="tree blank"></button><a href="cutcam/cutview.html">Skæringsvisning</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="reports/index.html">Rapporter</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="reports/itemdefaults.html">Artiklens standardindstillinger</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a class="active" href="importexport.html">Import/eksport</a></li>
+    <li><button class="tree blank"></button><a href="environment.html">Miljø</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../database/index.html">Database</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../database/materials.html">Materialer</a></li>
+    <li><button class="tree blank"></button><a href="../database/machines.html">Maskiner</a></li>
+    <li><button class="tree blank"></button><a href="../database/bendtools.html">Bukningsværktøjer</a></li>
+    <li><button class="tree blank"></button><a href="../database/formscomponents.html">Forme/komponenter</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../report/index.html">Rapporter</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../report/designer.html">Rapportdesigner</a></li>
+    <li><button class="tree blank"></button><a href="../report/fields.html">Felter, billeder og tabeller</a></li>
+    <li><button class="tree blank"></button><a href="../report/bands.html">Bånd (underrapporter)</a></li>
+    <li><button class="tree blank"></button><a href="../report/labels.html">Etiketter, bitmaps og former</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../appendix/index.html">Appendiks</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../appendix/3dformats.html">Understøttede 3D-formater</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Impressum</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Indstillinger</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="importexport.html">Import/eksport</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Import/eksport</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>I dette afsnit vil vi dække konfigurationen af <strong>Import settings</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/navset.png" alt="navset" width="800">
+</div>
+</div>
+<div class="paragraph">
+<p>Klik på ikonet <strong>Settings</strong> <span class="image"><img src="img/settings.png" alt="set" width="16"></span> fra startsiden.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/importexportsettings.png" alt="importexportsettings"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_import_settings">Import settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I dette afsnit vil vi dække konfigurationen af <strong>Import settings</strong>.
+Klik på ikonet <strong>Settings</strong>. Klik på <strong>Import/Export</strong> og navigér til <strong>Import settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/importsetup.png" alt="importsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Units for DXF files</strong> - Indstil til enten millimeter eller tommer her.</p>
+</div>
+<div class="paragraph">
+<p><strong>Stitch together lines/arcs closer than this</strong> - Indstil denne værdi (0&gt;1 mm). Ved import af en del, der har linjer/cirkelbuer mere tætte end indstillet værdi, vil softwaren automatisk sætte sammen ved import.</p>
+</div>
+<div class="paragraph">
+<p><strong>Maximum thickness for sheet-metal part</strong> - For at registrere en stor plademetaldel, skal tærsklen for metalregistrering øges. (10&gt;40mm) Dette indstilles automatisk som standard til 25 mm eller en tomme, afhængigt af den enhed, der anvendes.</p>
+</div>
+<div class="paragraph">
+<p><strong>Point entities</strong> - Afhængigt af valgt option afgøres, hvordan punkter importeres.</p>
+</div>
+<div class="paragraph">
+<p><em>Import all</em> - Alle punkter vil blive importeret og vist.</p>
+</div>
+<div class="paragraph">
+<p><em>Skip points on polylines</em> - Dette overspringer alle punkter, der registreres på polylinjer.</p>
+</div>
+<div class="paragraph">
+<p><em>Skip all</em> - Dette overspringer alle punkter ved import, og ingen vises.</p>
+</div>
+<div class="paragraph">
+<p><strong>Ignore layers in DXF/DWG files</strong> - DXF- og DWG-tegninger er som regel oprettet på forskellige lag. Med denne indstilling ignorerer softwaren disse lag og flytter alle objekter til standardlaget.</p>
+</div>
+<div class="paragraph">
+<p><strong>Explode blocks in 2D drawing</strong> - Opdeler grupperinger under import</p>
+</div>
+<div class="paragraph">
+<p><strong>Convert white entities to black</strong> - Slå denne indstilling til for at konvertere hvide objekter til sorte objekter under import.</p>
+</div>
+<div class="paragraph">
+<p><strong>Darken colors during DXF import</strong>- Slå denne indstilling til for at mørkne farvede objekter under import.</p>
+</div>
+<div class="paragraph">
+<p><strong>Remove duplicate segments</strong> - Slå denne indstilling til for at fjerne eventuelt duplikeret geometri, der findes i delen, når der importeres.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dxf_settings">DXF settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I dette afsnit vil vi dække konfigurationen af <strong>DXF settings</strong>. Klik på
+<strong>ikonet Settings</strong>. Klik på <strong>Import/Export</strong> og navigér til <strong>DXF settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/dxfsetup.png" alt="dxfsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Angles in DXF are interior angles</strong> - Aktivér denne indstilling for at vinklerne i en DXF håndteres som åbningsvinkler.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_settings">Export settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I dette afsnit vil vi dække konfigurationen af <strong>Export settings</strong>. Klik på ikonet <strong>Settings</strong>. Klik på <strong>Import/Export</strong> og navigér til <strong>Export settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/exportsetup.png" alt="exportsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>No POLYLINE objects in DXF output</strong> - Normalt udlæses lukkede konturer som polylinjer, når der eksporteres DXF&#8217;er. Nogle CAD-systemer kan ikke behandle dette output. Med denne indstilling producerer softwaren DXF med linjer og cirkelbuer. Disse filer kan læses overalt, men de oprettede filer er større, og forbindelserne mellem linjer og ciekelbuer går tabt.</p>
+</div>
+<div class="paragraph">
+<p><strong>Output bend-info when saving DXF files</strong> - Slå denne indstilling til for en eksporteret DXF, der skal ud med bukningsinformation.</p>
+</div>
+<div class="paragraph">
+<p><strong>Bend-info in Starmatik format</strong> - Tænd for denne kontakt for at få bukninginformation ud i Starmatik-format. Dette er, hvor en tekstenhed er placeret præcist i midten af hver linje, der skal være en bukningslinje.</p>
+</div>
+<div class="paragraph">
+<p><strong>Convert black to gray on output</strong> - Når 2D-data eksporteres, sendes objekterne i DXF-filen som standard ud i sort. For bedre at kunne registrere objekterne i CAD-programmerne, vises objekterne i gråt med denne indstilling.</p>
+</div>
+<div class="paragraph">
+<p><strong>Start MetaCAM when PDG files are exported</strong> - Slå denne indstilling til for en PDG-fil, der automatisk skal konfigureres til at åbne i MetaCAM</p>
+</div>
+<div class="paragraph">
+<p><strong>Format for flat pattern</strong> - Når der eksporteres et fladt mønster, kan dette sættes til filformaterne GEO, DXF eller PDG.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spline_conversion">Spline conversion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I dette afsnit vil vi dække konfigurationen af
+<strong>indstillingerne Spline conversion</strong>. Klik på ikonet <strong>Settings</strong>. Klik på
+<strong>Import/Export</strong> og navigér til indstillingerne <strong>Spline conversion</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/splineconvert.png" alt="splineconvert"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Convert splines on import</strong> - Indstil her om splinekonvertering er slået fra eller indstillet til at konvertere spliner til linjer eller ciekelbuer. I i begge tilfælde vil hver splinekurve blive konverteret til et enkelt polylinjeobjekt, der indeholder linjesegmenter eller ciekelbuesegmenter.</p>
+</div>
+<div class="paragraph">
+<p><strong>Node-count computation</strong> - Antallet af linjer eller cirkelbuer, der genereres, beregnes ved hjælp af en af to mekanismer: Stigning eller afvigelse.</p>
+</div>
+<div class="paragraph">
+<p><strong>Length of each line or arc segment</strong> - Hvis Stigning vælges i knudeoptællingsberegningen, indstil her længden af hver cirkelbue eller linjesegment for at opdele splinen ved brug af denne trinlængde.</p>
+</div>
+<div class="paragraph">
+<p><strong>Maximum deviation during approximation</strong> - Hvis Afvigelse vælges i knudeoptællingsberegningen, indstil her den maksimale afvigelse, der er tilladt mellem den originale glatte spline og linje- eller ciekelbuetilnærmelsen. Polylinjen er konstrueret med så få segmenter som muligt, samtidig med at den maksimale fejl holdes inden for denne grænse.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assembly_explode">Assembly Explode</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I dette afsnit dækker vi konfigurationen af indstillingerne <strong>Assembly Explode</strong>. Klik på ikonet <strong>Settings</strong>. Klik på
+<strong>Import/Export</strong> og navigér til indstillingerne <strong>Assembly Explode</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/assmexplsetup.png" alt="assmexplsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Skip sheet-metal parts with no bends</strong> - Når et modul opdeles, vil aktivering af denne kontakt kun vise plademetaldele med bukningslinjer. Slukkes der, vises alle dele i modulet.</p>
+</div>
+<div class="paragraph">
+<p><strong>Components (nuts/bolts etc) to display</strong> - Brug denne indstilling til at vælge, hvilke optioner der skal vises, når et modul opdeles, so indeholder andre komponenter,</p>
+</div>
+<div class="paragraph">
+<p><em>None</em> - Kun plademetaldele vises efter opdelingen, og andre møtrikker/bolte vises ikke.</p>
+</div>
+<div class="paragraph">
+<p><em>Unidentified</em> - Der vises kun komponenter, der endnu ikke er identificeret i softwaren.</p>
+</div>
+<div class="paragraph">
+<p><em>All</em> - Alle komponenter vises.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_layer_mapping">Layer mapping</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image"><img src="img/layermapsetup.png" alt="layermapsetup"></span></p>
+</div>
+<div class="paragraph">
+<p>I dette afsnit vil vi dække konfigurationen af <strong>Layer mapping</strong>. Klik på
+<strong>ikonet Settings</strong>. Klik på, <strong>Import/Export</strong> og navigér til indstillingerne <strong>Layer mapping</strong>.</p>
+</div>
+<div class="paragraph">
+<p>I dette afsnit kan lag, der bruges på dele, som importeres til softwaren, automatisk kortlægges til deres funktionalitet (brug).</p>
+</div>
+<div class="paragraph">
+<div class="title">Eksempel</div>
+<p>Hvis en importeret del har et MARKERINGS-lag, kan denne indstilles til automatisk brug af <strong>Markerings-laget</strong> i softwaren.</p>
+</div>
+<div class="paragraph">
+<p><strong>Layer name</strong> - Dette er navnet på det lag, som hvis en del er importeret hermed, vil den bruge den funktionalitet, der er indstillet i panelet 'Brug'.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use</strong> - Dette er lagets funktionalitet. De forskellige tilgængelige optioner er:</p>
+</div>
+<div class="paragraph">
+<p><em>Standard</em> - Dette er standardlaget, der skal bruges til CAM.</p>
+</div>
+<div class="paragraph">
+<p><em>Auxiliary</em> - Et ekstra lag, der ikke skal bruges til CAM.</p>
+</div>
+<div class="paragraph">
+<p><em>Mark</em> - Alle enheder i dette lag vil være markeret, ikke skåret.</p>
+</div>
+<div class="paragraph">
+<p><em>Approach marker</em> - Punktenheder, der angiver laserstartpositionen.</p>
+</div>
+<div class="paragraph">
+<p><em>Sequence marker</em> - Tekstmarkører, der angiver rækkefølgen af konturer.</p>
+</div>
+<div class="paragraph">
+<p><em>Forming center</em> - Centrisk markering for formgivning (punkt eller lille L).</p>
+</div>
+<div class="paragraph">
+<p><em>Forming foot print</em> - Omridset (fodaftrykket) af en formfivning.</p>
+</div>
+<div class="paragraph">
+<p><em>Evaporate</em> - Dette lag vil blive brugt til at adskille folieindbrænding.</p>
+</div>
+<div class="paragraph">
+<p><em>Dot marking</em> - Dette lag vil blive brugt til QR-koder.</p>
+</div>
+<div class="paragraph">
+<p><em>Info</em> - Dette er et lag, der kun indeholder information.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_import_settings">Import settings</a>
+  </li>
+  <li level="1">
+   <a href="#_dxf_settings">DXF settings</a>
+  </li>
+  <li level="1">
+   <a href="#_export_settings">Export settings</a>
+  </li>
+  <li level="1">
+   <a href="#_spline_conversion">Spline conversion</a>
+  </li>
+  <li level="1">
+   <a href="#_assembly_explode">Assembly Explode</a>
+  </li>
+  <li level="1">
+   <a href="#_layer_mapping">Layer mapping</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="reports/itemdefaults.html">Artiklens standardindstillinger</a></span>
+ <span class="next"><a href="environment.html">Miljø</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

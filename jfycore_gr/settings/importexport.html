@@ -1,0 +1,617 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/jfy-icon.png">
+  <title>Εισαγωγή/Εξαγωγή</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.jfy.png" width="150" height="50" /></div>
+        <div><p>JFY Core Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Καλώς ήρθατε στο JFY Core</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../intro/index.html">Εισαγωγή</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../intro/install.html">Εγκατάσταση του λογισμικού</a></li>
+    <li><button class="tree blank"></button><a href="../intro/clarity.html">Η επιφάνεια χειρισμού</a></li>
+    <li><button class="tree blank"></button><a href="../intro/workflow.html">Ροή εργασιών τεμαχίου</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../cad/index.html">CAD</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cad/2dimport/index.html">Εισαγωγή 2-D</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../cad/2dimport/2dcleanup.html">Εκκαθάριση 2-D</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cad/3dimport/index.html">Εισαγωγή 3-D</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../cad/3dimport/prep3dmodel.html">Εισαγωγή μοντέλου 3D</a></li>
+      <li><button class="tree blank"></button><a href="../cad/3dimport/prepassembly.html">Εισαγωγή συγκροτήματος</a></li>
+      <li><button class="tree blank"></button><a href="../cad/3dimport/formdetect.html">Ανίχνευση μορφής</a></li>
+      <li><button class="tree blank"></button><a href="../cad/3dimport/componentdetect.html">Ανίχνευση στοιχείων</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../cad/sketch.html">Τροποποίηση της γεωμετρίας</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../cut/index.html">JFY Cut</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cut/partworkflow/index.html">Ροή εργασιών τεμαχίου</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/partworkflow/panels/index.html">Πίνακες επεξεργασίας</a>
+       <ul class="hide">
+        <li>
+         <button class="tree closed"></button>
+         <a href="../cut/partworkflow/panels/lasercut/index.html">Κοπή με λέιζερ</a>
+         <ul class="hide">
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/approach.html">Προσέγγιση</a></li>
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/withdrawal.html">Απόσυρση</a></li>
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/microjoint.html">Microjoint</a></li>
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/advanced.html">Για προχωρημένους</a></li>
+         </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/contour.html">Περίγραμμα</a></li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/scrapcut.html">Κοπή αχρήστων</a></li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/part.html">Τεμάχιο</a></li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/cornertreatment.html">Αντιμετώπιση γωνιών</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../cut/partworkflow/quicknest.html">Quick-Nest (Γρήγορη κατανομή)</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cut/jobworkflow/index.html">Ροή εργασιών έργου</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/jobworkflow/jobpanel/index.html">Πίνακας εργασίας</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/sheets.html">Καρτέλα μεταλλικών πλακών</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/parts.html">Καρτέλα Τεμάχια</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/layouts.html">Καρτέλα Διατάξεις</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/summary.html">Καρτέλα σύνοψης</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/jobworkflow/editlayout/index.html">Επεξεργασία διάταξης</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/nestingmodes.html">Λειτουργίες κατανομής</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/placementpanel.html">Πίνακας τοποθέτησης</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/sequencing.html">Αλληλουχία</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/slicesheet.html">Τεμαχισμός μεταλλικής πλάκας</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cut/advanced/index.html">Για προχωρημένους</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../cut/advanced/finishingrules.html">Κανόνες ολοκλήρωσης</a></li>
+      <li><button class="tree blank"></button><a href="../cut/advanced/editltt.html">Επεξεργασία LTT</a></li>
+      <li><button class="tree blank"></button><a href="../cut/advanced/flyline.html">FlyLine</a></li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/advanced/twinline/index.html">Διπλή γραμμή (TwinLine)</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cut/advanced/twinline/strategies.html">Στρατηγική</a></li>
+        <li><button class="tree blank"></button><a href="../cut/advanced/twinline/microjoints.html">Microjoint</a></li>
+        <li><button class="tree blank"></button><a href="../cut/advanced/twinline/stability.html">Περαιτέρω ρυθμίσεις</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../bend/index.html">JFY Bend</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../bend/createbenddata.html">Δημιουργία δεδομένων κάμψης</a></li>
+    <li><button class="tree blank"></button><a href="../bend/navigator.html">Πλοηγός κάμψης</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../bend/editing/index.html">Επεξεργασία δεδομένων κάμψης</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../bend/editing/editbend.html">Επεξεργασίας μιας κάμψης</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/editmount.html">Επεξεργασία μιας βάσης εργαλείου</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/editsetup.html">Επεξεργασία ρυθμίσεων κάμψης</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/editgauge.html">Επεξεργασία των πίσω αναστολέων</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/bendsheet.html">Υπολογιστικό φύλλο Κάμψεις</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/sequencing.html">Αλλαγή της αλληλουχίας</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/addsetup.html">Προσθήκη ρυθμίσεων και σταθμών</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../bend/advanced/index.html">Για προχωρημένους</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../bend/advanced/batchprocess.html">Διαδικασία παρτίδας</a></li>
+      <li><button class="tree blank"></button><a href="../bend/advanced/recompute.html">Επανυπολογισμός λύσης</a></li>
+      <li><button class="tree blank"></button><a href="../bend/advanced/tonnage.html">Έλεγχος φορτίου</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Ρυθμίσεις</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="drawing/index.html">Σχέδιο</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="drawing/layers.html">Επίπεδα</a></li>
+      <li><button class="tree blank"></button><a href="drawing/dimensions.html">Διαστάσεις</a></li>
+      <li><button class="tree blank"></button><a href="drawing/view.html">Προβολή</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="bendcam/index.html">Κάμψη CAM</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="bendcam/benddefaults.html">Προεπιλογές μηχανήματος</a></li>
+      <li><button class="tree blank"></button><a href="bendcam/bendoutputs.html">Αποτελέσματα κάμψης</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="cutcam/index.html">Κοπή CAM</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="cutcam/layout/index.html">Διάταξη</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="cutcam/layout/nesting.html">Ρυθμίσεις κατανομής</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/sheet.html">Μεταλλική πλάκα</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/sheethandling.html">Χειρισμός μεταλλικής πλάκας</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/skeletoncuts.html">Κοπές σκελετού</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/worksupport.html">Υποστήριξη εργασίας</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="cutcam/lasercam/index.html">CAM Λέιζερ</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="cutcam/lasercam/sequence.html">Αλληλουχία</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="cutcam/cutoutputs.html">Αποτελέσματα κοπής</a></li>
+      <li><button class="tree blank"></button><a href="cutcam/cutview.html">Προβολή κοπής</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="reports/index.html">Αναφορές</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="reports/itemdefaults.html">Προεπιλογές στοιχείου</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a class="active" href="importexport.html">Εισαγωγή/Εξαγωγή</a></li>
+    <li><button class="tree blank"></button><a href="environment.html">Περιβάλλον</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../database/index.html">Βάση δεδομένων</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../database/materials.html">Υλικά</a></li>
+    <li><button class="tree blank"></button><a href="../database/machines.html">Μηχανήματα</a></li>
+    <li><button class="tree blank"></button><a href="../database/bendtools.html">Εργαλεία κάμψης</a></li>
+    <li><button class="tree blank"></button><a href="../database/formscomponents.html">Μορφές/στοιχεία</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../report/index.html">Αναφορές</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../report/designer.html">Σχεδιαστής αναφορών</a></li>
+    <li><button class="tree blank"></button><a href="../report/fields.html">Πεδία, εικόνες και πίνακες</a></li>
+    <li><button class="tree blank"></button><a href="../report/bands.html">Ζώνες (δευτερεύουσες αναφορές)</a></li>
+    <li><button class="tree blank"></button><a href="../report/labels.html">Ετικέτες, Bitmap και σχήματα</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../appendix/index.html">Παράρτημα</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../appendix/3dformats.html">Υποστηριζόμενες τρισδιάστατες μορφές</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Στοιχεία Επικοινωνίας</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Ρυθμίσεις</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="importexport.html">Εισαγωγή/Εξαγωγή</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Εισαγωγή/Εξαγωγή</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Σε αυτήν την ενότητα, θα καλύψουμε τη διαμόρφωση του <strong>Import settings</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/navset.png" alt="navset" width="800">
+</div>
+</div>
+<div class="paragraph">
+<p>Κάνετε κλικ στο εικονίδιο
+<strong>Settings</strong> <span class="image"><img src="img/settings.png" alt="set" width="16"></span> από την αρχική σελίδα.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/importexportsettings.png" alt="importexportsettings"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_import_settings">Import settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Σε αυτήν την ενότητα, θα καλύψουμε τη διαμόρφωση του <strong>Import settings</strong>.
+Κάνετε κλικ στο εικονίδιο <strong>Settings</strong>. Κάνετε κλικ στο <strong>Import/Export</strong>
+και μεταβείτε στο <strong>Import settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/importsetup.png" alt="importsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Units for DXF files</strong> - Ορίστε χιλιοστά ή ίντσες εδώ.</p>
+</div>
+<div class="paragraph">
+<p><strong>Stitch together lines/arcs closer than this</strong> - Ορίστε αυτήν την
+τιμή (0&gt;1 mm). Κατά την εισαγωγή ενός τεμαχίου που περιλαμβάνει γραμμές/τόξα πιο κοντά από την επιλεγμένη
+τιμή, το λογισμικό θα συρράψει αυτόματα αυτά τα στοιχεία κατά την εισαγωγή.</p>
+</div>
+<div class="paragraph">
+<p><strong>Maximum thickness for sheet-metal part</strong> - Για να αναγνωριστεί ένα
+μεγάλο τεμάχιο μεταλλικής πλάκας, θα πρέπει να αυξηθεί το όριο αναγνώρισης
+μεταλλικής πλάκας. (10&gt;40 mm) Αυτή η επιλογή ρυθμίζεται αυτόματα ως προεπιλογή σε 25 mm ή μία ίντσα,
+ανάλογα με τη μονάδα που χρησιμοποιείται.</p>
+</div>
+<div class="paragraph">
+<p><strong>Point entities</strong> - Ανάλογα με την επιλογή που έχετε κάνει,
+αυτή θα καθορίσει τον τρόπο εισαγωγής των σημείων.</p>
+</div>
+<div class="paragraph">
+<p><em>Import all</em> - Όλα τα σημεία θα εισαχθούν
+και θα εμφανιστούν.</p>
+</div>
+<div class="paragraph">
+<p><em>Skip points on polylines</em> - Αυτή η επιλογή
+παρακάμπτει όλα τα σημεία που ανιχνεύονται στις πολλαπλές γραμμές.</p>
+</div>
+<div class="paragraph">
+<p><em>Skip all</em> - Αυτή η επιλογή παρακάμπτει όλα τα σημεία κατά την εισαγωγή,
+και δεν προβάλλεται κανένα.</p>
+</div>
+<div class="paragraph">
+<p><strong>Ignore layers in DXF/DWG files</strong> - Τα σχέδια DXF και DWG δημιουργούνται
+συνήθως σε διαφορετικά επίπεδα. Με αυτήν τη ρύθμιση, το λογισμικό αγνοεί
+αυτά τα επίπεδα και μετακινεί όλα τα αντικείμενα στο προεπιλεγμένο επίπεδο.</p>
+</div>
+<div class="paragraph">
+<p><strong>Explode blocks in 2D drawing</strong> - Χωρίζει τις ομαδοποιήσεις κατά
+την εισαγωγή</p>
+</div>
+<div class="paragraph">
+<p><strong>Convert white entities to black</strong> - Ενεργοποιήστε αυτήν τη ρύθμιση.
+για τη μετατροπή λευκών αντικειμένων σε μαύρα αντικείμενα κατά την εισαγωγή.</p>
+</div>
+<div class="paragraph">
+<p><strong>Darken colors during DXF import</strong>- Ενεργοποιήστε αυτήν τη ρύθμιση για να
+προβάλλετε τα έγχρωμα αντικείμενα με πιο σκούρο χρώμα κατά την εισαγωγή.</p>
+</div>
+<div class="paragraph">
+<p><strong>Remove duplicate segments</strong> - Ενεργοποιήστε αυτήν τη ρύθμιση.
+για να αφαιρέστε τυχόν διπλότυπη γεωμετρία που βρίσκεται στο τεμάχιο κατά την εισαγωγή.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dxf_settings">DXF settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Σε αυτήν την ενότητα, θα καλύψουμε τη διαμόρφωση του <strong>DXF settings</strong>. Κάνετε κλικ στο
+<strong>εικονίδιο Settings</strong>. Κάνετε κλικ στο <strong>Import/Export</strong> και μεταβείτε
+στο <strong>DXF settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/dxfsetup.png" alt="dxfsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Angles in DXF are interior angles</strong> - Ενεργοποιήστε αυτήν
+τη ρύθμιση για τις γωνίες σε ένα DXF για χειρισμό ως γωνίες ανοίγματος.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_settings">Export settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Σε αυτήν την ενότητα, θα καλύψουμε τη διαμόρφωση του <strong>Export settings</strong>. Κάνετε κλικ
+στο εικονίδιο <strong>Settings</strong>. Κάνετε κλικ στο <strong>Import/Export</strong> και
+μεταβείτε στο <strong>Export settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/exportsetup.png" alt="exportsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>No POLYLINE objects in DXF output</strong> - Συνήθως, τα κλειστά
+περιγράμματα εξάγονται ως πολλαπλές γραμμές κατά την εξαγωγή DXF. Ορισμένα συστήματα CAD δεν μπορούν
+να επεξεργαστούν αυτό το αποτέλεσμα. Με αυτήν τη ρύθμιση, το λογισμικό εξάγει το DXF με γραμμές
+και τόξα. Αυτά τα αρχεία μπορούν να αναγνωστούν παντού, αλλά τα αρχεία που δημιουργούνται είναι μεγαλύτερα
+και οι συνδέσεις μεταξύ των γραμμών και των τόξων χάνονται</p>
+</div>
+<div class="paragraph">
+<p><strong>Output bend-info when saving DXF files</strong> - Ενεργοποιήστε αυτήν τη ρύθμιση
+για να εξάγεται ένα εξαγόμενο DXF με πληροφορίες κάμψης.</p>
+</div>
+<div class="paragraph">
+<p><strong>Bend-info in Starmatik format</strong> - Ενεργοποιήστε αυτόν τον διακόπτη για να
+εξάγετε τις πληροφορίες κάμψης σε μορφή Starmatik. Εδώ τοποθετείται μια οντότητα κειμένου
+με απόλυτη ακρίβεια στο μέσο κάθε γραμμής που πρόκειται να είναι γραμμή κάμψης.</p>
+</div>
+<div class="paragraph">
+<p><strong>Convert black to gray on output</strong> - Κατά την εξαγωγή δεδομένων
+2D, τα αντικείμενα στο αρχείο DXF εξάγονται με μαύρο χρώμα από προεπιλογή. Για να
+να είστε σε θέση να αναγνωρίζετε καλύτερα τα αντικείμενα στα προγράμματα CAD, τα αντικείμενα εξάγονται
+σε γκρι χρώμα με αυτήν τη ρύθμιση.</p>
+</div>
+<div class="paragraph">
+<p><strong>Start MetaCAM when PDG files are exported</strong> - Ενεργοποιήστε αυτήν
+τη ρύθμιση για να διαμορφώνεται αυτόματα ένα αρχείο PDG ώστε να ανοίγει στο MetaCAM</p>
+</div>
+<div class="paragraph">
+<p><strong>Format for flat pattern</strong> - Κατά την εξαγωγή ενός επίπεδου
+μοτίβου, αυτό μπορεί να ρυθμιστεί σε μορφή αρχείου Geo, DXF ή PDG.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spline_conversion">Spline conversion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Σε αυτή την ενότητα, θα καλύψουμε τη διαμόρφωση των
+<strong>ρυθμίσεων Spline conversion</strong>. Κάνετε κλικ στο εικονίδιο <strong>Settings</strong>. Κάνετε κλικ στο
+<strong>Import/Export</strong> και μεταβείτε στις
+ ρυθμίσεις <strong>Spline conversion</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/splineconvert.png" alt="splineconvert"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Convert splines on import</strong> - Ρυθμίστε εδώ αν η μετατροπή σφηνών
+θα είναι απενεργοποιημένη ή ρυθμίστε για να μετατρέπονται οι σφήνες σε γραμμές ή τόξα. Σε
+σε κάθε περίπτωση, κάθε σφήνα θα μετατραπεί σε ένα ενιαίο αντικείμενο πολλαπλών γραμμών που
+περιλαμβάνει ευθύγραμμα τμήματα ή τμήματα τόξου.</p>
+</div>
+<div class="paragraph">
+<p><strong>Node-count computation</strong> - Ο αριθμός των γραμμών ή των τόξων
+που δημιουργούνται υπολογίζεται χρησιμοποιώντας έναν από τους δύο μηχανισμούς: βήμα ή απόκλιση.</p>
+</div>
+<div class="paragraph">
+<p><strong>Length of each line or arc segment</strong> - Εάν επιλεγεί βήμα
+στον υπολογισμό αριθμού κόμβων, ορίστε εδώ το μήκος κάθε τμήματος τόξου ή γραμμής
+για τη διάσπαση της σφήνας χρησιμοποιώντας αυτό το μήκος βήματος.</p>
+</div>
+<div class="paragraph">
+<p><strong>Maximum deviation during approximation</strong> - Εάν
+επιλεγεί απόκλιση στον υπολογισμό αριθμός κόμβων, ορίστε εδώ τη μέγιστη
+απόκλιση που επιτρέπεται μεταξύ της αρχικής ομαλής σφήνας και της κατά προσέγγιση γραμμής ή
+του τόξου. Η πολλαπλή γραμμή κατασκευάζεται με όσο το δυνατόν λιγότερα τμήματα,
+διατηρώντας παράλληλα το μέγιστο σφάλμα εντός αυτού του ορίου.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assembly_explode">Assembly Explode</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Σε αυτήν την ενότητα, θα καλύψουμε τη διαμόρφωση των
+ ρυθμίσεων <strong>Assembly Explode</strong>. Κάνετε κλικ στο εικονίδιο <strong>Settings</strong>. Κάνετε κλικ στο
+<strong>Import/Export</strong> και μεταβείτε στις ρυθμίσεις <strong>Assembly Explode</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/assmexplsetup.png" alt="assmexplsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Skip sheet-metal parts with no bends</strong> - Κατά την ανάπτυξη ενός
+συγκροτήματος, με την ενεργοποίηση αυτού του διακόπτη προβάλλονται μόνο τα τεμάχια μεταλλικής πλάκας με γραμμές
+κάμψης. Με την απενεργοποίηση θα προβάλλονται όλα τα τεμάχια του συγκροτήματος.</p>
+</div>
+<div class="paragraph">
+<p><strong>Components (nuts/bolts etc) to display</strong> - Χρησιμοποιήστε αυτήν
+τη ρύθμιση για να επιλέξετε ποιες επιλογές θα εμφανίζονται κατά την ανάπτυξη ενός συγκροτήματος που
+περιέχει άλλα στοιχεία.</p>
+</div>
+<div class="paragraph">
+<p><em>None</em> - Εμφανίζονται μόνο τα τεμάχια μεταλλικής πλάκας
+μετά την ανάπτυξη, ενώ δεν προβάλλονται άλλα παξιμάδια/μπουλόνια.</p>
+</div>
+<div class="paragraph">
+<p><em>Unidentified</em> - Εμφανίζονται μόνο τα στοιχεία που
+δεν έχουν ακόμη αναγνωριστεί στο λογισμικό.</p>
+</div>
+<div class="paragraph">
+<p><em>All</em> - Εμφανίζονται όλα τα στοιχεία.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_layer_mapping">Layer mapping</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image"><img src="img/layermapsetup.png" alt="layermapsetup"></span></p>
+</div>
+<div class="paragraph">
+<p>Σε αυτή την ενότητα, θα καλύψουμε τη διαμόρφωση του <strong>Layer mapping</strong>. Κάνετε κλικ στο
+<strong>εικονίδιο Settings</strong>. Κάνετε κλικ στο <strong>Import/Export</strong> και περιηγηθείτε
+στις ρυθμίσεις <strong>Layer mapping</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Σε αυτήν την ενότητα, τα επίπεδα που χρησιμοποιούνται σε τεμάχια τα οποία εισάγονται στο
+λογισμικό, μπορούν να χαρτογραφηθούν αυτόματα για αυτήν τη λειτουργία (χρήση).</p>
+</div>
+<div class="paragraph">
+<div class="title">Παράδειγμα</div>
+<p>Εάν ένα εισαγόμενο τεμάχιο διαθέτει ένα επίπεδο ΣΗΜΑΝΣΗΣ, αυτό μπορεί να ρυθμιστεί ώστε
+να χρησιμοποιεί αυτόματα το <strong>επίπεδο Σήμανση</strong> στο λογισμικό.</p>
+</div>
+<div class="paragraph">
+<p><strong>Layer name</strong> - Αυτό είναι το όνομα του επιπέδου το οποίο, εάν ένα τεμάχιο
+εισαχθεί με αυτό, θα χρησιμοποιήσει τη λειτουργία που έχει οριστεί στον πίνακα 'Χρήση'.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use</strong> - Αυτή είναι η λειτουργία του επιπέδου. Οι διάφορες διαθέσιμες επιλογές
+είναι:</p>
+</div>
+<div class="paragraph">
+<p><em>Standard</em> - Αυτό είναι το βασικό επίπεδο που πρέπει να χρησιμοποιείται για το
+CAM.</p>
+</div>
+<div class="paragraph">
+<p><em>Auxiliary</em> - Ένα βοηθητικό επίπεδο, που δεν πρέπει να χρησιμοποιείται για CAM.</p>
+</div>
+<div class="paragraph">
+<p><em>Mark</em> - Οποιεσδήποτε οντότητες σε αυτό το επισημαίνονται, δεν κόβονται.</p>
+</div>
+<div class="paragraph">
+<p><em>Approach marker</em> - Σημειακές οντότητες που σηματοδοτούν
+τη θέση προσέγγισης με λέιζερ.</p>
+</div>
+<div class="paragraph">
+<p><em>Sequence marker</em> - Δείκτες κειμένου που σηματοδοτούν την
+σειρά της αλληλουχίας περιγραμμάτων.</p>
+</div>
+<div class="paragraph">
+<p><em>Forming center</em> - Κεντρική σήμανση για τη διαμόρφωση (σημείο ή
+μικρό L).</p>
+</div>
+<div class="paragraph">
+<p><em>Forming foot print</em> - Το περίγραμμα (αποτύπωμα) μιας
+διαμόρφωσης.</p>
+</div>
+<div class="paragraph">
+<p><em>Evaporate</em> - Αυτό το επίπεδο θα χρησιμοποιηθεί για τη διάκριση
+της καύσης της μεμβράνης.</p>
+</div>
+<div class="paragraph">
+<p><em>Dot marking</em> - Αυτό το επίπεδο θα χρησιμοποιηθεί για κωδικούς QR.</p>
+</div>
+<div class="paragraph">
+<p><em>Info</em> - Αυτό είναι απλώς ένα επίπεδο πληροφοριών.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_import_settings">Import settings</a>
+  </li>
+  <li level="1">
+   <a href="#_dxf_settings">DXF settings</a>
+  </li>
+  <li level="1">
+   <a href="#_export_settings">Export settings</a>
+  </li>
+  <li level="1">
+   <a href="#_spline_conversion">Spline conversion</a>
+  </li>
+  <li level="1">
+   <a href="#_assembly_explode">Assembly Explode</a>
+  </li>
+  <li level="1">
+   <a href="#_layer_mapping">Layer mapping</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="reports/itemdefaults.html">Προεπιλογές στοιχείου</a></span>
+ <span class="next"><a href="environment.html">Περιβάλλον</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/jfy-icon.png">
+  <title>Impor/Ekspor</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.jfy.png" width="150" height="50" /></div>
+        <div><p>JFY Core Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Selamat datang di JFY Core</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../intro/index.html">Pengantar</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../intro/install.html">Menginstal Perangkat Lunak</a></li>
+    <li><button class="tree blank"></button><a href="../intro/clarity.html">Antarmuka Pengguna</a></li>
+    <li><button class="tree blank"></button><a href="../intro/workflow.html">Alur Kerja Komponen</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../cad/index.html">CAD</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cad/2dimport/index.html">Impor 2-D</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../cad/2dimport/2dcleanup.html">Pembersihan 2-D</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cad/3dimport/index.html">Impor 3-D</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../cad/3dimport/prep3dmodel.html">Impor Model 3D</a></li>
+      <li><button class="tree blank"></button><a href="../cad/3dimport/prepassembly.html">Impor Modul</a></li>
+      <li><button class="tree blank"></button><a href="../cad/3dimport/formdetect.html">Deteksi Bentuk</a></li>
+      <li><button class="tree blank"></button><a href="../cad/3dimport/componentdetect.html">Deteksi Komponen</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../cad/sketch.html">Memodifikasi Geometri</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../cut/index.html">JFY Cut</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cut/partworkflow/index.html">Alur Kerja Komponen</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/partworkflow/panels/index.html">Panel Pengeditan</a>
+       <ul class="hide">
+        <li>
+         <button class="tree closed"></button>
+         <a href="../cut/partworkflow/panels/lasercut/index.html">Pemotongan Laser</a>
+         <ul class="hide">
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/approach.html">Pendekatan</a></li>
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/withdrawal.html">Mundur</a></li>
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/microjoint.html">Sambungan mikro</a></li>
+          <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/lasercut/advanced.html">Lanjutan</a></li>
+         </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/contour.html">Kontur</a></li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/scrapcut.html">Pemotongan Scrap</a></li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/part.html">Komponen</a></li>
+        <li><button class="tree blank"></button><a href="../cut/partworkflow/panels/cornertreatment.html">Penanganan Sudut</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../cut/partworkflow/quicknest.html">Nesting Cepat</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cut/jobworkflow/index.html">Alur Kerja Nesting</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/jobworkflow/jobpanel/index.html">Panel Nesting</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/sheets.html">Tab Lembaran</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/parts.html">Tab Komponen</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/layouts.html">Tab Rancangan</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/jobpanel/summary.html">Tab Ringkasan</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/jobworkflow/editlayout/index.html">Edit Rancangan</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/nestingmodes.html">Mode Nesting</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/placementpanel.html">Panel Penempatan</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/sequencing.html">Urutan</a></li>
+        <li><button class="tree blank"></button><a href="../cut/jobworkflow/editlayout/slicesheet.html">Lembar Irisan</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cut/advanced/index.html">Lanjutan</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../cut/advanced/finishingrules.html">Aturan Penyelesaian</a></li>
+      <li><button class="tree blank"></button><a href="../cut/advanced/editltt.html">Edit LTT</a></li>
+      <li><button class="tree blank"></button><a href="../cut/advanced/flyline.html">FlyLine</a></li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cut/advanced/twinline/index.html">TwinLine</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cut/advanced/twinline/strategies.html">Strategi</a></li>
+        <li><button class="tree blank"></button><a href="../cut/advanced/twinline/microjoints.html">Sambungan mikro</a></li>
+        <li><button class="tree blank"></button><a href="../cut/advanced/twinline/stability.html">Pengaturan lebih lanjut</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../bend/index.html">JFY Bend</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../bend/createbenddata.html">Buat parameter tekukan</a></li>
+    <li><button class="tree blank"></button><a href="../bend/navigator.html">Navigator penekukan</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../bend/editing/index.html">Edit parameter tekukan</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../bend/editing/editbend.html">Edit penekukan</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/editmount.html">Edit pemasangan alat</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/editsetup.html">Edit pengaturan penekukan</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/editgauge.html">Edit backgauge finger</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/bendsheet.html">Lembar Kerja Penekukan</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/sequencing.html">Mengubah urutan</a></li>
+      <li><button class="tree blank"></button><a href="../bend/editing/addsetup.html">Menambahkan pengaturan dan stasiun</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../bend/advanced/index.html">Lanjutan</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../bend/advanced/batchprocess.html">Proses batch</a></li>
+      <li><button class="tree blank"></button><a href="../bend/advanced/recompute.html">Solusi Perhitungan Ulang</a></li>
+      <li><button class="tree blank"></button><a href="../bend/advanced/tonnage.html">Pemeriksaan tonase</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Pengaturan</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="drawing/index.html">Diagram</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="drawing/layers.html">Layer</a></li>
+      <li><button class="tree blank"></button><a href="drawing/dimensions.html">Dimensi</a></li>
+      <li><button class="tree blank"></button><a href="drawing/view.html">Tampilan</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="bendcam/index.html">CAM Penekukan</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="bendcam/benddefaults.html">Pengaturan Default Mesin</a></li>
+      <li><button class="tree blank"></button><a href="bendcam/bendoutputs.html">Output Penekukan</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="cutcam/index.html">CAM Pemotongan</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="cutcam/layout/index.html">Rancangan</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="cutcam/layout/nesting.html">Pengaturan Nesting</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/sheet.html">Lembar</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/sheethandling.html">Penanganan Lembaran</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/skeletoncuts.html">Pemotongan Sisa Rangka</a></li>
+        <li><button class="tree blank"></button><a href="cutcam/layout/worksupport.html">Penyangga Kerja</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="cutcam/lasercam/index.html">CAM Laser</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="cutcam/lasercam/sequence.html">Urutan</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="cutcam/cutoutputs.html">Output Pemotongan</a></li>
+      <li><button class="tree blank"></button><a href="cutcam/cutview.html">Tampilan Pemotongan</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="reports/index.html">Laporan</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="reports/itemdefaults.html">Pengaturan Default Item</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a class="active" href="importexport.html">Impor/Ekspor</a></li>
+    <li><button class="tree blank"></button><a href="environment.html">Lingkungan</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../database/index.html">Database</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../database/materials.html">Bahan</a></li>
+    <li><button class="tree blank"></button><a href="../database/machines.html">Mesin</a></li>
+    <li><button class="tree blank"></button><a href="../database/bendtools.html">Alat Tekuk</a></li>
+    <li><button class="tree blank"></button><a href="../database/formscomponents.html">Pembentukan/Komponen</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../report/index.html">Laporan</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../report/designer.html">Perancang Laporan</a></li>
+    <li><button class="tree blank"></button><a href="../report/fields.html">Bidang, Gambar, dan Tabel</a></li>
+    <li><button class="tree blank"></button><a href="../report/bands.html">Band (sublaporan)</a></li>
+    <li><button class="tree blank"></button><a href="../report/labels.html">Stiker, Bitmap, dan Bentuk</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../appendix/index.html">Lampiran</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../appendix/3dformats.html">Format 3D yang Didukung</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Informasi Hukum</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Pengaturan</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="importexport.html">Impor/Ekspor</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Impor/Ekspor</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pada bagian ini, kita akan membahas konfigurasi <strong>Import settings</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/navset.png" alt="navset" width="800">
+</div>
+</div>
+<div class="paragraph">
+<p>Klik ikon <strong>Settings</strong>
+<span class="image"><img src="img/settings.png" alt="set" width="16"></span> dari halaman beranda.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/importexportsettings.png" alt="importexportsettings"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_import_settings">Import settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pada bagian ini, kita akan membahas konfigurasi <strong>Import settings</strong>.
+Klik ikon <strong>Settings</strong>. Klik <strong>Import/Export</strong> dan navigasikan ke <strong>Import settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/importsetup.png" alt="importsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Units for DXF files</strong> - Atur ke milimeter atau inci di sini.</p>
+</div>
+<div class="paragraph">
+<p><strong>Stitch together lines/arcs closer than this</strong> - Tetapkan nilai ini (0&gt;1mm). Saat mengimpor komponen yang memiliki garis/busur yang lebih dekat dari nilai yang diatur, perangkat lunak akan secara otomatis menyatukannya saat impor.</p>
+</div>
+<div class="paragraph">
+<p><strong>Maximum thickness for sheet-metal part</strong> - Untuk mengenali komponen lembaran logam yang besar, nilai ambang batas pengenalan lembaran logam perlu ditingkatkan. (10&gt;40 mm) Nilai ini secara otomatis diatur ke 25 mm atau 1 inci, tergantung pada satuan yang digunakan.</p>
+</div>
+<div class="paragraph">
+<p><strong>Point entities</strong> - Opsi yang dipilih akan menentukan cara titik akan diimpor.</p>
+</div>
+<div class="paragraph">
+<p><em>Import all</em> - Semua poin akan diimpor dan ditampilkan.</p>
+</div>
+<div class="paragraph">
+<p><em>Skip points on polylines</em> - Ini melewati semua titik yang terdeteksi pada polyline.</p>
+</div>
+<div class="paragraph">
+<p><em>Skip all</em> - Ini melewati semua poin saat impor, dan tidak ada yang ditampilkan.</p>
+</div>
+<div class="paragraph">
+<p><strong>Ignore layers in DXF/DWG files</strong> - Diagram DXF dan DWG biasanya dibuat pada layer yang berbeda. Dengan pengaturan ini, perangkat lunak akan mengabaikan layer tersebut dan memindahkan semua objek ke layer default.</p>
+</div>
+<div class="paragraph">
+<p><strong>Explode blocks in 2D drawing</strong> - Memisahkan grup saat mengimpor</p>
+</div>
+<div class="paragraph">
+<p><strong>Convert white entities to black</strong> - Aktifkan pengaturan ini untuk mengonversi objek putih menjadi objek hitam selama proses impor.</p>
+</div>
+<div class="paragraph">
+<p><strong>Darken colors during DXF import</strong>- Aktifkan pengaturan ini untuk menggelapkan objek berwarna saat mengimpor.</p>
+</div>
+<div class="paragraph">
+<p><strong>Remove duplicate segments</strong> - Aktifkan pengaturan ini untuk menghapus geometri duplikat yang ditemukan dalam komponen saat mengimpor.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dxf_settings">DXF settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pada bagian ini, kita akan membahas konfigurasi <strong>DXF settings</strong>. Klik pada
+<strong>ikon Settings</strong>. Klik <strong>Import/Export</strong> dan navigasikan ke <strong>DXF settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/dxfsetup.png" alt="dxfsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Angles in DXF are interior angles</strong> - Aktifkan pengaturan ini agar sudut-sudut dalam DXF ditangani sebagai sudut pembukaan.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_settings">Export settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pada bagian ini, kita akan membahas konfigurasi <strong>Export settings</strong>. Klik
+ikon <strong>Settings</strong>. Klik <strong>Import/Export</strong> dan navigasikan ke <strong>Export settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/exportsetup.png" alt="exportsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>No POLYLINE objects in DXF output</strong> - Biasanya, kontur tertutup dihasilkan sebagai polyline saat mengekspor DXF. Beberapa sistem CAD tidak dapat memproses output ini. Dengan pengaturan ini, perangkat lunak akan menghasilkan output DXF dengan garis dan busur. File-file ini dapat dibaca di mana saja, tetapi file yang dibuat berukuran lebih besar dan hubungan antara garis dan busur akan hilang</p>
+</div>
+<div class="paragraph">
+<p><strong>Output bend-info when saving DXF files</strong> - Aktifkan pengaturan ini agar DXF yang diekspor dapat ditampilkan dengan parameter tekukan.</p>
+</div>
+<div class="paragraph">
+<p><strong>Bend-info in Starmatik format</strong> - Aktifkan sakelar ini untuk menampilkan parameter tekukan dalam format Starmatik. Di sinilah entitas teks diposisikan tepat di tengah setiap baris yang akan menjadi garis tekuk.</p>
+</div>
+<div class="paragraph">
+<p><strong>Convert black to gray on output</strong> - Saat mengekspor data 2D, objek dalam file DXF secara default akan ditampilkan dalam warna hitam. Agar dapat mengenali objek dalam program CAD dengan lebih baik, objek akan ditampilkan dalam warna abu-abu dengan pengaturan ini.</p>
+</div>
+<div class="paragraph">
+<p><strong>Start MetaCAM when PDG files are exported</strong> - Aktifkan pengaturan ini agar file PDG secara otomatis dikonfigurasi untuk dibuka di MetaCAM</p>
+</div>
+<div class="paragraph">
+<p><strong>Format for flat pattern</strong> - Saat mengekspor pola datar, ini dapat diatur ke format file GEO, DXF, atau PDG.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spline_conversion">Spline conversion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pada bagian ini, kita akan membahas konfigurasi
+<strong>pengaturan Spline conversion</strong>. Klik ikon <strong>Settings</strong>. Klik
+<strong>Import/Export</strong> dan navigasikan ke pengaturan <strong>Spline conversion</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/splineconvert.png" alt="splineconvert"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Convert splines on import</strong> - Tentukan di sini apakah konversi spline dinonaktifkan atau diatur untuk mengubah spline menjadi garis atau busur. Dalam kedua kasus tersebut, setiap spline akan dikonversi menjadi objek polyline tunggal yang berisi segmen garis atau segmen busur.</p>
+</div>
+<div class="paragraph">
+<p><strong>Node-count computation</strong> - Jumlah garis atau busur yang dihasilkan dihitung menggunakan salah satu dari dua mekanisme: pitch atau penyimpangan.</p>
+</div>
+<div class="paragraph">
+<p><strong>Length of each line or arc segment</strong> - Jika Pitch dipilih dalam perhitungan Jumlah Node, atur panjang setiap segmen busur atau garis di sini untuk memecah spline menggunakan panjang langkah ini.</p>
+</div>
+<div class="paragraph">
+<p><strong>Maximum deviation during approximation</strong> - Jika Penyimpangan dipilih dalam perhitungan Jumlah Node, atur penyimpangan maksimum yang diperbolehkan antara spline halus asli dan perkiraan garis atau busur di sini. Polyline dibangun dengan segmen sesedikit mungkin, dengan tetap mempertahankan kondisi kegagalan maksimum dalam batas ini.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assembly_explode">Assembly Explode</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pada bagian ini, kita akan membahas konfigurasi pengaturan <strong>Assembly Explode</strong>. Klik ikon <strong>Settings</strong>. Klik
+<strong>Import/Export</strong> dan navigasikan ke pengaturan <strong>Assembly Explode</strong></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/assmexplsetup.png" alt="assmexplsetup"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Skip sheet-metal parts with no bends</strong> - Saat menguraikan modul, mengaktifkan sakelar ini hanya akan menampilkan komponen lembaran logam dengan garis tekuk. Menonaktifkan akan menampilkan semua komponen dalam modul.</p>
+</div>
+<div class="paragraph">
+<p><strong>Components (nuts/bolts etc) to display</strong> - Gunakan pengaturan ini untuk memilih opsi yang akan ditampilkan saat menguraikan modul yang berisi komponen lain.</p>
+</div>
+<div class="paragraph">
+<p><em>None</em> - Hanya komponen lembaran logam yang ditampilkan setelah penguraian, sedangkan mur/baut lainnya tidak ditampilkan.</p>
+</div>
+<div class="paragraph">
+<p><em>Unidentified</em> - Hanya komponen yang belum teridentifikasi dalam perangkat lunak yang ditampilkan.</p>
+</div>
+<div class="paragraph">
+<p><em>All</em> - Semua komponen ditampilkan.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_layer_mapping">Layer mapping</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image"><img src="img/layermapsetup.png" alt="layermapsetup"></span></p>
+</div>
+<div class="paragraph">
+<p>Pada bagian ini, kita akan membahas konfigurasi <strong>Layer mapping</strong>. Klik pada
+<strong>ikon Settings</strong>. Klik <strong>Import/Export</strong> dan navigasikan ke pengaturan <strong>Layer mapping</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Pada bagian ini, layer yang digunakan pada komponen yang diimpor ke dalam perangkat lunak dapat secara otomatis dipetakan ke fungsinya (penggunaan).</p>
+</div>
+<div class="paragraph">
+<div class="title">Contoh</div>
+<p>Jika komponen yang diimpor memiliki layer TANDA, ini dapat diatur untuk secara otomatis menggunakan <strong>layer Tanda</strong> dalam perangkat lunak.</p>
+</div>
+<div class="paragraph">
+<p><strong>Layer name</strong> - Ini adalah nama layer yang jika komponen diimpor dengan nama ini, fungsi yang ditetapkan di panel 'Gunakan' akan digunakan.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use</strong> - Ini adalah fungsi dari layer. Berbagai opsi yang tersedia adalah:</p>
+</div>
+<div class="paragraph">
+<p><em>Standard</em> - Ini adalah layer standar yang akan digunakan untuk CAM.</p>
+</div>
+<div class="paragraph">
+<p><em>Auxiliary</em> - Layer tambahan, tidak untuk digunakan untuk CAM.</p>
+</div>
+<div class="paragraph">
+<p><em>Mark</em> - Semua entitas dalam layer ini akan ditandai, tidak dipotong.</p>
+</div>
+<div class="paragraph">
+<p><em>Approach marker</em> - Entitas titik yang menunjukkan posisi pendekatan laser.</p>
+</div>
+<div class="paragraph">
+<p><em>Sequence marker</em> - Penanda teks yang menunjukkan urutan kontur.</p>
+</div>
+<div class="paragraph">
+<p><em>Forming center</em> - Tanda pusat untuk pembentukan (titik atau L kecil).</p>
+</div>
+<div class="paragraph">
+<p><em>Forming foot print</em> - Garis luar (jejak) suatu bentuk.</p>
+</div>
+<div class="paragraph">
+<p><em>Evaporate</em> - Layer ini akan digunakan untuk membedakan pembakaran film.</p>
+</div>
+<div class="paragraph">
+<p><em>Dot marking</em> - Layer ini akan digunakan untuk kode QR.</p>
+</div>
+<div class="paragraph">
+<p><em>Info</em> - Ini adalah layer catatan saja.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_import_settings">Import settings</a>
+  </li>
+  <li level="1">
+   <a href="#_dxf_settings">DXF settings</a>
+  </li>
+  <li level="1">
+   <a href="#_export_settings">Export settings</a>
+  </li>
+  <li level="1">
+   <a href="#_spline_conversion">Spline conversion</a>
+  </li>
+  <li level="1">
+   <a href="#_assembly_explode">Assembly Explode</a>
+  </li>
+  <li level="1">
+   <a href="#_layer_mapping">Layer mapping</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="reports/itemdefaults.html">Pengaturan Default Item</a></span>
+ <span class="next"><a href="environment.html">Lingkungan</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

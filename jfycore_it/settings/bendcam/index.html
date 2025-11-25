@@ -1,0 +1,519 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/jfy-icon.png">
+  <title>CAM piega</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.jfy.png" width="150" height="50" /></div>
+        <div><p>JFY Core Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Benvenuto in JFY Core</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../intro/index.html">Introduzione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../intro/install.html">Installazione del software</a></li>
+    <li><button class="tree blank"></button><a href="../../intro/clarity.html">L'interfaccia utente</a></li>
+    <li><button class="tree blank"></button><a href="../../intro/workflow.html">Workflow pezzo</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../cad/index.html">CAD</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cad/2dimport/index.html">Importazione 2D</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cad/2dimport/2dcleanup.html">Pulizia 2D</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cad/3dimport/index.html">Importazione 3D</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/prep3dmodel.html">Importazione modello 3D</a></li>
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/prepassembly.html">Importazione gruppo costruttivo</a></li>
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/formdetect.html">Riconoscimento delle forme</a></li>
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/componentdetect.html">Riconoscimento dei componenti</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../cad/sketch.html">Modifica della geometria</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../cut/index.html">JFY Cut</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/partworkflow/index.html">Workflow pezzo</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/partworkflow/panels/index.html">Pannelli di modifica</a>
+       <ul class="hide">
+        <li>
+         <button class="tree closed"></button>
+         <a href="../../cut/partworkflow/panels/lasercut/index.html">Taglio laser</a>
+         <ul class="hide">
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/approach.html">Accostamento</a></li>
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/withdrawal.html">Ritorno</a></li>
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/microjoint.html">Microgiunzione</a></li>
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/advanced.html">Avanzato</a></li>
+         </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/contour.html">Contorno</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/scrapcut.html">Taglio degli sfridi</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/part.html">Pezzo</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/cornertreatment.html">Trattamento degli spigoli</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../cut/partworkflow/quicknest.html">Quick Nest</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/jobworkflow/index.html">Workflow job</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/jobworkflow/jobpanel/index.html">Pannello Job</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/sheets.html">Scheda Lamiere</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/parts.html">Scheda Pezzi</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/layouts.html">Scheda Layout</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/summary.html">Scheda Sintesi</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/jobworkflow/editlayout/index.html">Modifica layout</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/nestingmodes.html">Modalità di nesting</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/placementpanel.html">Pannello Posizionamento</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/sequencing.html">Sequenziamento</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/slicesheet.html">Porzione di lamiera</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/advanced/index.html">Avanzato</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cut/advanced/finishingrules.html">Regole di lavoro di finitura</a></li>
+      <li><button class="tree blank"></button><a href="../../cut/advanced/editltt.html">Modifica della tabella tecnologica laser per il taglio</a></li>
+      <li><button class="tree blank"></button><a href="../../cut/advanced/flyline.html">FlyLine</a></li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/advanced/twinline/index.html">TwinLine</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../cut/advanced/twinline/strategies.html">Strategia</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/advanced/twinline/microjoints.html">Microgiunzioni</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/advanced/twinline/stability.html">Ulteriori impostazioni</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../bend/index.html">JFY Bend</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../bend/createbenddata.html">Creazione di parametri di piegatura</a></li>
+    <li><button class="tree blank"></button><a href="../../bend/navigator.html">Bend Navigator</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bend/editing/index.html">Modifica dei parametri di piegatura</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bend/editing/editbend.html">Modifica di una piega</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editmount.html">Modifica di un supporto dell'utensile</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editsetup.html">Modifica di una configurazione della piega</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editgauge.html">Modifica dei perni di battuta</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/bendsheet.html">Foglio di calcolo Pieghe</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/sequencing.html">Modifica della sequenza</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/addsetup.html">Aggiunta di configurazioni e stazioni</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bend/advanced/index.html">Avanzato</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bend/advanced/batchprocess.html">Lavorazione di lotti</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/advanced/recompute.html">Ricalcolo della soluzione</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/advanced/tonnage.html">Controllo del tonnellaggio</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Impostazioni</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../drawing/index.html">Disegno</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../drawing/layers.html">Layer</a></li>
+      <li><button class="tree blank"></button><a href="../drawing/dimensions.html">Dimensioni</a></li>
+      <li><button class="tree blank"></button><a href="../drawing/view.html">Vista</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a class="active" href="index.html">CAM piega</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="benddefaults.html">Impostazioni predefinite macchina</a></li>
+      <li><button class="tree blank"></button><a href="bendoutputs.html">Uscite di piega</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cutcam/index.html">CAM taglio</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cutcam/layout/index.html">Layout</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cutcam/layout/nesting.html">Impostazioni di nesting</a></li>
+        <li><button class="tree blank"></button><a href="../cutcam/layout/sheet.html">Lamiera</a></li>
+        <li><button class="tree blank"></button><a href="../cutcam/layout/sheethandling.html">Movimentazione lamiera</a></li>
+        <li><button class="tree blank"></button><a href="../cutcam/layout/skeletoncuts.html">Tagli del grigliato residuo</a></li>
+        <li><button class="tree blank"></button><a href="../cutcam/layout/worksupport.html">Supporto di lavoro</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cutcam/lasercam/index.html">CAM laser</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cutcam/lasercam/sequence.html">Sequenza</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../cutcam/cutoutputs.html">Output di taglio</a></li>
+      <li><button class="tree blank"></button><a href="../cutcam/cutview.html">Vista taglio</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../reports/index.html">Report</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../reports/itemdefaults.html">Valori predefiniti elementi</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../importexport.html">Importazione/esportazione</a></li>
+    <li><button class="tree blank"></button><a href="../environment.html">Ambiente</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../database/index.html">Banca dati</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../database/materials.html">Materiali</a></li>
+    <li><button class="tree blank"></button><a href="../../database/machines.html">Macchine</a></li>
+    <li><button class="tree blank"></button><a href="../../database/bendtools.html">Utensili di piegatura</a></li>
+    <li><button class="tree blank"></button><a href="../../database/formscomponents.html">Forme/componenti</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../report/index.html">Report</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../report/designer.html">Report Designer</a></li>
+    <li><button class="tree blank"></button><a href="../../report/fields.html">Campi, immagini e tabelle</a></li>
+    <li><button class="tree blank"></button><a href="../../report/bands.html">Bande (sottoreport)</a></li>
+    <li><button class="tree blank"></button><a href="../../report/labels.html">Etichette, bitmap e forme</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../appendix/index.html">Appendice</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../appendix/3dformats.html">Formati 3D supportati</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Note legali</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Impostazioni</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">CAM piega</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>CAM piega</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/bendcam.png" alt="bendcam">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_back_gauges">Back-gauges</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Min.thickness to always pull-back (mm)</strong> - Questa
+impostazione permette di inserire un valore in mm del ritorno automatico dei perni
+di battuta al raggiungimento dello spessore della lamiera inserito.</p>
+</div>
+<div class="paragraph">
+<p><strong>Clamping strategy</strong> - Serve per impostare come i perni di
+battuta devono fermarsi sul pezzo in lavorazione.</p>
+</div>
+<div class="paragraph">
+<p>Sono disponibili le seguenti opzioni di selezione:</p>
+</div>
+<div class="paragraph">
+<p><strong>Default</strong> - I perni di battuta si fermano per ogni piega nel
+modo ritenuto migliore dal software.</p>
+</div>
+<div class="paragraph">
+<p><strong>Stop + Stop</strong> - Le superfici dritte di
+entrambi i perni di battuta si fermano contro il pezzo in lavorazione.</p>
+</div>
+<div class="paragraph">
+<p><strong>Clamp + Stop</strong> - Un perno di battuta blocca il
+pezzo in lavorazione e l&#8217;altro lo ferma con la sua superficie dritta.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_geometry_adaptation_strategy">Geometry Adaptation Strategy</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Se un file 2D o 3D viene modificato nel software, vengono controllati i raggi di piegatura e la deduzione
+di piegatura. Vengono eseguite strategie di lavorazione diverse a seconda delle strategie
+selezionate per la modifica del pezzo nelle impostazioni Easy Programming. Se la
+decisione è stata impostata su interattiva, verrà visualizzata la finestra di dialogo Adapt Geometry.</p>
+</div>
+<div class="sect2">
+<h3 id="_when_starting_with_2d_flat">When starting with 2D flat</h3>
+<div class="paragraph">
+<p><strong>Ask each time</strong> - Quando si passa da un pezzo 2D a
+una piegatura, utilizzando questa impostazione verrà visualizzata automaticamente la finestra di
+dialogo Adapt Geometry. Ciò darà la possibilità di mantenere le dimensioni piatte,
+le dimensioni 3D o non cambiare nulla, rendendo questa funzione molto interattiva
+e facilmente utilizzabile dall&#8217;utente.</p>
+</div>
+<div class="paragraph">
+<p><strong>Keep 3D dimensions</strong> - Questa opzione cambia lo
+sviluppo, che poi deve essere salvato manualmente. Questa strategia viene utilizzata se la lamiera
+non è ancora stata tagliata.</p>
+</div>
+<div class="paragraph">
+<p><strong>Keep 2D dimensions</strong> - Questa opzione fa sì che
+il raggio di piegatura e la deduzione di piegatura vengano adeguati allo sviluppo esistente; la
+linea di piegatura rimane nello stesso punto. Questo cambierà la lunghezza lati del
+pezzo. Lo sviluppo non viene modificato. Questa strategia viene utilizzata se la lamiera è
+già stata tagliata a misura.</p>
+</div>
+<div class="paragraph">
+<p><strong>No adjustments</strong> - L&#8217;utilizzo di questa opzione fa sì che
+il raggio di piegatura e la deduzione di piegatura rimangano invariati. Il pezzo viene visualizzato con le
+dimensioni corrette in 3D, ma i raggi di piegatura mostrati non corrispondono a
+quelli effettivi. Le dimensioni di ogni piega del pezzo in lavorazione possono cambiare.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_when_starting_with_3d_model">When starting with 3D model</h3>
+<div class="paragraph">
+<p><strong>Ask each time</strong> - Quando si passa da un pezzo 3D a
+una piegatura, utilizzando questa impostazione verrà visualizzata automaticamente la finestra di
+dialogo Adapt Geometry. Ciò darà la possibilità di mantenere le dimensioni piatte,
+le dimensioni 3D o non cambiare nulla, rendendo questa funzione molto interattiva
+e facilmente utilizzabile dall&#8217;utente.</p>
+</div>
+<div class="paragraph">
+<p><strong>Keep 3D dimensions</strong> - Questa opzione cambia lo
+sviluppo, che poi deve essere salvato manualmente. Questa strategia viene utilizzata se la lamiera
+non è ancora stata tagliata.</p>
+</div>
+<div class="paragraph">
+<p><strong>Keep 2D dimensions</strong> - Questa opzione fa sì che
+il raggio di piegatura e la deduzione di piegatura vengano adeguati allo sviluppo esistente; la
+linea di piegatura rimane nello stesso punto. Questo cambierà la lunghezza lati del
+pezzo. Questa strategia viene utilizzata se la lamiera è già stata tagliata a misura.</p>
+</div>
+<div class="paragraph">
+<p><strong>No adjustments</strong> - L&#8217;utilizzo di questa opzione fa sì che
+il raggio di piegatura e la deduzione di piegatura rimangano invariati. Il pezzo viene visualizzato con le
+dimensioni corrette in 3D, ma i raggi di piegatura mostrati non corrispondono a
+quelli effettivi. Le dimensioni di ogni piega del pezzo in lavorazione possono cambiare.</p>
+</div>
+<div class="paragraph">
+<p><strong>Bend deduction calculation</strong> - Questa opzione consente di
+forzare l&#8217;utilizzo del metodo fattore-K. Questa impostazione può essere impostata nelle impostazioni predefinite
+dell&#8217;applicazione o può essere regolata singolarmente per ogni macchina.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Per le macchine non Trumpf, vengono utilizzati sempre i fattori-K; i calcoli piega Trumpf
+sono disponibili solo per le presse piegatrici Trumpf.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>BG-Left variant</strong> - A seconda della variante BG utilizzata, il
+programma NC verrà modificato per la rappresentazione.</p>
+</div>
+<div class="paragraph">
+<p><strong>BG-Right variant</strong> - A seconda della variante BG utilizzata, il
+programma NC verrà modificato per la rappresentazione.
+== Other Settings
+<strong>Hemming pre-bend angle</strong> - Questa opzione può modificare l&#8217;angolo
+preliminare dell&#8217;appiattimento tra 10° e 60°. Il valore predefinito è 40° poiché è
+l&#8217;angolo preliminare dell&#8217;appiattimento consigliato per la maggior parte dei produttori. È impostato a 30° per
+tutte le macchine Trumpf, in tutte le varie edizioni.</p>
+</div>
+<div class="paragraph">
+<p><strong>Bend-guard mode override</strong> - Con un&#8217;impostazione su calcolo automatico
+(impostazione predefinita), Bend calcolerà una modalità di protezione piega per ogni piega. Tuttavia, è
+possibile forzare la modalità di protezione piega su una delle opzioni consentendo l&#8217;utilizzo solamente di quella in questione,
+indipendentemente dal fatto che sia appropriata o meno.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+È anche possibile sovrascrivere questa impostazione per ogni macchina, configurandola su
+valori predefiniti della macchina, invece di Application Settings.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Machine table position</strong> - Questa impostazione ha tre opzioni per
+la posizione del tavolo:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Eliminato</p>
+</li>
+<li>
+<p>Giù</p>
+</li>
+<li>
+<p>Su</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Tool inventory check</strong> - L&#8217;abilitazione di questa opzione mostrerà i segmenti dell&#8217;utensile
+che possono essere necessari per piegare il pezzo in lavorazione. Verranno visualizzati indicatori di giacenze
+insufficienti.</p>
+</div>
+<div class="paragraph">
+<p><strong>Avoid tool overload if possible</strong> - Attivando questa
+opzione si eviterà il sovraccarico dell&#8217;utensile. Anche se un utensile con una
+priorità più alta sarebbe utilizzabile per il pezzo, verrà invece utilizzato un utensile con priorità inferiore per
+evitare problemi di sovraccarico.</p>
+</div>
+<div class="paragraph">
+<p><strong>Ignore tool hints from GEO/DXF files</strong> - L&#8217;attivazione di questa
+opzione ignorerà qualsiasi informazione trovata su un file DXF/GEO per quanto riguarda
+gli utensili da utilizzare.</p>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_back_gauges">Back-gauges</a>
+  </li>
+  <li level="1">
+   <a href="#_geometry_adaptation_strategy">Geometry Adaptation Strategy</a>
+  </li>
+  <li level="2">
+   <a href="#_when_starting_with_2d_flat">When starting with 2D flat</a>
+  </li>
+  <li level="2">
+   <a href="#_when_starting_with_3d_model">When starting with 3D model</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="../drawing/view.html">Vista</a></span>
+ <span class="next"><a href="benddefaults.html">Impostazioni predefinite macchina</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

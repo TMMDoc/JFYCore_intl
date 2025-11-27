@@ -1,0 +1,646 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../res/bento.css">
+  <link rel="stylesheet" href="../../../res/site.css">
+  <link rel="stylesheet" href="../../../res/tree.css">
+  <link rel="stylesheet" href="../../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../../img/jfy-icon.png">
+  <title>Laser CAM</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../../img/logo.jfy.png" width="150" height="50" /></div>
+        <div><p>JFY Core Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../../index.html">Bem-vindo ao JFY Core</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../../intro/index.html">Introdução</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../../intro/install.html">Instalando o software</a></li>
+    <li><button class="tree blank"></button><a href="../../../intro/clarity.html">A interface do usuário</a></li>
+    <li><button class="tree blank"></button><a href="../../../intro/workflow.html">Fluxograma da peça</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../../cad/index.html">CAD</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../../cad/2dimport/index.html">Importação 2D</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../../cad/2dimport/2dcleanup.html">Limpeza 2D</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../../cad/3dimport/index.html">Importação 3D</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../../cad/3dimport/prep3dmodel.html">Importar modelo 3D</a></li>
+      <li><button class="tree blank"></button><a href="../../../cad/3dimport/prepassembly.html">Importar Montagem</a></li>
+      <li><button class="tree blank"></button><a href="../../../cad/3dimport/formdetect.html">Detecção de formas</a></li>
+      <li><button class="tree blank"></button><a href="../../../cad/3dimport/componentdetect.html">Detecção de Componentes</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../../cad/sketch.html">Modificando a geometria</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../../cut/index.html">JFY Cut</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../../cut/partworkflow/index.html">Fluxograma da peça</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../../cut/partworkflow/panels/index.html">Painéis de Edição</a>
+       <ul class="hide">
+        <li>
+         <button class="tree closed"></button>
+         <a href="../../../cut/partworkflow/panels/lasercut/index.html">Corte a laser</a>
+         <ul class="hide">
+          <li><button class="tree blank"></button><a href="../../../cut/partworkflow/panels/lasercut/approach.html">Aproximação</a></li>
+          <li><button class="tree blank"></button><a href="../../../cut/partworkflow/panels/lasercut/withdrawal.html">Retirada</a></li>
+          <li><button class="tree blank"></button><a href="../../../cut/partworkflow/panels/lasercut/microjoint.html">Microjoint</a></li>
+          <li><button class="tree blank"></button><a href="../../../cut/partworkflow/panels/lasercut/advanced.html">Avançado</a></li>
+         </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../../../cut/partworkflow/panels/contour.html">Contorno</a></li>
+        <li><button class="tree blank"></button><a href="../../../cut/partworkflow/panels/scrapcut.html">Corte de refugo</a></li>
+        <li><button class="tree blank"></button><a href="../../../cut/partworkflow/panels/part.html">Peça</a></li>
+        <li><button class="tree blank"></button><a href="../../../cut/partworkflow/panels/cornertreatment.html">Tratamento de cantos</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../../cut/partworkflow/quicknest.html">Nesting rápido</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../../cut/jobworkflow/index.html">Fluxograma da tarefa</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../../cut/jobworkflow/jobpanel/index.html">Painel de Tarefas</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../../cut/jobworkflow/jobpanel/sheets.html">Aba Chapas</a></li>
+        <li><button class="tree blank"></button><a href="../../../cut/jobworkflow/jobpanel/parts.html">Aba Peças</a></li>
+        <li><button class="tree blank"></button><a href="../../../cut/jobworkflow/jobpanel/layouts.html">Aba Layout</a></li>
+        <li><button class="tree blank"></button><a href="../../../cut/jobworkflow/jobpanel/summary.html">Aba Resumo</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../../cut/jobworkflow/editlayout/index.html">Editar layout</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../../cut/jobworkflow/editlayout/nestingmodes.html">Modos de nesting</a></li>
+        <li><button class="tree blank"></button><a href="../../../cut/jobworkflow/editlayout/placementpanel.html">Painel de Colocação</a></li>
+        <li><button class="tree blank"></button><a href="../../../cut/jobworkflow/editlayout/sequencing.html">Sequenciamento</a></li>
+        <li><button class="tree blank"></button><a href="../../../cut/jobworkflow/editlayout/slicesheet.html">Fatiar chapa</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../../cut/advanced/index.html">Avançado</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../../cut/advanced/finishingrules.html">Regras de acabamento</a></li>
+      <li><button class="tree blank"></button><a href="../../../cut/advanced/editltt.html">Editar a LTT</a></li>
+      <li><button class="tree blank"></button><a href="../../../cut/advanced/flyline.html">FlyLine</a></li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../../cut/advanced/twinline/index.html">TwinLine</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../../cut/advanced/twinline/strategies.html">Estratégia</a></li>
+        <li><button class="tree blank"></button><a href="../../../cut/advanced/twinline/microjoints.html">Microjoints</a></li>
+        <li><button class="tree blank"></button><a href="../../../cut/advanced/twinline/stability.html">Outras configurações</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../../bend/index.html">JFY Bend</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../../bend/createbenddata.html">Criar dados de dobra</a></li>
+    <li><button class="tree blank"></button><a href="../../../bend/navigator.html">Navegador de dobras</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../../bend/editing/index.html">Editar dados de dobra</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../../bend/editing/editbend.html">Editar uma dobra</a></li>
+      <li><button class="tree blank"></button><a href="../../../bend/editing/editmount.html">Editar um suporte de ferramenta</a></li>
+      <li><button class="tree blank"></button><a href="../../../bend/editing/editsetup.html">Editar uma configuração de dobra</a></li>
+      <li><button class="tree blank"></button><a href="../../../bend/editing/editgauge.html">Editar os encostos traseiros</a></li>
+      <li><button class="tree blank"></button><a href="../../../bend/editing/bendsheet.html">Planilha de dobras</a></li>
+      <li><button class="tree blank"></button><a href="../../../bend/editing/sequencing.html">Alterando a sequência</a></li>
+      <li><button class="tree blank"></button><a href="../../../bend/editing/addsetup.html">Adicionando configurações e estações</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../../bend/advanced/index.html">Avançado</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../../bend/advanced/batchprocess.html">Processo em lote</a></li>
+      <li><button class="tree blank"></button><a href="../../../bend/advanced/recompute.html">Recalcular solução</a></li>
+      <li><button class="tree blank"></button><a href="../../../bend/advanced/tonnage.html">Verificação de tonelagem</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../../index.html">Ajustes</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../drawing/index.html">Desenho</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../drawing/layers.html">Camadas</a></li>
+      <li><button class="tree blank"></button><a href="../../drawing/dimensions.html">Dimensões</a></li>
+      <li><button class="tree blank"></button><a href="../../drawing/view.html">Vista</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bendcam/index.html">Dobrar CAM</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bendcam/benddefaults.html">Padrões da máquina</a></li>
+      <li><button class="tree blank"></button><a href="../../bendcam/bendoutputs.html">Saídas de dobra</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="../index.html">Corte CAM</a>
+     <ul>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../layout/index.html">Layout</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../layout/nesting.html">Ajustes de nesting</a></li>
+        <li><button class="tree blank"></button><a href="../layout/sheet.html">Chapa</a></li>
+        <li><button class="tree blank"></button><a href="../layout/sheethandling.html">Manuseio da chapa</a></li>
+        <li><button class="tree blank"></button><a href="../layout/skeletoncuts.html">Cortes do esqueleto</a></li>
+        <li><button class="tree blank"></button><a href="../layout/worksupport.html">Suporte do trabalho</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree open"></button>
+       <a class="active" href="index.html">Laser CAM</a>
+       <ul>
+        <li><button class="tree blank"></button><a href="sequence.html">Sequência</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../cutoutputs.html">Cortar saídas</a></li>
+      <li><button class="tree blank"></button><a href="../cutview.html">Cortar vistas</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../reports/index.html">Relatórios</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../reports/itemdefaults.html">Padrões do item</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../importexport.html">Importação/Exportação</a></li>
+    <li><button class="tree blank"></button><a href="../../environment.html">Ambiente</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../../database/index.html">Base de dados</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../../database/materials.html">Materiais</a></li>
+    <li><button class="tree blank"></button><a href="../../../database/machines.html">Máquinas</a></li>
+    <li><button class="tree blank"></button><a href="../../../database/bendtools.html">Ferramentas de Dobra</a></li>
+    <li><button class="tree blank"></button><a href="../../../database/formscomponents.html">Formas/Componentes</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../../report/index.html">Relatórios</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../../report/designer.html">Designer de Relatórios</a></li>
+    <li><button class="tree blank"></button><a href="../../../report/fields.html">Campos, Imagens e Tabelas</a></li>
+    <li><button class="tree blank"></button><a href="../../../report/bands.html">Bandas (sub-relatórios)</a></li>
+    <li><button class="tree blank"></button><a href="../../../report/labels.html">Etiquetas, Bitmaps e Formas</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../../appendix/index.html">Apêndice</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../../appendix/3dformats.html">Formatos 3D suportados</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../../impressum.html">Informações Legais</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../../index.html">Ajustes</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="../index.html">Corte CAM</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Laser CAM</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Laser CAM</h1>
+<div class="sect1">
+<h2 id="_corte">Corte<a id="h000955"></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Existem três condições para o corte de uma chapa.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/ne28.png" alt="ne28">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Choose cutting condition by</strong> - Esta configuração é para definir como a condição de corte será selecionada. As opções incluem comprimento máximo de segmento, comprimento médio de segmento e área.</p>
+</div>
+<div class="paragraph">
+<p><strong>Maximum segment length</strong> - O segmento mais longo é usado como limiar.</p>
+</div>
+<div class="paragraph">
+<p><strong>Average segment length</strong> - O comprimento médio para todos os segmentos é calculado e usado como um limiar. Configuração padrão no JFY Cut.</p>
+</div>
+<div class="paragraph">
+<p><strong>Area</strong> - A área delimitada pelo contorno é usada como limiar.</p>
+</div>
+<div class="paragraph">
+<p><strong>Switch to slower cutting condition when approach is constrained</strong> - O cabeçote a laser muda para uma situação de corte em baixa velocidade quando a geometria da chapa para a aproximação é complexa.</p>
+</div>
+<div class="paragraph">
+<p><strong>Process for open polylines</strong> - Quando forem encontradas polilinhas abertas em uma peça, dependendo da opção selecionada, o corte será processado de acordo com a polilinha. As opções incluem <em>Cut</em>, <em>Mark</em>, <em>None</em>, e <em>Based on layer</em>.</p>
+</div>
+<div class="paragraph">
+<p><strong>None</strong>: O laser ignorará esta linha no desenho da peça.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mark</strong>: O laser apenas marcará esta linha, ou seja, desenhará uma linha visível na chapa, sem perfurar.</p>
+</div>
+<div class="paragraph">
+<p><strong>Cut</strong>: JFY Cut escolherá a condição apropriada do laser para esta polilinha e o laser irá cortá-la de acordo.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Para que esta configuração entre em vigor, as ferramentas devem ser recalculadas, alterações para ferramental manual prevalecerão sobre quaisquer alterações feitas nesta configuração. Se a polilinha aberta é configurada manualmente para "marcar" no layout interativo, alterá-la para "Cortar" nas configurações não terá efeito.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Cut/Mark open polylines backwards</strong> - A opção é cortar ou marcar as polilinhas abertas para trás. O ajuste se aplica apenas se o corte ou marcação estiver definido para o processo para polilinhas abertas.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mark forming footprint</strong> - Quando uma situação de escareamento é detectada pelo Cut, ele move automaticamente o círculo externo para a camada de contorno de conformação. Se esta opção estiver selecionada, a geometria na camada de contorno de forma será marcada.</p>
+</div>
+<div class="paragraph">
+<p><strong>Stitch cutting threshold distance (0=disable)</strong> - Esta opção é para definir a distância máxima entre dois cortes que serão considerados para o corte de costura.</p>
+</div>
+<div class="paragraph">
+<p><strong>Dynamics</strong> - O menu suspenso Dinâmica inclui Normal, Alto e Reduzido.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pierce_settings">Pierce settings</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/pierce.png" alt="pierce">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Allow approach that is more than 0.5 distance to opposite side</strong> -
+Esta opção é para definir se uma aproximação é permitida para cobrir mais do que a distância para o lado oposto.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_corner_processing">Corner Processing</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/cornerprocess.png" alt="cornerprocess">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Rounding tolerance (distance of corner from rounding tip)</strong> -
+Esta opção é para definir a distância máxima permitida do canto até a ponta de arredondamento, como mostrado na imagem abaixo. A distância do canto até a ponta de arredondamento é diretamente proporcional ao raio de arredondamento. Com base no valor inserido aqui, o TecZone Cut irá selecionar o raio de arredondamento na faixa do mín. e do máx. Se selecionar o raio máximo não colocar esta distância dentro do valor de tolerância, então o arredondamento não será aplicado (poderá ser aplicado o ciclo ou resfriamento).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/cornprocess1.png" alt="cornprocess1">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Maximum distance of corner from outermost point on loop</strong> -
+Esta opção é para definir a extensão máxima do loop a partir do canto. A extensão do ciclo é diretamente proporcional ao raio. Em um canto fechado, se selecionar o menor raio não colocar esta distância do valor inserido aqui, fazer o ciclo não será aplicado (o arredondamento ou resfriamento ainda pode ser aplicado).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/cornprocess2.png" alt="cornprocess2">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_twinline">TwinLine</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/cornerprocess.png" alt="cornerprocess">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Twinline processing strategy</strong> - Este menu suspenso é para definir a estratégia de TwinLine a ser usada.</p>
+</div>
+<div class="paragraph">
+<p><em>Partwise</em> - Os cortes são feitos parcialmente. Adequado para chapas espessas, nas quais não há risco de tombamento de contornos.</p>
+</div>
+<div class="paragraph">
+<p><em>Partwise-Safe</em> - Os cortes são feitos parcialmente, mas cortes preparatórios são feitos em peças adjacentes. Adequado para chapas finas, nas quais as peças podem tombar.</p>
+</div>
+<div class="paragraph">
+<p><em>TIO (Twinline-Islands-Outer)</em> - Os cantos TwinLine são cortados primeiro, seguidos por quaisquer ilhas criadas entre as peças e, em seguida, o contorno externo.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use TIO strategy of there are no islands</strong> -
+O software sempre escolherá a estratégia TIO (Twinline-Islands-Outer), se não houver ilhas criadas no bloco TwinLine. Esta opção é marcada por padrão.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_scrap_cutting">Scrap cutting</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/scrap.png" alt="scrap">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Scrap grid width</strong> - Esta é a largura de cada célula na grade criada pelo ferramental. O valor inserido aqui deve ser tal que que quadrado resultante garantidamente caia através das barras de suporte, independentemente da sua posição.</p>
+</div>
+<div class="paragraph">
+<p><strong>Approach length for separating cuts</strong> - Este é o comprimento da aproximação desejada em cortes de sucata.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vaporization">Vaporization</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Vaporize</strong> - Esta configuração controlará se a vaporização deve ser feita ou não. E, se deve ser feito, quais porções do caminho de corte a laser devem ser vaporizadas.</p>
+</div>
+<div class="paragraph">
+<p><em>None</em> - Sem vaporização</p>
+</div>
+<div class="paragraph">
+<p><em>Pierce</em> - Somente os pontos de perfuração serão vaporizados</p>
+</div>
+<div class="paragraph">
+<p><em>Pierce &amp; approach</em> - As porções de perfuração e aproximação do caminho de corte a laser serão vaporizadas.</p>
+</div>
+<div class="paragraph">
+<p><em>Full laser path</em> - Todo o caminho de corte incluindo o furo, a aproximação e o contorno serão vaporizados.</p>
+</div>
+<div class="paragraph">
+<p><strong>Pierce point vaporization circle radius</strong> - Se um valor maior que zero for inserido aqui, o software moverá o cabeçote laser em um pequeno círculo ao redor do ponto de perfuração com o laser de vaporização ligado (vaporização do círculo). O valor decide o raio deste círculo. Se este valor for zero, o laser de vaporização será ligado exatamente em cima do ponto de perfuração e então desligado imediatamente (vaporização no ponto).</p>
+</div>
+<div class="paragraph">
+<p><strong>Vaporize marking</strong> - Esta opção é para ativar ou desativar a vaporização. Observe que as marcações de texto laser feitas usando a macro TC_WRITE nunca são vaporizadas.</p>
+</div>
+<div class="paragraph">
+<p>Quando estes ajustes são modificados, não haverá mudança visível na interface do usuário de corte, exceto pelo ícone do programa CN, que será ativado se estava desativado antes.
+Isso é porque estes ajustes têm impacto na geração do código. O código de vaporização gerado para diferentes cortes é descrito na tabela abaixo.</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">Corte</th>
+<th class="tableblock halign-left valign-top">Comportamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Laser Cut</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Este é item de corte usual para cortar um contorno da peça.<br>
+Se Vaporize =Full laser path, todo o contorno, incluindo a perfuração e abordagem será vaporizado. Entretanto, durante a passagem de vaporização, a compensação do raio está desligada. Não é necessário que o corte seja realizado imediatamente após a vaporização. Se um contorno tem mais de 1 microjoint, portanto, múltiplas peças cortadas a laser, todas as peças cortadas daquele contorno serão vaporizadas primeiro. Então se inicia o corte do contorno.
+Esta sequência de vaporização é chamada de modo de contorno, pois cada contorno é vaporizado antes de ser cortado. Isso normalmente leva a um movimento eficiente do cabeçote.</p>
+<p class="tableblock"><span class="image"><img src="img/scraplasercut.png" alt="scraplasercut"></span></p>
+<p class="tableblock">Se Vaporize =Pierce &amp; approach, apenas o ponto de perfuração e o percurso de aproximação são vaporizados primeiro e, imediatamente após isso, o cabeçote a laser reposicionará sobre o ponto de perfuração e iniciará o corte em si. Para esta opção de vaporização e para Vaporizar = Perfuração, a perfuração e a aproximação sempre são vaporizadas logo antes da execução do corte. Este tipo de sequência de vaporização é chamado de modo de corte, pois cada peça é vaporizada antes de ser cortada.</p>
+<p class="tableblock">O comportamento de Vaporize =Pierce, é como o acima, exceto que apenas os pontos de perfuração são vaporizados.</p>
+<p class="tableblock">Se Vaporize =None, não há alteração no código gerado.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Scrap Cut</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se Vaporize = Full laser path, a sequência de vaporização e corte seria a seguinte:<br>
+-  Toda a grade de sucata será vaporizada primeira, do mesmo modo como seria cortada.</p>
+<p class="tableblock">- O contorno será vaporizado junto com a perfuração e aproximação.</p>
+<p class="tableblock">- A grade de sucata será cortada.</p>
+<p class="tableblock">- O contorno será cortado.</p>
+<p class="tableblock">Assim, a grade e o contorno serão ambos vaporizados e então cortados.
+Se Vaporize = Pierce &amp; approach ou Pierce, o furo e os segmentos de aproximação para sucata e contorno serão vaporizados pouco antes de serem cortados.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Sheet Cut</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Um corte de chapa sempre será vaporizado logo antes de ser cortado.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Corte Flyline</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Estes cortes nunca são vaporizados, independentemente dos ajustes de vaporização.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Point Cut</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Este será vaporizado logo antes de ser cortado.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_marcação_a_laser">Marcação a laser<a id="h000956"></a></h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/lasermarking.png" alt="lasermarking">
+</div>
+</div>
+<div class="paragraph">
+<p>As regras para adicionar uma ou mais marcações de texto na peça podem ser definidas em <strong>Settings &#8594; Cut CAM &#8594; Laser CAM &#8594; Laser marking</strong>.
+Na tabela mostrada abaixo o usuário pode adicionar múltiplas regras, cada regra levando à colocação de uma linha individual de texto.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/ne94.png" alt="ne94">
+</div>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">Coluna</th>
+<th class="tableblock halign-left valign-top">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Caixa de verificação</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Você pode ativar ou desativar a regra usando a caixa de verificação na primeira coluna.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O texto que deve ser inserido na peça. Este texto pode conter os seguintes símbolos, que serão substituídos pelo valor correspondente da informação da peça. Estes símbolos não são sensíveis à maiúscula.</p>
+<p class="tableblock">$PARTNAME - Nome da peça.</p>
+<p class="tableblock">$FILENAME - Nome do arquivo FX.</p>
+<p class="tableblock">$ROOTFILE - Nome do arquivo CAD original.</p>
+<p class="tableblock">$PARTID -Part identifier.</p>
+<p class="tableblock">$CUSTOMER - Cliente.</p>
+<p class="tableblock">$AUTHOR - Autor.</p>
+<p class="tableblock">$JOBNUMBER - Número do trabalho em Part&#8594;Info.</p>
+<p class="tableblock">Estas variáveis são indicadas em uma tooltip.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Height</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Esta é a altura da fonte (da linha de base até a linha de maiúscula) em unidades de mm ou polegadas. Ao inserir este texto, pode ser possível que não haja espaço suficiente para inserir o texto na altura de fonte prescrita.
+Nessas situações, JFY Cut reduzirá automaticamente o tamanho do texto em etapas de 10% até que seja viável colocá-lo. Esta redução gradual é permitida atualmente até 2 mm.</p>
+<p class="tableblock">O mínimo está definido como 2 mm.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Orientation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Esta coluna determina a orientação do texto.
+Os seguintes valores são possíveis:</p>
+<p class="tableblock"><em>Horizontal</em> - O texto será horizontal.</p>
+<p class="tableblock"><em>Vertical</em> - O texto será vertical.</p>
+<p class="tableblock"><em>Along longer side</em>: O texto será alinhado com o lado mais longo da peça. Se a peça for formato paisagem isso será horizontal, se a peça for retrato isso será vertical.</p>
+<p class="tableblock"><em>Along shorter side</em>: O texto será alinhado com o lado mais curto da peça (oposto ao acima.) Ao adicionar dois textos para a peça, esta e a opção anterior podem ser usadas juntas para minimizar o risco de sobreposição de texto.</p>
+<p class="tableblock"><em>Along longest segment</em>:
+O texto será alinhado com o segmento linear mais longo do contorno externo. Neste caso, o texto poderá não ficar alinhado ao eixo. Se o texto é posicionado horizontal, vertical ou oblíquo, JFY Cut sempre orientará o texto de forma que o usuário encontre o texto na direção certa ao olhar para a parte do lado mais próximo do texto. Ou seja, o texto horizontal posicionado abaixo do centro partirá da esquerda para direita e se posicionado acima do centro partirá da direita para a esquerda.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Horizontal pos</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alinhamento horizontal do texto. Os valores possíveis são <em>center</em>, <em>left</em>&amp;_right_. Esta configuração não é relevante se <em>Along longest segment</em> for escolhida como a orientação necessária.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Vertical pos</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alinhamento vertical do texto. Os valores possíveis são <em>center</em>, <em>bottom</em>&amp;_top_. Esta configuração não é relevante se <em>Along longest segment</em> for escolhida como a orientação necessária.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Ao adicionar essas marcas, JFY Cut sempre assegura que o texto não colide com qualquer contorno da peça. Para peças muito pequenas ou peças com pouco espaço aberto, isso reduzirá automaticamente o tamanho de fonte pela quantidade necessária para caber o texto dentro da peça e longe de quaisquer furos.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_corte">Corte</a>
+  </li>
+  <li level="1">
+   <a href="#_pierce_settings">Pierce settings</a>
+  </li>
+  <li level="1">
+   <a href="#_corner_processing">Corner Processing</a>
+  </li>
+  <li level="1">
+   <a href="#_twinline">TwinLine</a>
+  </li>
+  <li level="1">
+   <a href="#_scrap_cutting">Scrap cutting</a>
+  </li>
+  <li level="1">
+   <a href="#_vaporization">Vaporization</a>
+  </li>
+  <li level="1">
+   <a href="#_marcação_a_laser">Marcação a laser</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="../layout/worksupport.html">Suporte do trabalho</a></span>
+ <span class="next"><a href="sequence.html">Sequência</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../../res/index.js"></script>
+    <script src="../../../res/files.js"></script>
+    <script src="../../../res/site.js"></script>
+
+    
+</body>
+</html>

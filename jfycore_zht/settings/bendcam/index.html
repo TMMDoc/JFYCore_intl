@@ -1,0 +1,471 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/jfy-icon.png">
+  <title>折彎 CAM</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.jfy.png" width="150" height="50" /></div>
+        <div><p>JFY Core Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">歡迎來到 JFY Core</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../intro/index.html">導言</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../intro/install.html">安裝軟體</a></li>
+    <li><button class="tree blank"></button><a href="../../intro/clarity.html">使用者介面</a></li>
+    <li><button class="tree blank"></button><a href="../../intro/workflow.html">零件工作流程</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../cad/index.html">CAD</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cad/2dimport/index.html">2D匯入</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cad/2dimport/2dcleanup.html">2D清理</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cad/3dimport/index.html">3D匯入</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/prep3dmodel.html">匯入3D模型</a></li>
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/prepassembly.html">匯入組件</a></li>
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/formdetect.html">成型加工辨識</a></li>
+      <li><button class="tree blank"></button><a href="../../cad/3dimport/componentdetect.html">部件辨識</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../cad/sketch.html">修改幾何形狀</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../cut/index.html">JFY Cut</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/partworkflow/index.html">零件工作流程</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/partworkflow/panels/index.html">編輯面板</a>
+       <ul class="hide">
+        <li>
+         <button class="tree closed"></button>
+         <a href="../../cut/partworkflow/panels/lasercut/index.html">雷射切割</a>
+         <ul class="hide">
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/approach.html">進刀</a></li>
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/withdrawal.html">回縮</a></li>
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/microjoint.html">微連</a></li>
+          <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/lasercut/advanced.html">進階</a></li>
+         </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/contour.html">輪廓</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/scrapcut.html">廢料切割</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/part.html">零件</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/partworkflow/panels/cornertreatment.html">轉角加工</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../cut/partworkflow/quicknest.html">快速排樣</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/jobworkflow/index.html">套裁工作流程</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/jobworkflow/jobpanel/index.html">套裁面板</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/sheets.html">板材選項卡</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/parts.html">零件選項卡</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/layouts.html">佈局選項卡</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/jobpanel/summary.html">摘要選項卡</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/jobworkflow/editlayout/index.html">編輯佈局</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/nestingmodes.html">排樣模式</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/placementpanel.html">放置面板</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/sequencing.html">排序</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/jobworkflow/editlayout/slicesheet.html">切片板材</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../cut/advanced/index.html">進階</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../cut/advanced/finishingrules.html">精加工規則</a></li>
+      <li><button class="tree blank"></button><a href="../../cut/advanced/editltt.html">編輯LTT</a></li>
+      <li><button class="tree blank"></button><a href="../../cut/advanced/flyline.html">FlyLine</a></li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../cut/advanced/twinline/index.html">TwinLine</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../cut/advanced/twinline/strategies.html">策略</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/advanced/twinline/microjoints.html">微連</a></li>
+        <li><button class="tree blank"></button><a href="../../cut/advanced/twinline/stability.html">其他設定</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../bend/index.html">JFY Bend</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../bend/createbenddata.html">建立折彎資料</a></li>
+    <li><button class="tree blank"></button><a href="../../bend/navigator.html">折彎導航器</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bend/editing/index.html">編輯折彎數據</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bend/editing/editbend.html">編輯折彎</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editmount.html">編輯模具裝置</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editsetup.html">編輯折彎設定</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/editgauge.html">編輯後定規</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/bendsheet.html">折彎試算表</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/sequencing.html">更改順序</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/editing/addsetup.html">添加設定和工站</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../bend/advanced/index.html">進階</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../bend/advanced/batchprocess.html">批量加工</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/advanced/recompute.html">重新計算程式</a></li>
+      <li><button class="tree blank"></button><a href="../../bend/advanced/tonnage.html">噸位檢查</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">設定</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../drawing/index.html">圖紙</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../drawing/layers.html">圖層</a></li>
+      <li><button class="tree blank"></button><a href="../drawing/dimensions.html">尺寸</a></li>
+      <li><button class="tree blank"></button><a href="../drawing/view.html">視圖</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a class="active" href="index.html">折彎 CAM</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="benddefaults.html">機台預配置</a></li>
+      <li><button class="tree blank"></button><a href="bendoutputs.html">折彎輸出</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../cutcam/index.html">切割 CAM</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cutcam/layout/index.html">布局</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cutcam/layout/nesting.html">排樣設定</a></li>
+        <li><button class="tree blank"></button><a href="../cutcam/layout/sheet.html">板材</a></li>
+        <li><button class="tree blank"></button><a href="../cutcam/layout/sheethandling.html">板材搬運</a></li>
+        <li><button class="tree blank"></button><a href="../cutcam/layout/skeletoncuts.html">骨架切割</a></li>
+        <li><button class="tree blank"></button><a href="../cutcam/layout/worksupport.html">工作支座</a></li>
+       </ul>
+      </li>
+      <li>
+       <button class="tree closed"></button>
+       <a href="../cutcam/lasercam/index.html">雷射 CAM</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../cutcam/lasercam/sequence.html">順序</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../cutcam/cutoutputs.html">切割輸出</a></li>
+      <li><button class="tree blank"></button><a href="../cutcam/cutview.html">切割視圖</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../reports/index.html">報告</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../reports/itemdefaults.html">項目預配置</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../importexport.html">匯入/匯出</a></li>
+    <li><button class="tree blank"></button><a href="../environment.html">環境</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../database/index.html">資料庫</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../database/materials.html">材料</a></li>
+    <li><button class="tree blank"></button><a href="../../database/machines.html">機台</a></li>
+    <li><button class="tree blank"></button><a href="../../database/bendtools.html">折彎模具</a></li>
+    <li><button class="tree blank"></button><a href="../../database/formscomponents.html">成型加工/部件</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../report/index.html">報告</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../report/designer.html">報告設計器</a></li>
+    <li><button class="tree blank"></button><a href="../../report/fields.html">字段、圖片和表格</a></li>
+    <li><button class="tree blank"></button><a href="../../report/bands.html">圖素集（子報告）</a></li>
+    <li><button class="tree blank"></button><a href="../../report/labels.html">標籤、點陣圖和形狀</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../appendix/index.html">附錄</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../appendix/3dformats.html">支持的3D格式</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Impressum</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">設定</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">折彎 CAM</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>折彎 CAM</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/bendcam.png" alt="bendcam">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_back_gauges">Back-gauges</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Min.thickness to always pull-back (mm)</strong> - 此設定允許您輸入當達到輸入的板材厚度時後定規的自動回縮值（以毫米為單位）。</p>
+</div>
+<div class="paragraph">
+<p><strong>Clamping strategy</strong> - 用於設定後定規如何停在工件上。提供以下選擇選項：</p>
+</div>
+<div class="paragraph">
+<p><strong>Default</strong> - 每次折彎後，後定規都會以軟體認為最好的方式停止。</p>
+</div>
+<div class="paragraph">
+<p><strong>Stop + Stop</strong> - 兩個後定規的平直表面停靠在工件上。</p>
+</div>
+<div class="paragraph">
+<p><strong>Clamp + Stop</strong> - 一個後定規夾住工件，另一個後定規以其平直表面擋停它。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_geometry_adaptation_strategy">Geometry Adaptation Strategy</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>如果在軟體中編輯2D或3D檔案，則將檢查折彎半徑和折彎係數。根據在「快速排版」設置中針對修改工件所選的策略，將執行不同的加工策略。如果決策被設定為互動式，則會顯示Adapt Geometry對話。</p>
+</div>
+<div class="sect2">
+<h3 id="_when_starting_with_2d_flat">When starting with 2D flat</h3>
+<div class="paragraph">
+<p><strong>Ask each time</strong> - 從2D零件導航到折彎時，使用此設置將自動顯示Adapt Geometry對話方塊。透過此選項可保持平面尺寸，保持3D尺寸或不改變任何東西，由此使該功能非常具有互動性和使用者便利性。</p>
+</div>
+<div class="paragraph">
+<p><strong>Keep 3D dimensions</strong> - 此選項會更改展開圖，後者必須手動保存。如果板坯尚未切割，則使用此策略。</p>
+</div>
+<div class="paragraph">
+<p><strong>Keep 2D dimensions</strong> - 此選項意味著折彎半徑和折彎係數會根據現有的展開圖進行調整；折彎線保持在同一位置。這會改變零件的邊長度。展開圖不變。如果板坯已經被切割成合適的尺寸，則使用此策略。</p>
+</div>
+<div class="paragraph">
+<p><strong>No adjustments</strong> - 使用此選項將意味著折彎半徑和折彎係數保持不變。零件以正確的尺寸進行3D顯示，但顯示的折彎半徑與實際折彎半徑不符。每個工件折彎的尺寸都可能發生變化。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_when_starting_with_3d_model">When starting with 3D model</h3>
+<div class="paragraph">
+<p><strong>Ask each time</strong> - 從3D零件導航到折彎時，使用此設置將自動顯示Adapt Geometry對話方塊。透過此選項可保持平面尺寸，保持3D尺寸或不改變任何東西，由此使該功能非常具有互動性和使用者便利性。</p>
+</div>
+<div class="paragraph">
+<p><strong>Keep 3D dimensions</strong> - 此選項會更改展開圖，後者必須手動保存。如果板坯尚未切割，則使用此策略。</p>
+</div>
+<div class="paragraph">
+<p><strong>Keep 2D dimensions</strong> - 此選項意味著折彎半徑和折彎係數會根據現有的展開圖進行調整；折彎線保持在同一位置。這會改變零件的邊長度。如果板坯已經被切割成合適的尺寸，則使用此策略。</p>
+</div>
+<div class="paragraph">
+<p><strong>No adjustments</strong> - 使用此選項將意味著折彎半徑和折彎係數保持不變。零件以正確的尺寸進行3D顯示，但顯示的折彎半徑與實際折彎半徑不符。每個工件折彎的尺寸都可能發生變化。</p>
+</div>
+<div class="paragraph">
+<p><strong>Bend deduction calculation</strong> - 透過此選項，您可強制使用修正係數 k方法。此設定可在應用程式預設值中設置，或可以為每臺機台單獨調整。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+對於非Trumpf機台，始終使用修正係數 k；Trumpf折彎計算僅適用於Trumpf折彎機。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>BG-Left variant</strong> - 根據所使用的變型BG， 數控程式將被修改以表示這一點。</p>
+</div>
+<div class="paragraph">
+<p><strong>BG-Right variant</strong> - 根據所使用的變型BG， 數控程式將被修改以表示這一點。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_other_settings">Other Settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Hemming pre-bend angle</strong> - 此選項可以在10°至60°之間編輯壓合預折彎角度。預設為40°，因為這是建議用於大多數製造商的壓合預折彎角度。設定為30°，用於所有不同版本的所有Trumpf機台。</p>
+</div>
+<div class="paragraph">
+<p><strong>Bend-guard mode override</strong> - 將此設定為自動計算（預設值）， 折彎將計算每個折彎的折彎防護模式。但是，您可以強制折彎防護模式使用其中一個選項，不管是否合適。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+您還可以覆蓋每臺機台的此設置，方法是在機台預設值中設置，而不是Application Settings。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Machine table position</strong> - 此設定有三個選項，用於工作台位置：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>已移除</p>
+</li>
+<li>
+<p>下</p>
+</li>
+<li>
+<p>上</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Tool inventory check</strong> - 啟用此選項將顯示模具段，這可能是折彎工件所需要的。將會顯示庫存標記不足。</p>
+</div>
+<div class="paragraph">
+<p><strong>Avoid tool overload if possible</strong> - 打開此選項可確保避免模具過載。即使具有更高優先級的模具適用於該零件，仍將使用較低優先級的模具，以避免過載問題。</p>
+</div>
+<div class="paragraph">
+<p><strong>Ignore tool hints from GEO/DXF files</strong> - 啟用此選項將忽略在DXF/GEO檔案中找到的與要使用加工相關的資訊。</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_back_gauges">Back-gauges</a>
+  </li>
+  <li level="1">
+   <a href="#_geometry_adaptation_strategy">Geometry Adaptation Strategy</a>
+  </li>
+  <li level="2">
+   <a href="#_when_starting_with_2d_flat">When starting with 2D flat</a>
+  </li>
+  <li level="2">
+   <a href="#_when_starting_with_3d_model">When starting with 3D model</a>
+  </li>
+  <li level="1">
+   <a href="#_other_settings">Other Settings</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="../drawing/view.html">視圖</a></span>
+ <span class="next"><a href="benddefaults.html">機台預配置</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

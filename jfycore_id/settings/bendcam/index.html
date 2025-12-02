@@ -283,65 +283,65 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_back_gauges">Back-gauges</h2>
+<h2 id="_backgauge">Backgauge</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Min.thickness to always pull-back (mm)</strong> - Pengaturan ini memungkinkan Anda memasukkan nilai dalam mm untuk mundur otomatis backgauge finger ketika ketebalan pelat yang dimasukkan tercapai.</p>
+<p><strong>Penarikan balik otomatis dari ketebalan pelat &#8230;&#8203; mm</strong> - Pengaturan ini memungkinkan Anda memasukkan nilai dalam mm untuk mundur otomatis backgauge finger ketika ketebalan pelat yang dimasukkan tercapai.</p>
 </div>
 <div class="paragraph">
-<p><strong>Clamping strategy</strong> - Ini digunakan untuk mengatur bagaimana backgauge finger akan berhenti pada benda kerja.</p>
+<p><strong>Strategi backgauge</strong> - Ini digunakan untuk mengatur bagaimana backgauge finger akan berhenti pada benda kerja.</p>
 </div>
 <div class="paragraph">
 <p>Opsi pemilihan berikut tersedia:</p>
 </div>
 <div class="paragraph">
-<p><strong>Default</strong> - Backgauge finger berhenti untuk setiap penekukan dengan cara yang dianggap terbaik oleh perangkat lunak.</p>
+<p><strong>Standar</strong> - Backgauge finger berhenti untuk setiap penekukan dengan cara yang dianggap terbaik oleh perangkat lunak.</p>
 </div>
 <div class="paragraph">
-<p><strong>Stop + Stop</strong> - Permukaan lurus dari kedua backgauge finger berhenti pada benda kerja.</p>
+<p><strong>2 x langsung tahan</strong> - Permukaan lurus dari kedua backgauge finger berhenti pada benda kerja.</p>
 </div>
 <div class="paragraph">
-<p><strong>Clamp + Stop</strong> - Satu backgauge finger menjepit benda kerja dan backgauge finger lainnya menghentikannya dengan permukaan lurusnya.</p>
+<p><strong>Jepit+stop</strong> - Satu backgauge finger menjepit benda kerja dan backgauge finger lainnya menghentikannya dengan permukaan lurusnya.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_geometry_adaptation_strategy">Geometry Adaptation Strategy</h2>
+<h2 id="_strategi_pemrosesan_untuk_menyesuaikan_benda_kerja">Strategi pemrosesan untuk menyesuaikan benda kerja</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Jika file 2D atau 3D diedit dalam perangkat lunak, radius tekukan dan toleransi tekukan akan diperiksa. Berbagai strategi pemrosesan dijalankan tergantung pada strategi yang dipilih untuk memodifikasi benda kerja dalam pengaturan Easy Programming. Jika pengaturan keputusan diatur ke mode interaktif, maka kotak dialog Adapt Geometry akan ditampilkan.</p>
+<p>Jika file 2D atau 3D diedit dalam perangkat lunak, radius tekukan dan toleransi tekukan akan diperiksa. Berbagai strategi pemrosesan dijalankan tergantung pada strategi yang dipilih untuk memodifikasi benda kerja dalam pengaturan Easy Programming. Jika pengaturan keputusan diatur ke mode interaktif, maka kotak dialog Sesuaikan benda kerja akan ditampilkan.</p>
 </div>
 <div class="sect2">
-<h3 id="_when_starting_with_2d_flat">When starting with 2D flat</h3>
+<h3 id="_impor_pemrosesan">Impor pemrosesan</h3>
 <div class="paragraph">
-<p><strong>Ask each time</strong> - Saat menavigasi dari komponen 2D ke penekukan, menggunakan pengaturan ini akan secara otomatis menampilkan dialog Adapt Geometry. Ini akan memberikan opsi untuk mempertahankan ukuran datar, mempertahankan dimensi 3D, atau tidak mengubah apa pun, sehingga fitur ini menjadi sangat interaktif dan dapat dikendalikan oleh pengguna.</p>
+<p><strong>Penentuan interaktif</strong> - Saat menavigasi dari komponen 2D ke penekukan, menggunakan pengaturan ini akan secara otomatis menampilkan dialog Sesuaikan benda kerja. Ini akan memberikan opsi untuk mempertahankan ukuran datar, mempertahankan dimensi 3D, atau tidak mengubah apa pun, sehingga fitur ini menjadi sangat interaktif dan dapat dikendalikan oleh pengguna.</p>
 </div>
 <div class="paragraph">
-<p><strong>Keep 3D dimensions</strong> - Opsi ini mengubah bentangan, yang kemudian harus disimpan secara manual. Strategi ini digunakan jika lembaran kosong belum dipotong.</p>
+<p><strong>Pertahankan model 3D</strong> - Opsi ini mengubah bentangan, yang kemudian harus disimpan secara manual. Strategi ini digunakan jika lembaran kosong belum dipotong.</p>
 </div>
 <div class="paragraph">
-<p><strong>Keep 2D dimensions</strong> - Opsi ini berarti radius tekukan dan toleransi tekukan disesuaikan dengan bentangan yang ada; garis tekuk tetap berada di tempat yang sama. Ini akan mengubah panjang sisi komponen. Bentangan tidak berubah. Strategi ini digunakan jika lembaran kosong telah dipotong sesuai ukuran.</p>
+<p><strong>Pertahankan pemrosesan</strong> - Opsi ini berarti radius tekukan dan toleransi tekukan disesuaikan dengan bentangan yang ada; garis tekuk tetap berada di tempat yang sama. Ini akan mengubah panjang sisi komponen. Bentangan tidak berubah. Strategi ini digunakan jika lembaran kosong telah dipotong sesuai ukuran.</p>
 </div>
 <div class="paragraph">
-<p><strong>No adjustments</strong> - Menggunakan opsi ini berarti radius tekukan dan toleransi tekukan tetap tidak berubah. Komponen ditampilkan dengan dimensi yang benar dalam 3D, tetapi radius tekukan yang ditampilkan tidak sesuai dengan radius tekukan yang sebenarnya. Dimensi penekukan setiap benda kerja dapat berubah.</p>
+<p><strong>Jangan melakukan penyesuaian</strong> - Menggunakan opsi ini berarti radius tekukan dan toleransi tekukan tetap tidak berubah. Komponen ditampilkan dengan dimensi yang benar dalam 3D, tetapi radius tekukan yang ditampilkan tidak sesuai dengan radius tekukan yang sebenarnya. Dimensi penekukan setiap benda kerja dapat berubah.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_when_starting_with_3d_model">When starting with 3D model</h3>
+<h3 id="_impor_model_3d">Impor model 3D</h3>
 <div class="paragraph">
-<p><strong>Ask each time</strong> - Saat menavigasi dari komponen 3D ke penekukan, menggunakan pengaturan ini akan secara otomatis menampilkan dialog Adapt Geometry. Ini akan memberikan opsi untuk mempertahankan ukuran datar, mempertahankan dimensi 3D, atau tidak mengubah apa pun, sehingga fitur ini menjadi sangat interaktif dan dapat dikendalikan oleh pengguna.</p>
+<p><strong>Penentuan interaktif</strong> - Saat menavigasi dari komponen 3D ke penekukan, menggunakan pengaturan ini akan secara otomatis menampilkan dialog Sesuaikan benda kerja. Ini akan memberikan opsi untuk mempertahankan ukuran datar, mempertahankan dimensi 3D, atau tidak mengubah apa pun, sehingga fitur ini menjadi sangat interaktif dan dapat dikendalikan oleh pengguna.</p>
 </div>
 <div class="paragraph">
-<p><strong>Keep 3D dimensions</strong> - Opsi ini mengubah bentangan, yang kemudian harus disimpan secara manual. Strategi ini digunakan jika lembaran kosong belum dipotong.</p>
+<p><strong>Pertahankan model 3D</strong> - Opsi ini mengubah bentangan, yang kemudian harus disimpan secara manual. Strategi ini digunakan jika lembaran kosong belum dipotong.</p>
 </div>
 <div class="paragraph">
-<p><strong>Keep 2D dimensions</strong> - Opsi ini berarti radius tekukan dan toleransi tekukan disesuaikan dengan bentangan yang ada; garis tekuk tetap berada di tempat yang sama. Ini akan mengubah panjang sisi komponen. Strategi ini digunakan jika lembaran kosong telah dipotong sesuai ukuran.</p>
+<p><strong>Pertahankan pemrosesan</strong> - Opsi ini berarti radius tekukan dan toleransi tekukan disesuaikan dengan bentangan yang ada; garis tekuk tetap berada di tempat yang sama. Ini akan mengubah panjang sisi komponen. Strategi ini digunakan jika lembaran kosong telah dipotong sesuai ukuran.</p>
 </div>
 <div class="paragraph">
-<p><strong>No adjustments</strong> - Menggunakan opsi ini berarti radius tekukan dan toleransi tekukan tetap tidak berubah. Komponen ditampilkan dengan dimensi yang benar dalam 3D, tetapi radius tekukan yang ditampilkan tidak sesuai dengan radius tekukan yang sebenarnya. Dimensi penekukan setiap benda kerja dapat berubah.</p>
+<p><strong>Jangan melakukan penyesuaian</strong> - Menggunakan opsi ini berarti radius tekukan dan toleransi tekukan tetap tidak berubah. Komponen ditampilkan dengan dimensi yang benar dalam 3D, tetapi radius tekukan yang ditampilkan tidak sesuai dengan radius tekukan yang sebenarnya. Dimensi penekukan setiap benda kerja dapat berubah.</p>
 </div>
 <div class="paragraph">
-<p><strong>Bend deduction calculation</strong> - Opsi ini memungkinkan untuk memaksa penggunaan metode Faktor K. Pengaturan ini dapat diatur di Pengaturan Default Aplikasi atau dapat disesuaikan secara individual untuk setiap mesin.</p>
+<p><strong>Nilai pemendekan</strong> - Opsi ini memungkinkan untuk memaksa penggunaan metode Faktor K. Pengaturan ini dapat diatur di Pengaturan Default Aplikasi atau dapat disesuaikan secara individual untuk setiap mesin.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -356,22 +356,22 @@ Untuk mesin non-Trumpf, Faktor K selalu digunakan; perhitungan penekukan Trumpf 
 </table>
 </div>
 <div class="paragraph">
-<p><strong>BG-Left variant</strong> - Tergantung pada varian BG yang digunakan, program NC akan dimodifikasi untuk mewakili hal ini.</p>
+<p><strong>Varian HA kiri</strong> - Tergantung pada varian BG yang digunakan, program NC akan dimodifikasi untuk mewakili hal ini.</p>
 </div>
 <div class="paragraph">
-<p><strong>BG-Right variant</strong> - Tergantung pada varian BG yang digunakan, program NC akan dimodifikasi untuk mewakili hal ini.</p>
+<p><strong>Varian HA kanan</strong> - Tergantung pada varian BG yang digunakan, program NC akan dimodifikasi untuk mewakili hal ini.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_other_settings">Other Settings</h2>
+<h2 id="_pengaturan_lanjutan">Pengaturan lanjutan</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Hemming pre-bend angle</strong> - Opsi ini dapat mengedit sudut pratekukan hem antara 10° hingga 60°. Nilai default-nya adalah 40° karena itu adalah sudut pratekukan hemming yang direkomendasikan untuk sebagian besar produsen. Ini diatur ke 30° untuk semua mesin Trumpf, di semua edisi yang tersedia.</p>
+<p><strong>Sudut pra-penekukan selama hemming</strong> - Opsi ini dapat mengedit sudut pratekukan hem antara 10° hingga 60°. Nilai default-nya adalah 40° karena itu adalah sudut pratekukan hemming yang direkomendasikan untuk sebagian besar produsen. Ini diatur ke 30° untuk semua mesin Trumpf, di semua edisi yang tersedia.</p>
 </div>
 <div class="paragraph">
-<p><strong>Bend-guard mode override</strong> - Dengan mengatur ini ke hitung otomatis (default), Penekukan akan menghitung mode bend-guard untuk setiap penekukan. Namun, Anda dapat memaksa mode bend-guard ke salah satu opsi agar hanya menggunakan opsi tersebut, terlepas dari apakah opsi tersebut sesuai atau tidak.</p>
+<p><strong>Pengaturan standar mode BendGuard</strong> - Dengan mengatur ini ke hitung otomatis (default), Penekukan akan menghitung mode bend-guard untuk setiap penekukan. Namun, Anda dapat memaksa mode bend-guard ke salah satu opsi agar hanya menggunakan opsi tersebut, terlepas dari apakah opsi tersebut sesuai atau tidak.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -380,13 +380,13 @@ Untuk mesin non-Trumpf, Faktor K selalu digunakan; perhitungan penekukan Trumpf 
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Anda juga dapat mengganti pengaturan ini untuk setiap mesin, dengan mengaturnya di Default Mesin, bukan di Application Settings.
+Anda juga dapat mengganti pengaturan ini untuk setiap mesin, dengan mengaturnya di Default Mesin, bukan di Pengaturan aplikasi.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Machine table position</strong> - Pengaturan ini memiliki tiga opsi untuk posisi tabel:</p>
+<p><strong>Posisi meja mesin</strong> - Pengaturan ini memiliki tiga opsi untuk posisi tabel:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -402,13 +402,13 @@ Anda juga dapat mengganti pengaturan ini untuk setiap mesin, dengan mengaturnya 
 </ol>
 </div>
 <div class="paragraph">
-<p><strong>Tool inventory check</strong> - Mengaktifkan opsi ini akan menampilkan segmen alat yang mungkin diperlukan untuk benda kerja yang akan ditekuk. Peringatan inventaris yang tidak mencukupi akan ditampilkan.</p>
+<p><strong>Pemeriksaan jumlah item</strong> - Mengaktifkan opsi ini akan menampilkan segmen alat yang mungkin diperlukan untuk benda kerja yang akan ditekuk. Peringatan inventaris yang tidak mencukupi akan ditampilkan.</p>
 </div>
 <div class="paragraph">
-<p><strong>Avoid tool overload if possible</strong> - Mengaktifkan opsi ini akan mencegah terjadinya kelebihan beban alat. Bahkan jika alat dengan prioritas lebih tinggi dapat digunakan pada komponen tersebut, alat dengan prioritas lebih rendah akan digunakan untuk menghindari masalah kelebihan beban.</p>
+<p><strong>Bila mungkin hindari alat kelebihan beban</strong> - Mengaktifkan opsi ini akan mencegah terjadinya kelebihan beban alat. Bahkan jika alat dengan prioritas lebih tinggi dapat digunakan pada komponen tersebut, alat dengan prioritas lebih rendah akan digunakan untuk menghindari masalah kelebihan beban.</p>
 </div>
 <div class="paragraph">
-<p><strong>Ignore tool hints from GEO/DXF files</strong> - Mengaktifkan opsi ini akan mengabaikan catatan apa pun yang ditemukan pada file DXF/GEO terkait pengaturan alat yang akan digunakan.</p>
+<p><strong>Abaikan alat dari file geo/DXF</strong> - Mengaktifkan opsi ini akan mengabaikan catatan apa pun yang ditemukan pada file DXF/GEO terkait pengaturan alat yang akan digunakan.</p>
 </div>
 </div>
 </div>
@@ -420,19 +420,19 @@ Anda juga dapat mengganti pengaturan ini untuk setiap mesin, dengan mengaturnya 
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_back_gauges">Back-gauges</a>
+   <a href="#_backgauge">Backgauge</a>
   </li>
   <li level="1">
-   <a href="#_geometry_adaptation_strategy">Geometry Adaptation Strategy</a>
+   <a href="#_strategi_pemrosesan_untuk_menyesuaikan_benda_kerja">Strategi pemrosesan untuk menyesuaikan benda kerja</a>
   </li>
   <li level="2">
-   <a href="#_when_starting_with_2d_flat">When starting with 2D flat</a>
+   <a href="#_impor_pemrosesan">Impor pemrosesan</a>
   </li>
   <li level="2">
-   <a href="#_when_starting_with_3d_model">When starting with 3D model</a>
+   <a href="#_impor_model_3d">Impor model 3D</a>
   </li>
   <li level="1">
-   <a href="#_other_settings">Other Settings</a>
+   <a href="#_pengaturan_lanjutan">Pengaturan lanjutan</a>
   </li>
  </ul>
 </aside>

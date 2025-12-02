@@ -324,7 +324,7 @@ Misalnya:</p>
 <p>Aktifkan sakelar <strong>Jangan ubah urutan</strong> untuk memaksa JFY Bend menghitung solusi baru tanpa mengubah urutan. Berbagai stasiun alat, posisi stopper, atau arah penyisipan komponen akan dicoba oleh JFY Bend, sambil mempertahankan urutan yang tidak berubah.</p>
 </li>
 <li>
-<p>Jika sakelar <strong>No angle measurement</strong> diaktifkan, JFY Bend menghitung solusi yang tidak melakukan pengukuran sudut, dan tidak akan menggunakan sensor stopper (tool sensor)</p>
+<p>Jika sakelar <strong>Tidak ada pengukuran sudut.</strong> diaktifkan, JFY Bend menghitung solusi yang tidak melakukan pengukuran sudut, dan tidak akan menggunakan sensor stopper (tool sensor)</p>
 </li>
 <li>
 <p><strong>Abaikan alat dari file GEO/DXF</strong> menginstruksikan JFY Bend untuk mengabaikan catatan pengaturan alat yang sering ditemukan dalam file GEO, dan terkadang dalam file DXF.</p>
@@ -357,7 +357,7 @@ Misalnya:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Jika Anda memilih <strong>GunakanSetup from File</strong>, Anda diminta untuk memilih file pengaturan penekukan (bsetup).
+<p>Jika Anda memilih <strong>GunakanSetup dari file</strong>, Anda diminta untuk memilih file pengaturan penekukan (bsetup).
 <strong>Pengaturan</strong> yang dimuat dari file ini kemudian digunakan untuk perhitungan; pengaturan tersebut tidak diubah, dan tidak ada stasiun tambahan yang dibuat. Pengaturan yang baru saja Anda muat dari file akan ditampilkan di selektor yang muncul di bawah bagian ini, dan Anda dapat mengklik tombol <strong>+</strong> di dekat selektor tersebut untuk memilih file pengaturan yang berbeda.</p>
 </li>
 </ul>
@@ -407,7 +407,7 @@ Misalnya:</p>
 Saat Anda memilih opsi ini, Anda akan diminta untuk memilih file daftar alat, dan file daftar alat yang baru saja Anda gunakan akan ditampilkan untuk memudahkan pemilihan. Anda dapat mengklik tanda <strong>+</strong> di dekat daftar ini untuk memilih daftar alat baru.</p>
 </li>
 <li>
-<p>Untuk kontrol paling langsung atas punch dan die, Anda dapat memilih opsi <strong>Specific Tools</strong>, lalu memilih punch dan die yang ingin digunakan.</p>
+<p>Untuk kontrol paling langsung atas punch dan die, Anda dapat memilih opsi <strong>Pilih pisau atas dan die bawah</strong>, lalu memilih punch dan die yang ingin digunakan.</p>
 </li>
 </ul>
 </div>
@@ -450,10 +450,10 @@ Sangat mungkin bahwa setiap operator mungkin memiliki seperangkat aturan priorit
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Don&#8217;t use low-priority tools</strong>: Menginstruksikan JFY Bend untuk menghindari penggunaan alat-alat dengan prioritas rendah, atau alat-alat yang tidak tercantum dalam daftar pilihan, sejauh mungkin.</p>
+<p><strong>Hindari alat dengan prioritas rendah</strong>: Menginstruksikan JFY Bend untuk menghindari penggunaan alat-alat dengan prioritas rendah, atau alat-alat yang tidak tercantum dalam daftar pilihan, sejauh mungkin.</p>
 </li>
 <li>
-<p><strong>Avoid gauging on open angles</strong>: Posisi pengukuran idealnya berada pada bidang yang sama dengan sumbu penekukan, dan tidak boleh ada penekukan yang telah diproses antara garis tekuk dan titik pengukuran. Berikut adalah contoh penyetelan stopper yang buruk yang ingin dihindari oleh aturan ini:</p>
+<p><strong>Hindari pengencangan di sudut terbuka</strong>: Posisi pengukuran idealnya berada pada bidang yang sama dengan sumbu penekukan, dan tidak boleh ada penekukan yang telah diproses antara garis tekuk dan titik pengukuran. Berikut adalah contoh penyetelan stopper yang buruk yang ingin dihindari oleh aturan ini:</p>
 </li>
 </ul>
 </div>
@@ -465,13 +465,13 @@ Sangat mungkin bahwa setiap operator mungkin memiliki seperangkat aturan priorit
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Avoid part tipping backwards</strong>: Terutama pada komponen yang berat, penting untuk menghindari situasi di mana titik gravitasi komponen berada di belakang garis alat. Aturan ini mencoba meminimalkan situasi seperti itu.<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p>
+<p><strong>Panjang sisi yang lebih panjang sebagian besar sebelum garis tekuk</strong>: Terutama pada komponen yang berat, penting untuk menghindari situasi di mana titik gravitasi komponen berada di belakang garis alat. Aturan ini mencoba meminimalkan situasi seperti itu.<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p>
 </li>
 <li>
-<p><strong>Minimize part flips</strong>: Komponen terbalik terjadi ketika komponen harus dibalik (penekukan berturut-turut berada pada arah atas/bawah yang berbeda).</p>
+<p><strong>Minimalkan penggunaan komponen</strong>: Komponen terbalik terjadi ketika komponen harus dibalik (penekukan berturut-turut berada pada arah atas/bawah yang berbeda).</p>
 </li>
 <li>
-<p><strong>Minimize part rotations</strong>: Putaran komponen adalah ketika sebuah komponen diputar ke kiri atau ke kanan pada bidang horizontal; hal ini dianggap lebih mudah bagi operator daripada membalik komponen; urutan default dari dua aturan terakhir ini mencoba untuk mengutamakan putaran komponen daripada membalik komponen, jika memungkinkan.</p>
+<p><strong>Minimalkan putaran komponen</strong>: Putaran komponen adalah ketika sebuah komponen diputar ke kiri atau ke kanan pada bidang horizontal; hal ini dianggap lebih mudah bagi operator daripada membalik komponen; urutan default dari dua aturan terakhir ini mencoba untuk mengutamakan putaran komponen daripada membalik komponen, jika memungkinkan.</p>
 </li>
 </ul>
 </div>

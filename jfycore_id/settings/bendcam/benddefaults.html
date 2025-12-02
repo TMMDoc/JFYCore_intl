@@ -280,7 +280,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Setelah penekukan lembaran logam selesai diatur dengan alat, klik ikon <strong>pengaturan</strong> dan pilih <strong>Machine Defaults</strong>.
+<p>Setelah penekukan lembaran logam selesai diatur dengan alat, klik ikon <strong>pengaturan</strong> dan pilih <strong>Pengaturan mesin</strong>.
 Ini akan membuka jendela baru tempat pengaturan press brake yang dipilih tersedia.</p>
 </div>
 <div class="admonitionblock note">
@@ -290,8 +290,8 @@ Ini akan membuka jendela baru tempat pengaturan press brake yang dipilih tersedi
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Bend-CAM Settings, Output Penekukan dan pengaturan Bend View serupa dengan
-<strong>Application Settings</strong>.
+Pengaturan penekukan die, Output Penekukan dan pengaturan Tampilan mesin serupa dengan
+<strong>Pengaturan aplikasi</strong>.
 </td>
 </tr>
 </table>
@@ -304,89 +304,89 @@ Bend-CAM Settings, Output Penekukan dan pengaturan Bend View serupa dengan
 </div>
 </div>
 <div class="sect1">
-<h2 id="_beam_cycle">Beam cycle</h2>
+<h2 id="_batang_penekan">Batang penekan</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Mute point (distance above sheet surface)</strong> - Pada titik diam, kecepatan maksimum (Penurunan cepat) secara otomatis dialihkan ke kecepatan yang dikurangi (Jepit).</p>
+<p><strong>Jarak diam</strong> - Pada titik diam, kecepatan maksimum (Penurunan cepat) secara otomatis dialihkan ke kecepatan yang dikurangi (Jepit).</p>
 </div>
 <div class="paragraph">
-<p><strong>Mute point for hemming</strong> -</p>
+<p><strong>Jarak diam (hemming)</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Slow speed to pinch point</strong> -</p>
+<p><strong>Jepit</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Pinch-point delay</strong> -</p>
+<p><strong>Waktu tunggu pada titik penjepitan</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Bending speed</strong> -</p>
+<p><strong>Tekan</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Bend hold</strong> -</p>
+<p><strong>Waktu tahan pada BDC</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Decompress speed</strong> -</p>
+<p><strong>Lepas</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Auto-compute decompress distance</strong> -</p>
+<p><strong>Dekompresi otomatis</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Decompress distance</strong> -</p>
+<p><strong>Jalur dekompresi</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Minimum ram opening</strong> -</p>
+<p><strong>Bukaan batang minimum</strong> -</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_back_gauge_movement">Back-gauge movement</h2>
+<h2 id="_backgauge">Backgauge</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Z axis speed</strong> -</p>
+<p><strong>Kecepatan Z</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>X axis speed</strong> -</p>
+<p><strong>X</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>R Speed</strong> -</p>
+<p><strong>R</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Movement trigger</strong> -</p>
+<p><strong>Pergantian langkah</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Movement delay</strong> -</p>
+<p><strong>Waktu tunggu sebelum pergantian langkah</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Movement path</strong> -
-Safe velocity: Backgauge bergerak di sekitar area berbahaya dengan kecepatan yang telah diprogram (50 mm di belakang dan di atas alat).
+<p><strong>Strategi perpindahan</strong> -
+ASV: Backgauge bergerak di sekitar area berbahaya dengan kecepatan yang telah diprogram (50 mm di belakang dan di atas alat).
 Backgauge akan bergerak maju pada langkah terakhir (sumbu X)
 Backgauge akan bergerak dengan kecepatan yang dikurangi ketika jarak antara backgauge finger dan alat kurang dari 50 mm.</p>
 </div>
 <div class="paragraph">
-<p>Safe path: Backgauge bergerak di sekitar area berbahaya dengan kecepatan yang telah diprogram (50 mm di belakang dan di atas alat) Backgauge akan bergerak ke bawah pada langkah terakhir (sumbu R). Semua sumbu bergerak pada kecepatan yang diprogram.</p>
+<p>ASW: Backgauge bergerak di sekitar area berbahaya dengan kecepatan yang telah diprogram (50 mm di belakang dan di atas alat) Backgauge akan bergerak ke bawah pada langkah terakhir (sumbu R). Semua sumbu bergerak pada kecepatan yang diprogram.</p>
 </div>
 <div class="paragraph">
-<p><strong>Parallel retraction (along with beam opening)</strong> -</p>
+<p><strong>Penarikan balik paralel</strong> -</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_other_settings">Other settings</h2>
+<h2 id="_pengaturan_lanjutan">Pengaturan lanjutan</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Min. overhang of bend beyond tooling</strong> -</p>
+<p><strong>Overhang garis tekuk ke stasiun alat</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Minimum punch-die gap</strong> -</p>
+<p><strong>Jarak punch-die minimal</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Bending aid UP speed</strong> -</p>
+<p><strong>Kecepatan naik bending aid</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Bending aid DOWN speed</strong> -</p>
+<p><strong>Kecepatan turun bending aid</strong> -</p>
 </div>
 <div class="paragraph">
-<p><strong>Operator console/foot switch</strong> -</p>
+<p><strong>Pemicu pengangkatan</strong> -</p>
 </div>
 </div>
 </div>
@@ -398,13 +398,13 @@ Backgauge akan bergerak dengan kecepatan yang dikurangi ketika jarak antara back
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_beam_cycle">Beam cycle</a>
+   <a href="#_batang_penekan">Batang penekan</a>
   </li>
   <li level="1">
-   <a href="#_back_gauge_movement">Back-gauge movement</a>
+   <a href="#_backgauge">Backgauge</a>
   </li>
   <li level="1">
-   <a href="#_other_settings">Other settings</a>
+   <a href="#_pengaturan_lanjutan">Pengaturan lanjutan</a>
   </li>
  </ul>
 </aside>

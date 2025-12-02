@@ -278,7 +278,7 @@
                     <article id="article">
                         <h1>Output Penekukan</h1>
 <div class="sect1">
-<h2 id="_report_settings">Report Settings</h2>
+<h2 id="_pengaturan_diagram_konfigurasi">Pengaturan diagram konfigurasi</h2>
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
@@ -286,24 +286,24 @@
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Report template</strong> - Ini adalah lokasi dan nama templat yang akan digunakan untuk tampilan laporan.</p>
+<p><strong>Template untuk diagram konfigurasi</strong> - Ini adalah lokasi dan nama templat yang akan digunakan untuk tampilan laporan.</p>
 </div>
 <div class="paragraph">
-<p><strong>Report destination</strong> - Tetapkan ini sebagai lokasi untuk menyimpan semua file laporan.</p>
+<p><strong>Lokasi penyimpanan diagram konfigurasi</strong> - Tetapkan ini sebagai lokasi untuk menyimpan semua file laporan.</p>
 </div>
 <div class="paragraph">
-<p><strong>Report output format</strong> - Ini dapat diatur sebagai HTML atau PDF. Catatan: untuk menggunakan konten multimedia dan 3D dalam PDF, Adobe Acrobat Reader harus diinstal.</p>
+<p><strong>Format output diagram konfigurasi</strong> - Ini dapat diatur sebagai HTML atau PDF. Catatan: untuk menggunakan konten multimedia dan 3D dalam PDF, Adobe Acrobat Reader harus diinstal.</p>
 </div>
 <div class="paragraph">
-<p><strong>Generate report on switching to bend</strong> - Aktifkan ini agar laporan dibuat secara otomatis saat beralih ke penekukan dan solusi telah ditemukan. Jika solusi mendeteksi adanya kondisi kegagalan atau petunjuk peringatan, laporan tidak akan dibuat.</p>
+<p><strong>Buat diagram konfigurasi dengan solusi penekukan</strong> - Aktifkan ini agar laporan dibuat secara otomatis saat beralih ke penekukan dan solusi telah ditemukan. Jika solusi mendeteksi adanya kondisi kegagalan atau petunjuk peringatan, laporan tidak akan dibuat.</p>
 </div>
 <div class="paragraph">
-<p><strong>Attach reports to an NC program if possible</strong> - Aktifkan fitur ini untuk melampirkan laporan ke program NC.</p>
+<p><strong>Masukkan diagram konfigurasi dalam kode NC jika memungkinkan</strong> - Aktifkan fitur ini untuk melampirkan laporan ke program NC.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_code_settings">Code Settings</h2>
+<h2 id="_pengaturan_kode">Pengaturan kode</h2>
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
@@ -311,34 +311,34 @@
 </div>
 </div>
 <div class="paragraph">
-<p><strong>NC-Code destination</strong> - Tetapkan ini sebagai lokasi untuk menyimpan semua file program NC.</p>
+<p><strong>Lokasi penyimpanan file NC</strong> - Tetapkan ini sebagai lokasi untuk menyimpan semua file program NC.</p>
 </div>
 <div class="paragraph">
-<p><strong>NC-Code post-processor</strong> - Ini adalah lokasi dan nama file batch atau alat eksternal yang akan dirujuk saat membuat program NC.</p>
+<p><strong>Postprocessor untuk file NC</strong> - Ini adalah lokasi dan nama file batch atau alat eksternal yang akan dirujuk saat membuat program NC.</p>
 </div>
 <div class="paragraph">
-<p><strong>Generate code on switching to bend</strong> - Aktifkan ini agar program NC secara otomatis dibuat saat beralih ke mode Bend CAM, (asalkan solusi yang valid dibuat tanpa kondisi kegagalan).</p>
+<p><strong>Buat file NC dengan solusi penekukan</strong> - Aktifkan ini agar program NC secara otomatis dibuat saat beralih ke mode Tekukan bawah, (asalkan solusi yang valid dibuat tanpa kondisi kegagalan).</p>
 </div>
 <div class="paragraph">
-<p><strong>Simulation graphics in NC code</strong> - Ini adalah opsi B23 yang memungkinkan Anda membandingkan grafik BNC-SAT dengan komponen yang sebenarnya. Grafik BNC-Sat ditampilkan pada monitor. Gambar komponen yang sebenarnya ditampilkan pada monitor yang sama. Pengguna sekarang dapat memindahkan, memutar, atau membalik komponen hingga grafik BNC dan gambar komponen yang sebenarnya saling tumpang tindih. Hal ini membantu pengguna untuk melihat apakah komponen telah diposisikan dengan benar untuk penekukan.</p>
+<p><strong>Tulis grafik dalam file NC</strong> - Ini adalah opsi B23 yang memungkinkan Anda membandingkan grafik BNC-SAT dengan komponen yang sebenarnya. Grafik BNC-Sat ditampilkan pada monitor. Gambar komponen yang sebenarnya ditampilkan pada monitor yang sama. Pengguna sekarang dapat memindahkan, memutar, atau membalik komponen hingga grafik BNC dan gambar komponen yang sebenarnya saling tumpang tindih. Hal ini membantu pengguna untuk melihat apakah komponen telah diposisikan dengan benar untuk penekukan.</p>
 </div>
 <div class="paragraph">
-<p><strong>Simplify graphics (remove small holes)</strong> - Secara default, fitur ini aktif (dan grafik BNC disederhanakan). Namun, ini dapat dimatikan, jika dimatikan, semua bukaan akan menjadi output di BNC.</p>
+<p><strong>Sederhanakan grafik (hapus lubang kecil)</strong> - Secara default, fitur ini aktif (dan grafik BNC disederhanakan). Namun, ini dapat dimatikan, jika dimatikan, semua bukaan akan menjadi output di BNC.</p>
 </div>
 <div class="paragraph">
-<p><strong>Lock code (no recalculation by HMI)</strong> - Aktifkan opsi ini untuk mengunci kode. Hal ini memastikan bahwa pengontrol tidak mengubah kode atau melakukan perhitungan ulang.</p>
+<p><strong>Kode kunci (tanpa perhitungan ulang dari HMI)</strong> - Aktifkan opsi ini untuk mengunci kode. Hal ini memastikan bahwa pengontrol tidak mengubah kode atau melakukan perhitungan ulang.</p>
 </div>
 <div class="paragraph">
-<p><strong>Format for flat pattern</strong> - Ini dapat diatur sebagai GEO, DXF, atau PDG untuk opsi ekspor file default saat menyimpan rancangan datar secara otomatis. Ketika solusi untuk suatu komponen telah ditemukan, pola datar dapat secara otomatis diekspor dan disimpan di tujuan pola datar. Namun, jika ditemukan kondisi kegagalan atau petunjuk peringatan, rancangan pola datar harus disimpan secara manual.</p>
+<p><strong>Format output pemrosesan</strong> - Ini dapat diatur sebagai GEO, DXF, atau PDG untuk opsi ekspor file default saat menyimpan rancangan datar secara otomatis. Ketika solusi untuk suatu komponen telah ditemukan, pola datar dapat secara otomatis diekspor dan disimpan di tujuan pola datar. Namun, jika ditemukan kondisi kegagalan atau petunjuk peringatan, rancangan pola datar harus disimpan secara manual.</p>
 </div>
 <div class="paragraph">
-<p><strong>Flat pattern destination</strong> - Tetapkan ini sebagai lokasi penyimpanan untuk semua pola datar.</p>
+<p><strong>Jalur output pemrosesan</strong> - Tetapkan ini sebagai lokasi penyimpanan untuk semua pola datar.</p>
 </div>
 <div class="paragraph">
-<p><strong>Generate FX file along with NC code</strong> - Aktifkan opsi ini untuk menyimpan file FX ke lokasi yang dipilih saat membuat program NC.</p>
+<p><strong>Hasilkan file FX bersama dengan kode NC</strong> - Aktifkan opsi ini untuk menyimpan file FX ke lokasi yang dipilih saat membuat program NC.</p>
 </div>
 <div class="paragraph">
-<p><strong>FX file destination</strong> - Tetapkan ini sebagai lokasi untuk menyimpan semua file FX.</p>
+<p><strong>File FX jalur output</strong> - Tetapkan ini sebagai lokasi untuk menyimpan semua file FX.</p>
 </div>
 </div>
 </div>
@@ -350,10 +350,10 @@
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_report_settings">Report Settings</a>
+   <a href="#_pengaturan_diagram_konfigurasi">Pengaturan diagram konfigurasi</a>
   </li>
   <li level="1">
-   <a href="#_code_settings">Code Settings</a>
+   <a href="#_pengaturan_kode">Pengaturan kode</a>
   </li>
  </ul>
 </aside>

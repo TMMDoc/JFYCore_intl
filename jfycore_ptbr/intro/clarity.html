@@ -301,7 +301,7 @@ trabalhando no JFY Core, você é apresentado a uma visão organizada e minimali
 </ul>
 </div>
 <div class="paragraph">
-<p>Em vez disso, a interface Clarity funciona com base no princípio de <strong>Select</strong>, em seguida, <strong>Operar</strong>.</p>
+<p>Em vez disso, a interface Clarity funciona com base no princípio de <strong>Selecionar</strong>, em seguida, <strong>Operar</strong>.</p>
 </div>
 <div id="h000469" class="ulist">
 <ul>
@@ -309,7 +309,7 @@ trabalhando no JFY Core, você é apresentado a uma visão organizada e minimali
 <p>Selecione as coisas clicando nelas.</p>
 </li>
 <li>
-<p>Um painel do Clarity aparece, contendo diversas <strong>Settings</strong> e <strong>Operações</strong> para a coisa selecionada.</p>
+<p>Um painel do Clarity aparece, contendo diversas <strong>Ajustes</strong> e <strong>Operações</strong> para a coisa selecionada.</p>
 </li>
 <li>
 <p>O Painel geralmente contém alguns controles para <strong>Estender</strong> a seleção selecionando outras coisas semelhantes.</p>
@@ -352,16 +352,16 @@ Por enquanto, vamos apresentar alguma terminologia de relatório para que possam
 <div class="ulist">
 <ul>
 <li>
-<p>Um <strong>Label</strong> é um texto simples; você pode definir várias propriedades, como a fonte, alinhamento de texto e a cor.</p>
+<p>Um <strong>Campo de texto</strong> é um texto simples; você pode definir várias propriedades, como a fonte, alinhamento de texto e a cor.</p>
 </li>
 <li>
-<p>Um <strong>Field</strong> exibe alguns dados reais coletados da Peça subjacente.</p>
+<p>Um <strong>Campo</strong> exibe alguns dados reais coletados da Peça subjacente.</p>
 </li>
 <li>
-<p>Uma <strong>Shape</strong> é uma geometria simples (como uma elipse, retângulo ou linha) que pode ser usada para adicionar fundos, destaques ou divisores em um relatório.</p>
+<p>Uma <strong>Forma</strong> é uma geometria simples (como uma elipse, retângulo ou linha) que pode ser usada para adicionar fundos, destaques ou divisores em um relatório.</p>
 </li>
 <li>
-<p>Uma <strong>Table</strong> exibe dados da Peça subjacente que tem uma forma tabular (como uma planilha de informações). Neste exemplo, podemos ver uma lista de operações de dobra desta peça, e alguns atributos são exibidos para cada uma delas.</p>
+<p>Uma <strong>Tabela</strong> exibe dados da Peça subjacente que tem uma forma tabular (como uma planilha de informações). Neste exemplo, podemos ver uma lista de operações de dobra desta peça, e alguns atributos são exibidos para cada uma delas.</p>
 </li>
 </ul>
 </div>
@@ -392,10 +392,10 @@ Aqui estão alguns elementos que vemos neste painel:</p>
 </li>
 <li>
 <p>Os botões de ação são como diversas operações são executadas no objeto selecionado.
-Nesse caso, pode-se excluir o campo do relatório clicando no botão <strong>Delete</strong>.</p>
+Nesse caso, pode-se excluir o campo do relatório clicando no botão <strong>Cancelar</strong>.</p>
 </li>
 <li>
-<p>Alguns painéis podem conter muitos elementos. Para reduzir a desordem, os painéis são divididos em seções usando <strong>Expansores</strong>. Na imagem acima, você pode ver que o expansor <strong>Visual</strong> está fechado (ocultando todas as configurações nessa seção), enquanto o expansor de Fonte está aberto. Você pode clicar em qualquer lugar no expansor para abrir ou fechar uma seção.</p>
+<p>Alguns painéis podem conter muitos elementos. Para reduzir a desordem, os painéis são divididos em seções usando <strong>Expansores</strong>. Na imagem acima, você pode ver que o expansor <strong>Ilustração</strong> está fechado (ocultando todas as configurações nessa seção), enquanto o expansor de Fonte está aberto. Você pode clicar em qualquer lugar no expansor para abrir ou fechar uma seção.</p>
 </li>
 </ul>
 </div>
@@ -412,7 +412,7 @@ Nesse caso, pode-se excluir o campo do relatório clicando no botão <strong>Del
 </div>
 <div class="paragraph">
 <p>Na imagem acima, temos 3 campos que selecionamos usando o mecanismo <span class="keyseq"><kbd>Shift</kbd>+<kbd>Click</kbd></span>.
-O painel que é exibido nos permite editar as configurações de todos estes três campos ao mesmo tempo. (Aqui temos o expansor <strong>Visual</strong> aberto, e o expansor <strong>Font</strong> fechado).
+O painel que é exibido nos permite editar as configurações de todos estes três campos ao mesmo tempo. (Aqui temos o expansor <strong>Ilustração</strong> aberto, e o expansor <strong>Tipo de letra</strong> fechado).
 Depois de editar a cor de <strong>fundo</strong> e as configurações de <strong>largura da caneta</strong>, veja como fica o relatório:</p>
 </div>
 <div class="imageblock">
@@ -421,14 +421,14 @@ Depois de editar a cor de <strong>fundo</strong> e as configurações de <strong
 </div>
 </div>
 <div class="paragraph">
-<p>As alterações que fizemos são aplicadas a todos os itens selecionados. Neste cenário de edição múltipla, observe que a configuração <strong>Expression</strong> não é exibida; esta é uma das configurações que é improvável que queiramos editar junto para um conjunto de campos (não gostaríamos que 3 campos exibissem o mesmo valor da Peça).
+<p>As alterações que fizemos são aplicadas a todos os itens selecionados. Neste cenário de edição múltipla, observe que a configuração <strong>Expressão</strong> não é exibida; esta é uma das configurações que é improvável que queiramos editar junto para um conjunto de campos (não gostaríamos que 3 campos exibissem o mesmo valor da Peça).
 Ajustes que normalmente teriam valores distintos para cada entidade não são exibidos nesses painéis de edição de grupo.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_princípio_você_pode_editar_diferentes_tipos_de_entidades_juntas">Princípio: Você pode editar diferentes tipos de entidades juntas<a id="h000480"></a></h3>
 <div class="paragraph">
-<p>No exemplo acima, selecionamos três entidades do mesmo tipo. O que acontecerá se selecionarmos entidades de tipos diferentes? Vamos ver. Primeiro, esta é a aparência do painel para de uma entidade <strong>Shape</strong>:</p>
+<p>No exemplo acima, selecionamos três entidades do mesmo tipo. O que acontecerá se selecionarmos entidades de tipos diferentes? Vamos ver. Primeiro, esta é a aparência do painel para de uma entidade <strong>Forma</strong>:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -436,7 +436,7 @@ Ajustes que normalmente teriam valores distintos para cada entidade não são ex
 </div>
 </div>
 <div class="paragraph">
-<p>Se selecionarmos um <strong>Field</strong> e uma <strong>Shape</strong> ao mesmo tempo, este é o painel que é exibido:</p>
+<p>Se selecionarmos um <strong>Campo</strong> e uma <strong>Forma</strong> ao mesmo tempo, este é o painel que é exibido:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -449,7 +449,7 @@ Ajustes que normalmente teriam valores distintos para cada entidade não são ex
 <p>Agora a barra de legenda diz <strong>2 Itens de relatório</strong> pois estamos editando itens de relatório, mas não do mesmo tipo.</p>
 </li>
 <li>
-<p>Apenas as configurações comuns entre <strong>Field</strong> e <strong>Shape</strong> são exibidas (neste caso, essas são apenas as configurações na seção Visual).</p>
+<p>Apenas as configurações comuns entre <strong>Campo</strong> e <strong>Forma</strong> são exibidas (neste caso, essas são apenas as configurações na seção Visual).</p>
 </li>
 </ul>
 </div>
@@ -473,8 +473,8 @@ Ajustes que normalmente teriam valores distintos para cada entidade não são ex
 </div>
 </div>
 <div class="paragraph">
-<p>Existem algumas configurações que podemos editar em comum (a configuração de pular dobra ou a configuração do número da estação). No entanto, vemos um novo botão aqui, chamado <strong>Group</strong>.
-Quando duas dobras são selecionadas, e estas são colineares, elas podem ser agrupados em uma única operação de dobra. Isso é detectado automaticamente, e esse novo botão <strong>Group</strong> é exibido; esta operação não está disponível quando apenas uma dobra única é selecionada. Clicar nesse botão agrupa as duas dobras, como você pode ver na imagem abaixo.</p>
+<p>Existem algumas configurações que podemos editar em comum (a configuração de pular dobra ou a configuração do número da estação). No entanto, vemos um novo botão aqui, chamado <strong>Agrupar</strong>.
+Quando duas dobras são selecionadas, e estas são colineares, elas podem ser agrupados em uma única operação de dobra. Isso é detectado automaticamente, e esse novo botão <strong>Agrupar</strong> é exibido; esta operação não está disponível quando apenas uma dobra única é selecionada. Clicar nesse botão agrupa as duas dobras, como você pode ver na imagem abaixo.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -482,13 +482,13 @@ Quando duas dobras são selecionadas, e estas são colineares, elas podem ser ag
 </div>
 </div>
 <div class="paragraph">
-<p>Agora, existem apenas 3 operações de dobra nesta parte. Além disso, a dobra 3 agora é uma dobra <em>agrupada</em> e você vê um novo botão aparecer: <strong>Ungroup</strong>.</p>
+<p>Agora, existem apenas 3 operações de dobra nesta parte. Além disso, a dobra 3 agora é uma dobra <em>agrupada</em> e você vê um novo botão aparecer: <strong>Separar</strong>.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_princípio_use_o_subpainel_de_seleção_para_modificar_a_seleção">Princípio: Use o subpainel de seleção para modificar a seleção<a id="h000483"></a></h3>
 <div class="paragraph">
-<p>Um painel Clarity geralmente terá um subpainel <strong>Selection</strong> perto da parte inferior.
+<p>Um painel Clarity geralmente terá um subpainel <strong>Selecionar</strong> perto da parte inferior.
 Este painel fornece alguns botões para modificar a seleção de diversas formas.
 Normalmente, há botões para selecionar mais objetos que são similares de uma forma ou de outra. Por exemplo, algumas formas para expandir a seleção seriam:</p>
 </div>
@@ -518,7 +518,7 @@ Normalmente, há botões para selecionar mais objetos que são similares de uma 
 </div>
 <div class="paragraph">
 <p>O subpainel de seleção tem um fundo estampado distinto e botões arredondados.
-Neste exemplo, você pode ver os botões para selecionar <strong>Todos os Campos</strong>, selecione <strong>Todos os Campos de Dobra</strong> (campos relacionados aos dados CAM de dobra) e <strong>Toggle</strong> (o conjunto de seleção atual).</p>
+Neste exemplo, você pode ver os botões para selecionar <strong>Todos os Campos</strong>, selecione <strong>Todos os Campos de Dobra</strong> (campos relacionados aos dados CAM de dobra) e <strong>Comutar</strong> (o conjunto de seleção atual).</p>
 </div>
 <div class="paragraph">
 <p>A lista real de botões de seleção exibidos neste subpainel irá variar dependendo do contexto. Você descobrirá que os cenários mais comuns são tratados muito convenientemente por meio desses botões de seleção.</p>
@@ -563,11 +563,11 @@ Quando clicamos na tabela, vemos um painel como este:</p>
 </div>
 <div class="paragraph">
 <p>Os botões <span class="icon"><i class="fa fa-arrow-left"></i></span>
-<strong>Prev.</strong> e <strong>Next</strong> <span class="icon"><i class="fa fa-arrow-right"></i></span> se movem entre os itens no mesmo nível da árvore de entidades. Assim, clicar nesses botões selecionaria os outros itens no relatório, como o <strong>Label</strong> ou os itens de <strong>Field</strong> no relatório.</p>
+<strong>Voltar.</strong> e <strong>Continuar</strong> <span class="icon"><i class="fa fa-arrow-right"></i></span> se movem entre os itens no mesmo nível da árvore de entidades. Assim, clicar nesses botões selecionaria os outros itens no relatório, como o <strong>Campo de texto</strong> ou os itens de <strong>Campo</strong> no relatório.</p>
 </div>
 <div class="paragraph">
-<p>Clicar no <strong>Report</strong> <span class="icon"><i class="fa fa-arrow-up"></i></span> move para cima da tabela para o nível superior - o próprio <em>Relatório</em>. O painel que é exibido
-quando você clica no botão <strong>Report</strong> mostra algumas configurações relacionadas ao relatório em si, como o tamanho do papel e as margens:</p>
+<p>Clicar no <strong>Plano de preparação</strong> <span class="icon"><i class="fa fa-arrow-up"></i></span> move para cima da tabela para o nível superior - o próprio <em>Relatório</em>. O painel que é exibido
+quando você clica no botão <strong>Plano de preparação</strong> mostra algumas configurações relacionadas ao relatório em si, como o tamanho do papel e as margens:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -578,7 +578,7 @@ quando você clica no botão <strong>Report</strong> mostra algumas configuraç�
 <p>Agora estamos editando o relatório; estamos na raiz da árvore de entidades. Não há direção para ir exceto para baixo, portanto, o subpainel de navegação tem somente um botão (<span class="icon"><i class="fa fa-arrow-down"></i></span> Itens) para descer até a lista de itens. Clicar nele seleciona a tabela novamente.</p>
 </div>
 <div class="paragraph">
-<p>A partir da tabela, o botão de navegação para baixo <span class="icon"><i class="fa fa-arrow-down"></i></span> <strong>Columns</strong> botão nos move para baixo um nível e nos coloca no modo de edição de coluna. Isso é o que acontece quando clicamos no botão de navegação <span class="icon"><i class="fa fa-arrow-down"></i></span> <strong>Columns</strong> do painel da tabela:</p>
+<p>A partir da tabela, o botão de navegação para baixo <span class="icon"><i class="fa fa-arrow-down"></i></span> <strong>Colunas</strong> botão nos move para baixo um nível e nos coloca no modo de edição de coluna. Isso é o que acontece quando clicamos no botão de navegação <span class="icon"><i class="fa fa-arrow-down"></i></span> <strong>Colunas</strong> do painel da tabela:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -586,7 +586,7 @@ quando você clica no botão <strong>Report</strong> mostra algumas configuraç�
 </div>
 </div>
 <div class="paragraph">
-<p>As configurações para a coluna selecionada na tabela são exibidas. Clicar nos botões <span class="icon"><i class="fa fa-arrow-left"></i></span> <strong>Prev.</strong> e <strong>Next</strong> <span class="icon"><i class="fa fa-arrow-right"></i></span> agora move a seleção entre as <em>colunas</em> da tabela, já que esse é o nível da árvore com a qual estamos trabalhando. Não há um botão de navegação para baixo, pois este é o nível mais baixo da árvore. O botão <strong>Table</strong> <span class="icon"><i class="fa fa-arrow-up"></i></span> sobe um nível, e estamos de volta para editar a tabela inteira.</p>
+<p>As configurações para a coluna selecionada na tabela são exibidas. Clicar nos botões <span class="icon"><i class="fa fa-arrow-left"></i></span> <strong>Voltar.</strong> e <strong>Continuar</strong> <span class="icon"><i class="fa fa-arrow-right"></i></span> agora move a seleção entre as <em>colunas</em> da tabela, já que esse é o nível da árvore com a qual estamos trabalhando. Não há um botão de navegação para baixo, pois este é o nível mais baixo da árvore. O botão <strong>Tabela</strong> <span class="icon"><i class="fa fa-arrow-up"></i></span> sobe um nível, e estamos de volta para editar a tabela inteira.</p>
 </div>
 </div>
 </div>

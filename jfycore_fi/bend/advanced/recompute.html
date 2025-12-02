@@ -335,7 +335,7 @@ ohjelman muuttamatta järjestystä. JFY Bend kokeilee erilaisia työkaluasemia, 
 tai osan paikalleen sijoittamiseen käytettäviä suuntia muuttamatta tällöin järjestystä.</p>
 </li>
 <li>
-<p>Jos kytkin <strong>No angle measurement</strong> on päällä, JFY Bend laskee ohjelman,
+<p>Jos kytkin <strong>EI kulmanmittausta.</strong> on päällä, JFY Bend laskee ohjelman,
 joka ei suorita kulmamittauksia eikä käytä vasteisiin liittyviä antureita (ACB-työkaluja).</p>
 </li>
 <li>
@@ -375,7 +375,7 @@ katseltavissa uudelleenlaskennan jälkeen.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Jos valitset vaihtoehdon <strong>Use Setup from File</strong> (käytä tiedoston kokoonpanoa), sovellus pyytää sinua valitsemaan taivutuskokoonpanon tiedoston (bsetup).
+<p>Jos valitset vaihtoehdon <strong>Use Setup tiedostosta</strong> (käytä tiedoston kokoonpanoa), sovellus pyytää sinua valitsemaan taivutuskokoonpanon tiedoston (bsetup).
 Sovellus käyttää tämän jälkeen laskentaan tästä tiedostosta ladattua <strong>kokoonpanoa</strong>. Sovellus ei tällöin muuta tiedoston sisältämää kokoonpanoa eikä
 luo uusia asemia. Äsken tiedostosta lataamasi kokoonpanot ovat nähtävissä
 tämän osion alapuolisessa avattavassa valikossa, josta voit myös valita toisen kokoonpanotiedoston napsauttamalla painiketta <strong>+</strong>
@@ -446,7 +446,7 @@ Valitessasi tämän vaihtoehdon sovellus kehottaa sinua valitsemaan työkaluluet
 luettelon lähellä.</p>
 </li>
 <li>
-<p>Voit vaikuttaa itse eniten pistinten ja tyynyjen valintaan valitsemalla ensin vaihtoehdon <strong>Specific Tools</strong>
+<p>Voit vaikuttaa itse eniten pistinten ja tyynyjen valintaan valitsemalla ensin vaihtoehdon <strong>Määrittele ylä- ja alatyökalu</strong>
 ja sen jälkeen juuri sen pistimen ja tyynyn, jota haluat käyttää.</p>
 </li>
 </ul>
@@ -500,10 +500,10 @@ estäisi ylitaivutuksen.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Don&#8217;t use low-priority tools</strong>: kehottaa JFY Bend-sovellusta välttämään siinä määrin kuin mahdollista sellaisten työkalujen käyttöä, joiden ensisijaisuustaso on matala tai jotka puuttuvat ensisijaisten työkalujen luettelosta.</p>
+<p><strong>Vältä matalan prioriteetin työkalujen käyttöä</strong>: kehottaa JFY Bend-sovellusta välttämään siinä määrin kuin mahdollista sellaisten työkalujen käyttöä, joiden ensisijaisuustaso on matala tai jotka puuttuvat ensisijaisten työkalujen luettelosta.</p>
 </li>
 <li>
-<p><strong>Avoid gauging on open angles</strong>: vasteiden asemien tulisi mieluiten olla samassa
+<p><strong>Vältä avoimiin kulmiin kohdistuvia iskuja</strong>: vasteiden asemien tulisi mieluiten olla samassa
 tasossa kuin taivutusakseli, eikä taivutuslinjan ja vastepisteen välissä
 tulisi olla aiemmin valmistettuja taivutuksia. Seuraavassa on esimerkki huonosta vasteen asemoinnista, joka pyritään välttämään
 tämän säännön avulla:</p>
@@ -518,16 +518,16 @@ tämän säännön avulla:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Avoid part tipping backwards</strong>: erityisesti painavien osien kohdalla kannattaa välttää
+<p><strong>Pitkä jalka ensisijaisesti taivutusreunan edellä</strong>: erityisesti painavien osien kohdalla kannattaa välttää
 tilanteet, joissa osan painopiste on työkalun linjan takana. Tämän
 säännön avulla pyritään minimoimaan tällaiset tilanteet.<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p>
 </li>
 <li>
-<p><strong>Minimize part flips</strong>: osien kääntö tapahtuu silloin, kun osa on käännettävä ylösalaisin (peräkkäiset
+<p><strong>Minimoi osien kääntö</strong>: osien kääntö tapahtuu silloin, kun osa on käännettävä ylösalaisin (peräkkäiset
 taivutukset ovat eri suunnissa ylöspäin/alaspäin).</p>
 </li>
 <li>
-<p><strong>Minimize part rotations</strong>: osan kierto tapahtuu käännettäessä osaa vasemmalle tai oikealle
+<p><strong>Minimoi osien pyöritys</strong>: osan kierto tapahtuu käännettäessä osaa vasemmalle tai oikealle
 vaakatasossa. Tämän katsotaan olevan koneenkäyttäjälle helpompaa kuin
 osan kääntö. Näiden kahden viimeisen säännön oletusjärjestyksen tarkoituksena on suosia mahdollisuuksien mukaan osan kiertämistä
 osan kääntämiseen verrattuna.</p>

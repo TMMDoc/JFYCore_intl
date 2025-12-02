@@ -283,62 +283,62 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_back_gauges">Back-gauges</h2>
+<h2 id="_后止挡">后止挡</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Min.thickness to always pull-back (mm)</strong> - 此设置允许您输入当达到输入的板材厚度时后挡料的自动退回值，以毫米为单位。</p>
+<p><strong>自板材厚度 … mm 起自动退回</strong> - 此设置允许您输入当达到输入的板材厚度时后挡料的自动退回值，以毫米为单位。</p>
 </div>
 <div class="paragraph">
-<p><strong>Clamping strategy</strong> - 用于设置后挡料如何停在工件上。以下选择选项可用：</p>
+<p><strong>后止挡策略</strong> - 用于设置后挡料如何停在工件上。以下选择选项可用：</p>
 </div>
 <div class="paragraph">
-<p><strong>Default</strong> - 后挡料在每个折弯处以软件认为的最好方式停止。</p>
+<p><strong>标准</strong> - 后挡料在每个折弯处以软件认为的最好方式停止。</p>
 </div>
 <div class="paragraph">
-<p><strong>Stop + Stop</strong> - 两个后挡料的平直表面停靠在工件上。</p>
+<p><strong>2 x 垂直止挡</strong> - 两个后挡料的平直表面停靠在工件上。</p>
 </div>
 <div class="paragraph">
-<p><strong>Clamp + Stop</strong> - 一个后挡料夹住工件，另一个后挡料以其平直表面使工件停止。</p>
+<p><strong>夹紧+停止</strong> - 一个后挡料夹住工件，另一个后挡料以其平直表面使工件停止。</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_geometry_adaptation_strategy">Geometry Adaptation Strategy</h2>
+<h2 id="_用于适配工件的加工策略">用于适配工件的加工策略</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>如果在软件中编辑了2D或3D文件，将检查折弯半径和折弯系数。根据在 Easy Programming 设置中针对修改工件所选的策略，将执行不同的加工策略。如果决定被设置为交互式，则将显示Adapt Geometry对话。</p>
+<p>如果在软件中编辑了2D或3D文件，将检查折弯半径和折弯系数。根据在 Easy Programming 设置中针对修改工件所选的策略，将执行不同的加工策略。如果决定被设置为交互式，则将显示适配工件对话。</p>
 </div>
 <div class="sect2">
-<h3 id="_when_starting_with_2d_flat">When starting with 2D flat</h3>
+<h3 id="_导入展开图">导入展开图</h3>
 <div class="paragraph">
-<p><strong>Ask each time</strong> - 从2D零件导航到折弯时，使用此设置将自动显示 Adapt Geometry对话框。通过此选项可保持平面尺寸，保持3D尺寸或不改变任何东西，由此使该功能非常具有互动性和用户便利性。</p>
+<p><strong>互动式决策</strong> - 从2D零件导航到折弯时，使用此设置将自动显示 适配工件对话框。通过此选项可保持平面尺寸，保持3D尺寸或不改变任何东西，由此使该功能非常具有互动性和用户便利性。</p>
 </div>
 <div class="paragraph">
-<p><strong>Keep 3D dimensions</strong> - 此选项将更改展开图，后者必须手动保存。如果板坯尚未被切割，则使用此策略。</p>
+<p><strong>保留 3D 模型</strong> - 此选项将更改展开图，后者必须手动保存。如果板坯尚未被切割，则使用此策略。</p>
 </div>
 <div class="paragraph">
-<p><strong>Keep 2D dimensions</strong> - 此选项将意味着折弯半径和折弯系数将根据现有展开图进行调整；折弯线保持在同一位置。这将改变零件的边长度。展开图不变。如果板坯已经被切割成合适的尺寸，则使用此策略。</p>
+<p><strong>保留展开图</strong> - 此选项将意味着折弯半径和折弯系数将根据现有展开图进行调整；折弯线保持在同一位置。这将改变零件的边长度。展开图不变。如果板坯已经被切割成合适的尺寸，则使用此策略。</p>
 </div>
 <div class="paragraph">
-<p><strong>No adjustments</strong> - 使用此选项将意味着折弯半径和折弯系数保持不变。零件以正确的尺寸进行3D显示，但显示的折弯半径与实际折弯半径不符。每个工件折弯的尺寸可能会发生变化。</p>
+<p><strong>不作调整</strong> - 使用此选项将意味着折弯半径和折弯系数保持不变。零件以正确的尺寸进行3D显示，但显示的折弯半径与实际折弯半径不符。每个工件折弯的尺寸可能会发生变化。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_when_starting_with_3d_model">When starting with 3D model</h3>
+<h3 id="_导入_3d_模型">导入 3D 模型</h3>
 <div class="paragraph">
-<p><strong>Ask each time</strong> - 从3D零件导航到折弯时，使用此设置将自动显示 Adapt Geometry对话框。通过此选项可保持平面尺寸，保持3D尺寸或不改变任何东西，由此使该功能非常具有互动性和用户便利性。</p>
+<p><strong>互动式决策</strong> - 从3D零件导航到折弯时，使用此设置将自动显示 适配工件对话框。通过此选项可保持平面尺寸，保持3D尺寸或不改变任何东西，由此使该功能非常具有互动性和用户便利性。</p>
 </div>
 <div class="paragraph">
-<p><strong>Keep 3D dimensions</strong> - 此选项将更改展开图，后者必须手动保存。如果板坯尚未被切割，则使用此策略。</p>
+<p><strong>保留 3D 模型</strong> - 此选项将更改展开图，后者必须手动保存。如果板坯尚未被切割，则使用此策略。</p>
 </div>
 <div class="paragraph">
-<p><strong>Keep 2D dimensions</strong> - 此选项将意味着折弯半径和折弯系数将根据现有展开图进行调整；折弯线保持在同一位置。这将改变零件的边长度。如果板坯已经被切割成合适的尺寸，则使用此策略。</p>
+<p><strong>保留展开图</strong> - 此选项将意味着折弯半径和折弯系数将根据现有展开图进行调整；折弯线保持在同一位置。这将改变零件的边长度。如果板坯已经被切割成合适的尺寸，则使用此策略。</p>
 </div>
 <div class="paragraph">
-<p><strong>No adjustments</strong> - 使用此选项将意味着折弯半径和折弯系数保持不变。零件以正确的尺寸进行3D显示，但显示的折弯半径与实际折弯半径不符。每个工件折弯的尺寸可能会发生变化。</p>
+<p><strong>不作调整</strong> - 使用此选项将意味着折弯半径和折弯系数保持不变。零件以正确的尺寸进行3D显示，但显示的折弯半径与实际折弯半径不符。每个工件折弯的尺寸可能会发生变化。</p>
 </div>
 <div class="paragraph">
-<p><strong>Bend deduction calculation</strong> - 通过此选项，您可以强制使用修正系数 k 方法。此设置可以在应用程序默认值中设置，或可以针对每台机床单独进行调整。</p>
+<p><strong>折弯系数</strong> - 通过此选项，您可以强制使用修正系数 k 方法。此设置可以在应用程序默认值中设置，或可以针对每台机床单独进行调整。</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -353,22 +353,22 @@
 </table>
 </div>
 <div class="paragraph">
-<p><strong>BG-Left variant</strong> - 根据使用的变型BG，数控程序将被修改以表示这一点。</p>
+<p><strong>左侧后挡料类型</strong> - 根据使用的变型BG，数控程序将被修改以表示这一点。</p>
 </div>
 <div class="paragraph">
-<p><strong>BG-Right variant</strong> - 根据使用的变型BG，数控程序将被修改以表示这一点。</p>
+<p><strong>右侧后挡料类型</strong> - 根据使用的变型BG，数控程序将被修改以表示这一点。</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_other_settings">Other Settings</h2>
+<h2 id="_其它设置">其它设置</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Hemming pre-bend angle</strong> - 此选项可以在10°至60°之间编辑压边预折弯角度。默认值为40°，因为这是建议用于大多数制造商的压边预折弯角度。设置为30°，用于所有不同版本的所有通快机床。</p>
+<p><strong>折边时的预折弯角度</strong> - 此选项可以在10°至60°之间编辑压边预折弯角度。默认值为40°，因为这是建议用于大多数制造商的压边预折弯角度。设置为30°，用于所有不同版本的所有通快机床。</p>
 </div>
 <div class="paragraph">
-<p><strong>Bend-guard mode override</strong> - 将此设置为自动计算（默认值），折弯将计算每个折弯的折弯防护模式。但是，您可以强制折弯防护模式使用其中一个选项，无论是否合适。</p>
+<p><strong>BendGuard 模式预设定</strong> - 将此设置为自动计算（默认值），折弯将计算每个折弯的折弯防护模式。但是，您可以强制折弯防护模式使用其中一个选项，无论是否合适。</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -377,13 +377,13 @@
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-您也可以覆盖每台机床的此设置，方法是在机床默认值中设置，而不是Application Settings。
+您也可以覆盖每台机床的此设置，方法是在机床默认值中设置，而不是应用设置。
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Machine table position</strong> - 此设置有三个选项，用于表位置：</p>
+<p><strong>机床工作台位置</strong> - 此设置有三个选项，用于表位置：</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -399,13 +399,13 @@
 </ol>
 </div>
 <div class="paragraph">
-<p><strong>Tool inventory check</strong> - 启用此选项将显示模具段，这可能是工件折弯所必需的。将显示库存标记不足。</p>
+<p><strong>件数检查</strong> - 启用此选项将显示模具段，这可能是工件折弯所必需的。将显示库存标记不足。</p>
 </div>
 <div class="paragraph">
-<p><strong>Avoid tool overload if possible</strong> - 打开此选项可确保避免模具过载。即使具有更高优先级的模具适用于该零件，仍将使用较低优先级的模具，以避免过载问题。</p>
+<p><strong>尽可能避免工具过载</strong> - 打开此选项可确保避免模具过载。即使具有更高优先级的模具适用于该零件，仍将使用较低优先级的模具，以避免过载问题。</p>
 </div>
 <div class="paragraph">
-<p><strong>Ignore tool hints from GEO/DXF files</strong> - 启用此选项将忽略在DXF/GEO文件上找到的有关要使用加工的信息。</p>
+<p><strong>忽略来自 geo/dxf 文件的模具</strong> - 启用此选项将忽略在DXF/GEO文件上找到的有关要使用加工的信息。</p>
 </div>
 </div>
 </div>
@@ -417,19 +417,19 @@
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_back_gauges">Back-gauges</a>
+   <a href="#_后止挡">后止挡</a>
   </li>
   <li level="1">
-   <a href="#_geometry_adaptation_strategy">Geometry Adaptation Strategy</a>
+   <a href="#_用于适配工件的加工策略">用于适配工件的加工策略</a>
   </li>
   <li level="2">
-   <a href="#_when_starting_with_2d_flat">When starting with 2D flat</a>
+   <a href="#_导入展开图">导入展开图</a>
   </li>
   <li level="2">
-   <a href="#_when_starting_with_3d_model">When starting with 3D model</a>
+   <a href="#_导入_3d_模型">导入 3D 模型</a>
   </li>
   <li level="1">
-   <a href="#_other_settings">Other Settings</a>
+   <a href="#_其它设置">其它设置</a>
   </li>
  </ul>
 </aside>

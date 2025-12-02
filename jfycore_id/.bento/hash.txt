@@ -6,11 +6,11 @@ CUTAPP=JFY Cut
 FLAVOR=JFY
 FOLDAPP=JFY Fold
 JFY=
-LANGUAGE=EN
+LANGUAGE=ID
 TECNOAPP=JFY Plus
 Folders=27
 Pages=97
-UIXlate=False, DebugUIXlate=False, Language=EN
+UIXlate=True, DebugUIXlate=False, Language=ID
 
 contents.txt • 254003.084024
 Impressum.adoc • Impressum
